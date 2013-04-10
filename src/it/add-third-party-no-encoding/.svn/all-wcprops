@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/add-third-party-no-encoding
+END
+invoker.properties
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/add-third-party-no-encoding/invoker.properties
+END
+postbuild.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/add-third-party-no-encoding/postbuild.groovy
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/add-third-party-no-encoding/pom.xml
+END

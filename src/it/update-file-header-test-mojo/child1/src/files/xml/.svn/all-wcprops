@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/child1/src/files/xml
+END
+test2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/child1/src/files/xml/test2.xml
+END
+test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/child1/src/files/xml/test.xml
+END

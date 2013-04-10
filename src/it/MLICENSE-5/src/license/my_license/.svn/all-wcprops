@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-5/src/license/my_license
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-5/src/license/my_license/license.txt
+END
+header.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-5/src/license/my_license/header.txt
+END

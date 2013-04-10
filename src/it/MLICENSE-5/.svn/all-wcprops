@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-5
+END
+LICENSE.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-5/LICENSE.html
+END
+invoker.properties
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-5/invoker.properties
+END
+postbuild.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-5/postbuild.groovy
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-5/pom.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-5/README.txt
+END

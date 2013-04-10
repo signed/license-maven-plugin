@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/aggregate-add-third-party-bad-license
+END
+invoker.properties
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/aggregate-add-third-party-bad-license/invoker.properties
+END
+postbuild.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/aggregate-add-third-party-bad-license/postbuild.groovy
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/aggregate-add-third-party-bad-license/pom.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/aggregate-add-third-party-bad-license/README.txt
+END

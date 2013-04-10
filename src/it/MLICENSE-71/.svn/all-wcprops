@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/mojo/!svn/ver/17913/trunk/mojo/license-maven-plugin/src/it/MLICENSE-71
+END
+invoker.properties
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/mojo/!svn/ver/17913/trunk/mojo/license-maven-plugin/src/it/MLICENSE-71/invoker.properties
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/mojo/!svn/ver/17913/trunk/mojo/license-maven-plugin/src/it/MLICENSE-71/pom.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/mojo/!svn/ver/17913/trunk/mojo/license-maven-plugin/src/it/MLICENSE-71/README.txt
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/mojo/!svn/ver/17308/trunk/mojo/license-maven-plugin/src/test/java/org/codehaus/mojo/license/header/transformer
+END
+XmlFileHeaderTransformerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/test/java/org/codehaus/mojo/license/header/transformer/XmlFileHeaderTransformerTest.java
+END
+JavaFileHeaderTransformerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/mojo/!svn/ver/17308/trunk/mojo/license-maven-plugin/src/test/java/org/codehaus/mojo/license/header/transformer/JavaFileHeaderTransformerTest.java
+END
+AbstractFileHeaderTransformerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/test/java/org/codehaus/mojo/license/header/transformer/AbstractFileHeaderTransformerTest.java
+END

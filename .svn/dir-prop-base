@@ -1,0 +1,20 @@
+K 10
+svn:ignore
+V 122
+
+*.iml
+*.ipr
+*.iws
+*.log
+*~
+.classpath
+.project
+.settings
+catalog.xml
+nbactions.xml
+nbproject
+private
+profiles.xml
+target
+
+END

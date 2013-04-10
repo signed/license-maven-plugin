@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/jsp
+END
+test2.jsp2
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/jsp/test2.jsp2
+END
+test.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/jsp/test.jsp
+END
+test.jsp2
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/jsp/test.jsp2
+END
+test2.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/jsp/test2.jsp
+END

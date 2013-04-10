@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/mojo/!svn/ver/17808/trunk/mojo/license-maven-plugin/src/license-test
+END
+test.license.properties
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/mojo/!svn/ver/17808/trunk/mojo/license-maven-plugin/src/license-test/test.license.properties
+END
+test-add-third-party-global-db-misc-dep-1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/mojo/!svn/ver/17808/trunk/mojo/license-maven-plugin/src/license-test/test-add-third-party-global-db-misc-dep-1.jar
+END

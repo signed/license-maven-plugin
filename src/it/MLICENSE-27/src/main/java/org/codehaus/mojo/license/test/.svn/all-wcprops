@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-27/src/main/java/org/codehaus/mojo/license/test
+END
+MyBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-27/src/main/java/org/codehaus/mojo/license/test/MyBean.java
+END
+MyBean2.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-27/src/main/java/org/codehaus/mojo/license/test/MyBean2.java
+END
+MyBean3.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-27/src/main/java/org/codehaus/mojo/license/test/MyBean3.java
+END

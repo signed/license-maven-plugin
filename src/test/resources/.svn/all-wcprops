@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/mojo/!svn/ver/16926/trunk/mojo/license-maven-plugin/src/test/resources
+END
+license-summary-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/test/resources/license-summary-test.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/test/resources/log4j.properties
+END

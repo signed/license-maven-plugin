@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/add-third-party-global-db/publish-db/src/license
+END
+test.license.properties
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/add-third-party-global-db/publish-db/src/license/test.license.properties
+END

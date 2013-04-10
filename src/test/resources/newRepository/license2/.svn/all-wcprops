@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/mojo/!svn/ver/14664/trunk/mojo/license-maven-plugin/src/test/resources/newRepository/license2
+END
+TheLicense.rst
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/mojo/!svn/ver/14664/trunk/mojo/license-maven-plugin/src/test/resources/newRepository/license2/TheLicense.rst
+END
+TheHeader.rst
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/mojo/!svn/ver/14664/trunk/mojo/license-maven-plugin/src/test/resources/newRepository/license2/TheHeader.rst
+END

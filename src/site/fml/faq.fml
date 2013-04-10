@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  #%L
+  License Maven Plugin
+  %%
+  Copyright (C) 2010 - 2011 Codehaus, Tony Chemit
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Lesser Public License for more details.
+
+  You should have received a copy of the GNU General Lesser Public
+  License along with this program.  If not, see
+  <http://www.gnu.org/licenses/lgpl-3.0.html>.
+  #L%
+  -->
+
+<faqs id="FAQ" title="Frequently Asked Questions">
+  <part id="General">
+    <faq id="google-code-maven-license-plugin">
+      <question>What is the difference between this plugin (the Codehaus license-maven-plugin) and the maven-license-plugin hosted at Google Code?</question>
+      <answer>
+        <p>
+          The Codehaus plugin and the <a href="">Google Code</a> plugin were developed separately but with similar goals.  
+          The two plugins have several overlapping features including verifying and updating license information in 
+          source files.  The Codehaus plugin also provides the ability to download the licenses of thirdparty dependencies 
+          and create and XML report listing each project dependency and its license.  If you are not sure which one to use
+          you should try both to see which one better fits your needs.
+        </p>
+      </answer>
+    </faq>
+    <faq id="code-lutin-maven-license-plugin">
+      <question>What is the difference between this plugin (the Codehaus license-maven-plugin) and the maven-license-plugin hosted at Code Lutin?</question>
+      <answer>
+        <p>
+          The <a href="http://maven-site.nuiton.org/maven-license-plugin/">Code Lutin maven-license-plugin</a> is an older version of the Codehaus license-maven-plugin.  The source code 
+          of the Code Lutin plugin was donated to Codehaus and merged with some existing license plugin code.
+          His original creator joined then the Codehaus team to continue the project developement.
+        </p>
+      </answer>
+    </faq>
+    <faq id="mysql-file-header">
+          <question>Why sql style should not be used with mysql sql files ?</question>
+          <answer>
+            <p>
+              Mysql does not accept <strong>---</strong> as comment (which is used to mark license header for normal sql files).
+              You should use the <i>mysql</i> header style instead, with with configuration:
+              <pre>
+              &lt;extraExtensions&gt;
+              &lt;sql&gt;mysql&lt;/sql&gt;
+              &lt;/extraExtensions&gt;
+              </pre>
+              <a href="http://jira.codehaus.org/browse/MLICENSE-56">Bug detail.</a>
+            </p>
+          </answer>
+        </faq>
+  </part>
+</faqs>

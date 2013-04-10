@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-45/child1/src/main/resources/mypackage/mylicensestore
+END
+licenses.properties
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/MLICENSE-45/child1/src/main/resources/mypackage/mylicensestore/licenses.properties
+END

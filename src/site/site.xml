@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  #%L
+  License Maven Plugin
+  %%
+  Copyright (C) 2010 - 2011 Codehaus, Tony Chemit
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Lesser Public License for more details.
+
+  You should have received a copy of the GNU General Lesser Public
+  License along with this program.  If not, see
+  <http://www.gnu.org/licenses/lgpl-3.0.html>.
+  #L%
+  -->
+
+<project xmlns="http://maven.apache.org/DECORATION/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+  <body>
+    <menu name="Overview">
+      <item name="Introduction" href="index.html"/>
+      <item name="Goals" href="plugin-info.html"/>
+      <item name="Usage" href="usage.html"/>
+      <item name="FAQ" href="faq.html"/>
+      <item name="File header model" href="header.html"/>
+      <!--<item name="Site français" href="http://mojo.codehaus.org/license-maven-plugin/fr/index.html"/>-->
+    </menu>
+    <menu name="Examples">
+      <item name="Add License" href="examples/example-add-license.html"/>
+      <item name="Download Licenses" href="examples/example-download-licenses.html"/>
+      <item name="List Licenses" href="examples/example-license-list.html"/>
+      <item name="Thirdparty Licenses" href="examples/example-thirdparty.html"/>
+      <item name="List Comment style" href="examples/example-comment-style-list.html"/>
+      <item name="Update File Header" href="examples/update-file-header-config.html"/>
+    </menu>
+    <menu ref="reports"/>
+  </body>
+</project>

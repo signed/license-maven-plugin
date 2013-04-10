@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/mojo/!svn/ver/17913/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/api
+END
+DependenciesTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/mojo/!svn/ver/17797/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/api/DependenciesTool.java
+END
+DefaultThirdPartyDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/mojo/!svn/ver/16927/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/api/DefaultThirdPartyDetails.java
+END
+MavenProjectDependenciesConfigurator.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/api/MavenProjectDependenciesConfigurator.java
+END
+ThirdPartyToolException.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/api/ThirdPartyToolException.java
+END
+ThirdPartyTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/mojo/!svn/ver/17840/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/api/ThirdPartyTool.java
+END
+DefaultDependenciesTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/mojo/!svn/ver/17808/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/api/DefaultDependenciesTool.java
+END
+ThirdPartyHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/mojo/!svn/ver/17806/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/api/ThirdPartyHelper.java
+END
+DefaultThirdPartyTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/mojo/!svn/ver/17840/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/api/DefaultThirdPartyTool.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/mojo/!svn/ver/16927/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/api/package.html
+END
+DefaultThirdPartyHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/mojo/!svn/ver/17913/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/api/DefaultThirdPartyHelper.java
+END
+ThirdPartyDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/mojo/!svn/ver/16927/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/api/ThirdPartyDetails.java
+END
+FreeMarkerHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/mojo/!svn/ver/16927/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/api/FreeMarkerHelper.java
+END

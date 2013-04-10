@@ -1,0 +1,66 @@
+~~~
+~~ #%L
+~~ License Maven Plugin
+~~ %%
+~~ Copyright (C) 2008 - 2011 CodeLutin, Codehaus, Tony Chemit
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU Lesser General Public License as
+~~ published by the Free Software Foundation, either version 3 of the
+~~ License, or (at your option) any later version.
+~~
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Lesser Public License for more details.
+~~
+~~ You should have received a copy of the GNU General Lesser Public
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/lgpl-3.0.html>.
+~~ #L%
+~~~
+
+ ------
+ Comment style List Examples
+ ------
+ ------
+ 2011-09-14
+ ------
+
+Comment style List Examples
+
+* comment-style-list goal
+
+  This goal displays the available comment styles to box file header.
+
+  Use it directly (and only) from commandline :
+
+-------------------------------------------------------------------------------
+  mvn license:comment-style-list
+-------------------------------------------------------------------------------
+
+  To display the example, use the <<detail>> parameter :
+
+-------------------------------------------------------------------------------
+  mvn license:comment-style-list -Ddetail
+-------------------------------------------------------------------------------
+
+  for full detail see {{{../comment-style-list-mojo.html}detail page}}.
+
+** Example output
+
+-------------------------------------------------------------------------------
+[INFO] --- license-maven-plugin:${project.version}:comment-style-list (default-cli) @ license-maven-plugin ---
+[INFO] List of available comment styles:
+
+  - apt        : header transformer with apt comment style            , extensions : [apt]
+  - ftl        : header transformer with free marker comment style    , extensions : [ftl]
+  - java       : header transformer with java comment style           , extensions : [java, groovy, css, cs, as, aj, c, h, cpp, js, json]
+  - jsp        : header transformer with jsp comment style            , extensions : [jsp, jspx]
+  - php        : header transformer with php comment style            , extensions : [php]
+  - properties : header transformer with properties file comment style, extensions : [properties, sh, py, rb, pl, pm]
+  - rst        : header transformer with rst comment style            , extensions : [rst]
+  - mysql      : header transformer with mysql comment style          , extensions : [mysql]
+  - sql        : header transformer with sql comment style            , extensions : [sql]
+  - xml        : header transformer with xml comment style            , extensions : [pom, xml, xhtml, mxlm, dtd, fml, xsl, html, htm, jaxx, kml, gsp, tml]
+-------------------------------------------------------------------------------

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/mojo/!svn/ver/17762/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header
+END
+FileHeaderFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/mojo/!svn/ver/17061/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/FileHeaderFilter.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/mojo/!svn/ver/16616/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/package.html
+END
+FileHeaderProcessorConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/FileHeaderProcessorConfiguration.java
+END
+UpdateFileHeaderFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/UpdateFileHeaderFilter.java
+END
+InvalideFileHeaderException.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/InvalideFileHeaderException.java
+END
+FileHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/FileHeader.java
+END
+FileHeaderProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/FileHeaderProcessor.java
+END

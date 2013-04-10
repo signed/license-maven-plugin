@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/aggregate-add-third-party-multimodule-filters/child2
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/aggregate-add-third-party-multimodule-filters/child2/pom.xml
+END

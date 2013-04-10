@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/mysql
+END
+test.mysql
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/mysql/test.mysql
+END
+test.mysql2
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/mysql/test.mysql2
+END
+test2.mysql
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/mysql/test2.mysql
+END
+test2.mysql2
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/mysql/test2.mysql2
+END

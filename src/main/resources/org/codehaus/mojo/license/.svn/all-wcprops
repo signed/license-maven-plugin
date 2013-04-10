@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/mojo/!svn/ver/16927/trunk/mojo/license-maven-plugin/src/main/resources/org/codehaus/mojo/license
+END
+third-party-file-groupByLicense.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/mojo/!svn/ver/16927/trunk/mojo/license-maven-plugin/src/main/resources/org/codehaus/mojo/license/third-party-file-groupByLicense.ftl
+END
+licenses.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/resources/org/codehaus/mojo/license/licenses.xsd
+END
+third-party-file.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/mojo/!svn/ver/16927/trunk/mojo/license-maven-plugin/src/main/resources/org/codehaus/mojo/license/third-party-file.ftl
+END
+default-file-header-description.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/mojo/!svn/ver/16927/trunk/mojo/license-maven-plugin/src/main/resources/org/codehaus/mojo/license/default-file-header-description.ftl
+END

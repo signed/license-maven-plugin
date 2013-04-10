@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/download-licenses-configured/src/license
+END
+licenses.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/download-licenses-configured/src/license/licenses.xml
+END

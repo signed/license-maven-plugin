@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/properties
+END
+test2.properties2
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/properties/test2.properties2
+END
+test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/properties/test.sh
+END
+test.properties
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/properties/test.properties
+END
+test.sh2
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/properties/test.sh2
+END
+test2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/properties/test2.sh
+END
+test.properties2
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/properties/test.properties2
+END
+test2.properties
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/properties/test2.properties
+END
+test2.sh2
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/properties/test2.sh2
+END

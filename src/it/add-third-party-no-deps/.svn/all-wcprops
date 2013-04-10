@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/add-third-party-no-deps
+END
+invoker.properties
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/add-third-party-no-deps/invoker.properties
+END
+postbuild.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/add-third-party-no-deps/postbuild.groovy
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/add-third-party-no-deps/pom.xml
+END

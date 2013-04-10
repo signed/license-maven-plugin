@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/third-party-report-global-db
+END
+goals.txt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/third-party-report-global-db/goals.txt
+END
+invoker.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/third-party-report-global-db/invoker.properties
+END
+postbuild.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/third-party-report-global-db/postbuild.groovy
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/third-party-report-global-db/pom.xml
+END

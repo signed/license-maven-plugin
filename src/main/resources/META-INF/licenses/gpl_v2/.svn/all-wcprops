@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/mojo/!svn/ver/13433/trunk/mojo/license-maven-plugin/src/main/resources/META-INF/licenses/gpl_v2
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/mojo/!svn/ver/13433/trunk/mojo/license-maven-plugin/src/main/resources/META-INF/licenses/gpl_v2/license.txt
+END
+header.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/mojo/!svn/ver/13433/trunk/mojo/license-maven-plugin/src/main/resources/META-INF/licenses/gpl_v2/header.txt
+END

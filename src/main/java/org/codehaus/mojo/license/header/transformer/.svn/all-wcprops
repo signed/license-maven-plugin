@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/mojo/!svn/ver/17762/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/transformer
+END
+FileHeaderTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/transformer/FileHeaderTransformer.java
+END
+SqlFileHeaderTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/transformer/SqlFileHeaderTransformer.java
+END
+XmlFileHeaderTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/transformer/XmlFileHeaderTransformer.java
+END
+JavaFileHeaderTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/mojo/!svn/ver/17308/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/transformer/JavaFileHeaderTransformer.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/mojo/!svn/ver/16616/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/transformer/package.html
+END
+AbstractFileHeaderTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/mojo/!svn/ver/17762/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/transformer/AbstractFileHeaderTransformer.java
+END
+FreeMarkerFileHeaderTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/transformer/FreeMarkerFileHeaderTransformer.java
+END
+AptFileHeaderTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/transformer/AptFileHeaderTransformer.java
+END
+MySqlFileHeaderTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/mojo/!svn/ver/17762/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/transformer/MySqlFileHeaderTransformer.java
+END
+PhpFileHeaderTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/transformer/PhpFileHeaderTransformer.java
+END
+RstFileHeaderTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/transformer/RstFileHeaderTransformer.java
+END
+JspFileHeaderTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/transformer/JspFileHeaderTransformer.java
+END
+PropertiesFileHeaderTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/mojo/!svn/ver/16640/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/header/transformer/PropertiesFileHeaderTransformer.java
+END

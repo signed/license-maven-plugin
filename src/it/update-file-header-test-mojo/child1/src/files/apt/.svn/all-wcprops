@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/child1/src/files/apt
+END
+test.apt
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/child1/src/files/apt/test.apt
+END
+test2.apt
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/mojo/!svn/ver/17847/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/child1/src/files/apt/test2.apt
+END

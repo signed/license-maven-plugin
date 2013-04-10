@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/mojo/!svn/ver/17843/trunk/mojo/license-maven-plugin/src/site/apt/examples
+END
+example-add-license.apt.vm
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/mojo/!svn/ver/17843/trunk/mojo/license-maven-plugin/src/site/apt/examples/example-add-license.apt.vm
+END
+example-comment-style-list.apt.vm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/mojo/!svn/ver/17764/trunk/mojo/license-maven-plugin/src/site/apt/examples/example-comment-style-list.apt.vm
+END
+example-download-licenses.apt.vm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/mojo/!svn/ver/17764/trunk/mojo/license-maven-plugin/src/site/apt/examples/example-download-licenses.apt.vm
+END
+example-thirdparty.apt.vm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/mojo/!svn/ver/17840/trunk/mojo/license-maven-plugin/src/site/apt/examples/example-thirdparty.apt.vm
+END
+example-license-list.apt.vm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/mojo/!svn/ver/17764/trunk/mojo/license-maven-plugin/src/site/apt/examples/example-license-list.apt.vm
+END
+update-file-header-config.apt.vm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/mojo/!svn/ver/17764/trunk/mojo/license-maven-plugin/src/site/apt/examples/update-file-header-config.apt.vm
+END
