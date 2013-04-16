@@ -1,7 +1,7 @@
 10
 
 dir
-18173
+18219
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/test/resources
 http://svn.codehaus.org/mojo
 
@@ -25,40 +25,6 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
-
-log4j.properties
-file
-
-
-
-
-2013-04-10T20:18:06.182197Z
-829ecda785c7c57e4703f45dfbf57bc9
-2012-05-17T22:44:37.307000Z
-16640
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1138
 
 newRepository
 dir
@@ -96,4 +62,38 @@ has-props
 
 
 1322
+
+log4j.properties
+file
+
+
+
+
+2013-04-10T20:18:06.182197Z
+829ecda785c7c57e4703f45dfbf57bc9
+2012-05-17T22:44:37.307000Z
+16640
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1138
 

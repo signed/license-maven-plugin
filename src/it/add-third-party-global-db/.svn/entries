@@ -1,7 +1,7 @@
 10
 
 dir
-18173
+18219
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/it/add-third-party-global-db
 http://svn.codehaus.org/mojo
 
@@ -25,9 +25,6 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
-
-misc-dep
-dir
 
 invoker.properties
 file
@@ -135,5 +132,8 @@ has-props
 1985
 
 consume-db
+dir
+
+misc-dep
 dir
 

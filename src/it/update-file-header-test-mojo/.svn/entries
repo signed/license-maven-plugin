@@ -1,7 +1,7 @@
 10
 
 dir
-18173
+18219
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo
 http://svn.codehaus.org/mojo
 
@@ -25,6 +25,40 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
+
+README.txt
+file
+
+
+
+
+2013-04-10T20:18:07.874197Z
+388f8e2bbb32773ae0bcc9eefac03b01
+2011-01-22T08:36:13.436452Z
+13433
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+156
 
 LICENSE.txt
 file
@@ -201,38 +235,4 @@ has-props
 
 
 3168
-
-README.txt
-file
-
-
-
-
-2013-04-10T20:18:07.874197Z
-388f8e2bbb32773ae0bcc9eefac03b01
-2011-01-22T08:36:13.436452Z
-13433
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-156
 

@@ -1,7 +1,7 @@
 10
 
 dir
-18173
+18219
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/it
 http://svn.codehaus.org/mojo
 
@@ -26,37 +26,55 @@ tchemit
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
 
+update-file-header-test-mojo
+dir
+
+MLICENSE-37-blacklist-fail
+dir
+
 aggregate-add-third-party-simple
 dir
 
 MLICENSE-37-whitelist-fail
 dir
 
-add-third-party-excluded-included
+add-third-party-global-db
 dir
 
-MLICENSE-30
+MLICENSE-21
 dir
 
-MLICENSE-33
+download-licenses-configured-alt-location
 dir
 
-MLICENSE-71
+MLICENSE-23
 dir
 
-MLICENSE-53
+MLICENSE-24
 dir
 
-aggregate-add-third-party-multimodule-filters
+MLICENSE-25
 dir
 
-aggregate-add-third-party-bad-license
+MLICENSE-44
 dir
 
-MLICENSE-72
+MLICENSE-27
 dir
 
-MLICENSE-36
+MLICENSE-45
+dir
+
+MLICENSE-28
+dir
+
+download-licenses-basic
+dir
+
+add-third-party-no-encoding
+dir
+
+add-third-party-missing-pom
 dir
 
 add-third-party-merge-licenses
@@ -96,58 +114,49 @@ has-props
 
 1783
 
-add-third-party-no-deps
+add-third-party-with-deps
 dir
 
 third-party-report-global-db
 dir
 
-aggregate-add-third-party-global-db
+MLICENSE-37-blacklist-success
 dir
 
-add-third-party-global-db
+MLICENSE-37-whitelist-success
 dir
 
-MLICENSE-21
+add-third-party-excluded-included
 dir
 
-MLICENSE-23
+MLICENSE-30
 dir
 
-download-licenses-configured-alt-location
+MLICENSE-33
 dir
 
-MLICENSE-24
+MLICENSE-71
 dir
 
-MLICENSE-25
-dir
-
-MLICENSE-44
-dir
-
-MLICENSE-45
-dir
-
-MLICENSE-27
+MLICENSE-53
 dir
 
 update-project-license-test-mojo
 dir
 
-MLICENSE-28
+aggregate-add-third-party-multimodule-filters
 dir
 
-download-licenses-basic
+aggregate-add-third-party-bad-license
 dir
 
-add-third-party-no-encoding
+MLICENSE-72
+dir
+
+MLICENSE-36
 dir
 
 download-licenses-configured
-dir
-
-add-third-party-missing-pom
 dir
 
 MLICENSE-2
@@ -156,7 +165,7 @@ dir
 MLICENSE-3
 dir
 
-add-third-party-with-deps
+add-third-party-no-deps
 dir
 
 MLICENSE-4
@@ -165,15 +174,6 @@ dir
 MLICENSE-5
 dir
 
-MLICENSE-37-blacklist-success
-dir
-
-update-file-header-test-mojo
-dir
-
-MLICENSE-37-blacklist-fail
-dir
-
-MLICENSE-37-whitelist-success
+aggregate-add-third-party-global-db
 dir
 
