@@ -1,7 +1,7 @@
 10
 
 dir
-18219
+18230
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/test/resources/newRepository/license2
 http://svn.codehaus.org/mojo
 
@@ -25,40 +25,6 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
-
-TheLicense.rst
-file
-
-
-
-
-2013-04-10T20:18:06.078197Z
-7e4546222bf40c0c47c74b1f8d8e025f
-2011-09-09T07:47:49.418397Z
-14664
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-12
 
 TheHeader.rst
 file
@@ -93,4 +59,38 @@ has-props
 
 
 11
+
+TheLicense.rst
+file
+
+
+
+
+2013-04-10T20:18:06.078197Z
+7e4546222bf40c0c47c74b1f8d8e025f
+2011-09-09T07:47:49.418397Z
+14664
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12
 

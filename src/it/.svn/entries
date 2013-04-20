@@ -1,7 +1,7 @@
 10
 
 dir
-18219
+18230
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/it
 http://svn.codehaus.org/mojo
 
@@ -25,24 +25,6 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
-
-update-file-header-test-mojo
-dir
-
-MLICENSE-37-blacklist-fail
-dir
-
-aggregate-add-third-party-simple
-dir
-
-MLICENSE-37-whitelist-fail
-dir
-
-add-third-party-global-db
-dir
-
-MLICENSE-21
-dir
 
 download-licenses-configured-alt-location
 dir
@@ -74,10 +56,13 @@ dir
 add-third-party-no-encoding
 dir
 
+add-third-party-merge-licenses
+dir
+
 add-third-party-missing-pom
 dir
 
-add-third-party-merge-licenses
+add-third-party-with-deps
 dir
 
 settings.xml
@@ -114,9 +99,6 @@ has-props
 
 1783
 
-add-third-party-with-deps
-dir
-
 third-party-report-global-db
 dir
 
@@ -135,19 +117,19 @@ dir
 MLICENSE-33
 dir
 
-MLICENSE-71
-dir
-
 MLICENSE-53
 dir
 
-update-project-license-test-mojo
+MLICENSE-71
+dir
+
+aggregate-add-third-party-bad-license
 dir
 
 aggregate-add-third-party-multimodule-filters
 dir
 
-aggregate-add-third-party-bad-license
+update-project-license-test-mojo
 dir
 
 MLICENSE-72
@@ -175,5 +157,23 @@ MLICENSE-5
 dir
 
 aggregate-add-third-party-global-db
+dir
+
+update-file-header-test-mojo
+dir
+
+MLICENSE-37-blacklist-fail
+dir
+
+aggregate-add-third-party-simple
+dir
+
+MLICENSE-37-whitelist-fail
+dir
+
+add-third-party-global-db
+dir
+
+MLICENSE-21
 dir
 
