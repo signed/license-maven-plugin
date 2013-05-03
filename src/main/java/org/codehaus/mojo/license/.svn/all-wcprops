@@ -1,43 +1,43 @@
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/mojo/!svn/ver/18168/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license
-END
-UpdateProjectLicenseMojo.java
-K 25
-svn:wc:ra_dav:version-url
-V 122
-/mojo/!svn/ver/17061/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/UpdateProjectLicenseMojo.java
+/mojo/!svn/ver/18277/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license
 END
 AbstractFileHeaderMojo.java
 K 25
 svn:wc:ra_dav:version-url
 V 120
-/mojo/!svn/ver/18116/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/AbstractFileHeaderMojo.java
+/mojo/!svn/ver/18277/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/AbstractFileHeaderMojo.java
+END
+UpdateProjectLicenseMojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/mojo/!svn/ver/18277/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/UpdateProjectLicenseMojo.java
 END
 LicenseListMojo.java
 K 25
 svn:wc:ra_dav:version-url
 V 113
-/mojo/!svn/ver/17842/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/LicenseListMojo.java
+/mojo/!svn/ver/18277/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/LicenseListMojo.java
 END
 CommentStyleListMojo.java
 K 25
 svn:wc:ra_dav:version-url
 V 118
-/mojo/!svn/ver/17061/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/CommentStyleListMojo.java
-END
-ThirdPartyReportMojo.java
-K 25
-svn:wc:ra_dav:version-url
-V 118
-/mojo/!svn/ver/17808/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/ThirdPartyReportMojo.java
+/mojo/!svn/ver/18277/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/CommentStyleListMojo.java
 END
 CheckFileHeaderMojo.java
 K 25
 svn:wc:ra_dav:version-url
 V 117
-/mojo/!svn/ver/17061/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/CheckFileHeaderMojo.java
+/mojo/!svn/ver/18277/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/CheckFileHeaderMojo.java
+END
+ThirdPartyReportMojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/mojo/!svn/ver/18277/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/ThirdPartyReportMojo.java
 END
 AbstractAddThirdPartyMojo.java
 K 25
@@ -55,7 +55,7 @@ UpdateFileHeaderMojo.java
 K 25
 svn:wc:ra_dav:version-url
 V 118
-/mojo/!svn/ver/17061/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/UpdateFileHeaderMojo.java
+/mojo/!svn/ver/18277/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/UpdateFileHeaderMojo.java
 END
 DownloadLicensesMojo.java
 K 25
@@ -67,13 +67,13 @@ AbstractLicenseReportMojo.java
 K 25
 svn:wc:ra_dav:version-url
 V 123
-/mojo/!svn/ver/17808/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/AbstractLicenseReportMojo.java
+/mojo/!svn/ver/18277/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/AbstractLicenseReportMojo.java
 END
 AddThirdPartyMojo.java
 K 25
 svn:wc:ra_dav:version-url
 V 115
-/mojo/!svn/ver/17810/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/AddThirdPartyMojo.java
+/mojo/!svn/ver/18277/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/AddThirdPartyMojo.java
 END
 AbstractLicenseReportRenderer.java
 K 25
@@ -81,21 +81,21 @@ svn:wc:ra_dav:version-url
 V 127
 /mojo/!svn/ver/17806/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/AbstractLicenseReportRenderer.java
 END
-AbstractLicenseMojo.java
-K 25
-svn:wc:ra_dav:version-url
-V 117
-/mojo/!svn/ver/17762/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/AbstractLicenseMojo.java
-END
 AggregatorAddThirdPartyMojo.java
 K 25
 svn:wc:ra_dav:version-url
 V 125
-/mojo/!svn/ver/17808/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/AggregatorAddThirdPartyMojo.java
+/mojo/!svn/ver/18277/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/AggregatorAddThirdPartyMojo.java
+END
+AbstractLicenseMojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/mojo/!svn/ver/18277/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/AbstractLicenseMojo.java
 END
 AbstractLicenseNameMojo.java
 K 25
 svn:wc:ra_dav:version-url
 V 121
-/mojo/!svn/ver/17842/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/AbstractLicenseNameMojo.java
+/mojo/!svn/ver/18277/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/AbstractLicenseNameMojo.java
 END

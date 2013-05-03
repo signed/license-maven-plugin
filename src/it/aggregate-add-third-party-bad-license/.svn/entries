@@ -1,7 +1,7 @@
 10
 
 dir
-18230
+18277
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/it/aggregate-add-third-party-bad-license
 http://svn.codehaus.org/mojo
 
@@ -25,6 +25,9 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
+
+child1
+dir
 
 child2
 dir
@@ -164,7 +167,4 @@ has-props
 
 
 116
-
-child1
-dir
 

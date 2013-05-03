@@ -1,7 +1,7 @@
 10
 
 dir
-18230
+18277
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/it/MLICENSE-72
 http://svn.codehaus.org/mojo
 
@@ -25,6 +25,40 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
+
+invoker.properties
+file
+
+
+
+
+2013-04-10T20:18:07.302197Z
+8bdf7128fab36d8eb733f797eeb16632
+2013-04-05T06:03:17.321528Z
+18167
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+123
 
 pom.xml
 file
@@ -93,38 +127,4 @@ has-props
 
 
 598
-
-invoker.properties
-file
-
-
-
-
-2013-04-10T20:18:07.302197Z
-8bdf7128fab36d8eb733f797eeb16632
-2013-04-05T06:03:17.321528Z
-18167
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-123
 

@@ -1,7 +1,7 @@
 10
 
 dir
-18230
+18277
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/it/update-project-license-test-mojo
 http://svn.codehaus.org/mojo
 
@@ -25,6 +25,40 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
+
+LICENSE.txt
+file
+
+
+
+
+2013-04-10T20:18:07.390197Z
+c2ba9ae146bd703380d75d895d7b0470
+2011-02-05T09:32:50.771705Z
+13519
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7670
 
 changelog.txt
 file
@@ -198,38 +232,4 @@ has-props
 
 
 156
-
-LICENSE.txt
-file
-
-
-
-
-2013-04-10T20:18:07.390197Z
-c2ba9ae146bd703380d75d895d7b0470
-2011-02-05T09:32:50.771705Z
-13519
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7670
 
