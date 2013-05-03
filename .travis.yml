@@ -11,6 +11,7 @@ jdk:
 branches:
   only:
     - probe
+    - fetch-licenses-mojo
 notifications:
   email:
     - thomas.heilbronner@gmail.com
