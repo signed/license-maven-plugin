@@ -706,7 +706,7 @@ public class DownloadLicensesMojo
      *
      * @param depProject The project which generated the dependency
      */
-    private void downloadLicenses( ProjectLicenseInfo depProject )
+    protected void downloadLicenses( ProjectLicenseInfo depProject )
     {
 
         getLog().debug( "Downloading license(s) for project " + depProject );

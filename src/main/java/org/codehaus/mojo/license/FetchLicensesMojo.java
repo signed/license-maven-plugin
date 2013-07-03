@@ -24,13 +24,59 @@ package org.codehaus.mojo.license;
 
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
+import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.plugins.annotations.ResolutionScope;
+import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
+import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
+import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
+import org.codehaus.mojo.license.fetchlicenses.Licensee;
+import org.codehaus.mojo.license.fetchlicenses.Outcome;
+import org.codehaus.mojo.license.fetchlicenses.ThirdPartyLicenseRegister;
+import org.codehaus.mojo.license.model.ProjectLicenseInfo;
 
-@Mojo( name = "fetch-licenses", requiresDependencyResolution = ResolutionScope.TEST,
-       defaultPhase = LifecyclePhase.PACKAGE )
-public class FetchLicensesMojo
-    extends DownloadLicensesMojo
-{
+import java.io.File;
+
+@Mojo(name = "fetch-licenses", requiresDependencyResolution = ResolutionScope.TEST,
+        defaultPhase = LifecyclePhase.PACKAGE)
+public class FetchLicensesMojo extends DownloadLicensesMojo {
+
+    /**
+     * The base directory fot the third party license register that contains the license information
+     * in maven file structure.
+     *
+     * @since 1.6
+     */
+    @Parameter(property = "thirdPartyLicenseRegisterRoot", defaultValue = "${project.build.directory}/license-register/")
+    private File licenseRegisterRoot;
+
+    /**
+     * The base directory fot the third party license register that contains the license information
+     * in maven file structure.
+     *
+     * @since 1.6
+     */
+    @Parameter(property = "usedLicenseDirectory", defaultValue = "${project.build.directory}/license-register/")
+    private File usedLicenseDirectory;
 
 
+    @Override
+    protected void downloadLicenses(ProjectLicenseInfo depProject) {
+        final Outcome outcome = Outcome.pessimistic();
+        GavCoordinates coordinates = new GavCoordinates(depProject.getGroupId(), depProject.getArtifactId(), depProject.getVersion());
+        ThirdPartyLicenseRegister licenseRepository = new ThirdPartyLicenseRegister(licenseRegisterRoot);
+        final Licensee licensee = new Licensee(usedLicenseDirectory);
+
+        licenseRepository.lookup(coordinates, new LicenseLookupCallback() {
+            public void found(LicenseObligations obligations) {
+                licensee.complyWith(obligations);
+                outcome.success();
+            }
+
+            public void missingLicenseInformationFor(GavCoordinates coordinates) {
+                outcome.failure();
+            }
+        });
+
+        outcome.onFailureThrow(new RuntimeException());
+    }
 }
