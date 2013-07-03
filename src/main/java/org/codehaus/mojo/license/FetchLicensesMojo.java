@@ -46,8 +46,8 @@ public class FetchLicensesMojo extends DownloadLicensesMojo {
      *
      * @since 1.6
      */
-    @Parameter(property = "thirdPartyLicenseRegisterRoot", defaultValue = "${project.build.directory}/license-register/")
-    private File licenseRegisterRoot;
+    @Parameter(property = "thirdPartyLicensesRegister", defaultValue = "${project.build.directory}/licenses-register/")
+    private File licensesRegisterRoot;
 
     /**
      * The base directory fot the third party license register that contains the license information
@@ -55,17 +55,17 @@ public class FetchLicensesMojo extends DownloadLicensesMojo {
      *
      * @since 1.6
      */
-    @Parameter(property = "usedLicenseDirectory", defaultValue = "${project.build.directory}/license-register/")
-    private File usedLicenseDirectory;
+    @Parameter(property = "writeUsedLicensesTo", defaultValue = "${project.build.directory}/licenses")
+    private File usedLicensesDirectory;
 
 
     @Override
     protected void downloadLicenses(ProjectLicenseInfo depProject) {
-        final Outcome outcome = Outcome.pessimistic();
         GavCoordinates coordinates = new GavCoordinates(depProject.getGroupId(), depProject.getArtifactId(), depProject.getVersion());
-        ThirdPartyLicenseRegister licenseRepository = new ThirdPartyLicenseRegister(licenseRegisterRoot);
-        final Licensee licensee = new Licensee(usedLicenseDirectory);
+        ThirdPartyLicenseRegister licenseRepository = new ThirdPartyLicenseRegister(licensesRegisterRoot);
+        final Licensee licensee = new Licensee(usedLicensesDirectory);
 
+        final Outcome outcome = Outcome.pessimistic();
         licenseRepository.lookup(coordinates, new LicenseLookupCallback() {
             public void found(LicenseObligations obligations) {
                 licensee.complyWith(obligations);
