@@ -1,15 +1,15 @@
 10
 
 dir
-18277
+18500
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin
 http://svn.codehaus.org/mojo
 
 
 
-2013-05-02T19:34:40.064374Z
-18277
-tchemit
+2013-06-29T20:32:08.637154Z
+18462
+rfscholte
 has-props
 
 
@@ -25,6 +25,40 @@ has-props
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
+
+pom.xml
+file
+
+
+
+
+2013-07-05T08:33:05.874293Z
+fe486bfc88bace1222f6263da2b584df
+2013-05-16T06:39:35.871316Z
+18317
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18364
 
 config
 dir
@@ -65,38 +99,4 @@ has-props
 
 src
 dir
-
-pom.xml
-file
-
-
-
-
-2013-04-10T20:18:08.450197Z
-81e4831302f6be8e31c7654d6e1e59df
-2013-04-05T04:34:27.204662Z
-18165
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-18355
 

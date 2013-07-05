@@ -1,7 +1,7 @@
 10
 
 dir
-18277
+18500
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/sql
 http://svn.codehaus.org/mojo
 
@@ -25,40 +25,6 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
-
-test.sql
-file
-
-
-
-
-2013-04-10T20:18:07.642197Z
-95d753a18fedc8a3a42fb7f74246bae0
-2011-09-19T17:39:34.571656Z
-14735
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-20
 
 test.sql2
 file
@@ -161,4 +127,38 @@ has-props
 
 
 984
+
+test.sql
+file
+
+
+
+
+2013-04-10T20:18:07.642197Z
+95d753a18fedc8a3a42fb7f74246bae0
+2011-09-19T17:39:34.571656Z
+14735
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20
 

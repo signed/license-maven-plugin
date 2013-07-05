@@ -1,14 +1,14 @@
 10
 
 dir
-18277
+18500
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license
 http://svn.codehaus.org/mojo
 
 
 
-2013-05-02T19:34:40.064374Z
-18277
+2013-05-12T10:24:33.959287Z
+18291
 tchemit
 
 
@@ -26,195 +26,16 @@ tchemit
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
 
-header
-dir
-
-CheckFileHeaderMojo.java
-file
-
-
-
-
-2013-05-03T07:03:09.788887Z
-b24f30ce672350700395fe23719094ea
-2013-05-02T19:34:40.064374Z
-18277
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3264
-
-ThirdPartyReportMojo.java
-file
-
-
-
-
-2013-05-03T07:03:09.788887Z
-22ce724b15eb1ce3ec5dd4eb3948e8ee
-2013-05-02T19:34:40.064374Z
-18277
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-10967
-
-AbstractAddThirdPartyMojo.java
-file
-
-
-
-
-2013-04-10T20:18:06.914197Z
-48de6f73124978b026b87c7be6b29813
-2013-01-06T12:20:28.144351Z
-17840
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-21308
-
-ThirdPartyReportRenderer.java
-file
-
-
-
-
-2013-04-10T20:18:06.914197Z
-57bfef99a29fa19c1b9a465ffbc8d9ef
-2012-06-20T19:03:14.198283Z
-16927
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8169
-
-UpdateFileHeaderMojo.java
-file
-
-
-
-
-2013-05-03T07:03:09.792887Z
-25275e4e1d2f677d9514a6881ad86198
-2013-05-02T19:34:40.064374Z
-18277
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3720
-
-model
-dir
-
-utils
-dir
-
 DownloadLicensesMojo.java
 file
 
 
 
 
-2013-04-10T20:18:06.914197Z
-b4db41fb2ceb99bf631bcc446c5c0b71
-2013-04-05T06:04:16.557796Z
-18168
+2013-07-05T08:33:05.718293Z
+b6e8574c80c0bea56a701ca86abf08ce
+2013-05-12T10:24:33.959287Z
+18291
 tchemit
 has-props
 
@@ -237,7 +58,7 @@ has-props
 
 
 
-25630
+19180
 
 AbstractLicenseReportMojo.java
 file
@@ -307,9 +128,6 @@ has-props
 
 15336
 
-api
-dir
-
 AbstractLicenseReportRenderer.java
 file
 
@@ -344,39 +162,8 @@ has-props
 
 12861
 
-AggregatorAddThirdPartyMojo.java
-file
-
-
-
-
-2013-05-03T07:03:09.792887Z
-02ebde647f9c7a59ff1910ef9e2d690c
-2013-05-02T19:34:40.064374Z
-18277
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6915
+api
+dir
 
 AbstractLicenseMojo.java
 file
@@ -411,6 +198,40 @@ has-props
 
 
 11593
+
+AggregatorAddThirdPartyMojo.java
+file
+
+
+
+
+2013-05-03T07:03:09.792887Z
+02ebde647f9c7a59ff1910ef9e2d690c
+2013-05-02T19:34:40.064374Z
+18277
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6915
 
 AbstractLicenseNameMojo.java
 file
@@ -581,4 +402,183 @@ has-props
 
 
 4800
+
+header
+dir
+
+ThirdPartyReportMojo.java
+file
+
+
+
+
+2013-05-03T07:03:09.788887Z
+22ce724b15eb1ce3ec5dd4eb3948e8ee
+2013-05-02T19:34:40.064374Z
+18277
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10967
+
+CheckFileHeaderMojo.java
+file
+
+
+
+
+2013-05-03T07:03:09.788887Z
+b24f30ce672350700395fe23719094ea
+2013-05-02T19:34:40.064374Z
+18277
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3264
+
+AbstractAddThirdPartyMojo.java
+file
+
+
+
+
+2013-04-10T20:18:06.914197Z
+48de6f73124978b026b87c7be6b29813
+2013-01-06T12:20:28.144351Z
+17840
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+21308
+
+ThirdPartyReportRenderer.java
+file
+
+
+
+
+2013-04-10T20:18:06.914197Z
+57bfef99a29fa19c1b9a465ffbc8d9ef
+2012-06-20T19:03:14.198283Z
+16927
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8169
+
+utils
+dir
+
+model
+dir
+
+UpdateFileHeaderMojo.java
+file
+
+
+
+
+2013-05-03T07:03:09.792887Z
+25275e4e1d2f677d9514a6881ad86198
+2013-05-02T19:34:40.064374Z
+18277
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3720
 

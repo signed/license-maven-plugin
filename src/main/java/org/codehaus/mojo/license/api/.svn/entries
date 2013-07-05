@@ -1,7 +1,7 @@
 10
 
 dir
-18277
+18500
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license/api
 http://svn.codehaus.org/mojo
 
@@ -25,6 +25,74 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
+
+FreeMarkerHelper.java
+file
+
+
+
+
+2013-04-10T20:18:06.902197Z
+99ca9faaf97d946e23c544d8b8c829c7
+2012-06-20T19:03:14.198283Z
+16927
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3632
+
+DependenciesTool.java
+file
+
+
+
+
+2013-04-10T20:18:06.902197Z
+8ab8b4e71e798552339316b3e0701421
+2012-12-31T18:27:16.457374Z
+17797
+bimargulies
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2406
 
 DefaultThirdPartyDetails.java
 file
@@ -365,72 +433,4 @@ has-props
 
 
 2636
-
-FreeMarkerHelper.java
-file
-
-
-
-
-2013-04-10T20:18:06.902197Z
-99ca9faaf97d946e23c544d8b8c829c7
-2012-06-20T19:03:14.198283Z
-16927
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3632
-
-DependenciesTool.java
-file
-
-
-
-
-2013-04-10T20:18:06.902197Z
-8ab8b4e71e798552339316b3e0701421
-2012-12-31T18:27:16.457374Z
-17797
-bimargulies
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2406
 

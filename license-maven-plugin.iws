@@ -1,0 +1,1292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8023f31-fb82-4006-8046-2305987dc8be" name="Default" comment="" />
+    <ignored path="license-maven-plugin.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373011832678" ignored="false" />
+    <file path="/LicenseRepositoryTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366789159008" ignored="false" />
+    <file path="/LicenseRepository.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366789337385" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-45/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-global-db/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-global-db/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-global-db/consume-db/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-bad-license/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-bad-license/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-bad-license/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-bad-license/child1/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-45/child1/src/main/resources/mypackage/mylicensestore/licenses.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-bad-license/child2/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-45/child2/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-multimodule-filters/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366803199499" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-multimodule-filters/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-multimodule-filters/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-53/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-53/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-multimodule-filters/child1/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-71/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-multimodule-filters/child2/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-71/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-71/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-72/postbuild.bsh" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-72/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-72/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-no-deps/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-no-deps/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-no-deps/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/download-licenses-basic/verify.bsh" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-global-db/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-global-db/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-global-db/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-global-db/misc-dep/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-global-db/consume-db/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-global-db/publish-db/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-global-db/publish-db/src/license/test.license.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-with-deps/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-with-deps/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-with-deps/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-37-blacklist-fail/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-37-blacklist-fail/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-37-blacklist-fail/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-37-whitelist-fail/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-37-whitelist-fail/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-37-whitelist-fail/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-missing-pom/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-missing-pom/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-missing-pom/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-missing-pom/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-no-encoding/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-no-encoding/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-no-encoding/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/download-licenses-configured/verify.bsh" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-2/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/header/transformer/package.html" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/header/transformer/SqlFileHeaderTransformer.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-2/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/header/transformer/PhpFileHeaderTransformer.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-2/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/header/transformer/XmlFileHeaderTransformer.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-2/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/header/transformer/RstFileHeaderTransformer.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/header/transformer/MySqlFileHeaderTransformer.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-2/child1/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/header/transformer/PropertiesFileHeaderTransformer.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/header/transformer/JavaFileHeaderTransformer.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-2/child2/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/download-licenses-configured/src/license/licenses.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/header/transformer/JspFileHeaderTransformer.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-2/child2/src/license/THIRD-PARTY.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-3/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/third-party-report-global-db/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/third-party-report-global-db/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/third-party-report-global-db/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-3/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-3/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/third-party-report-global-db/consume-db/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-3/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/changelog.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/LICENSE.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-4/postbuild.bsh" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-4/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/main/java/org/codehaus/mojo/license/MyBean.java2" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-4/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-5/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-5/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/main/java/org/codehaus/mojo/license/MyBean3.java2" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/main/java/org/codehaus/mojo/license/MyBean2.java2" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-5/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-5/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/resources/META-INF/licenses/mit/license.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/resources/META-INF/licenses/mit/header.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-5/src/license/licenses.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/apt/test2.apt2" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/apt/test2.apt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-21/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/ftl/test2.ftl2" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/ftl/test2.ftl" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366803533098" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/resources/META-INF/licenses/agpl_v3/license.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-21/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/resources/META-INF/licenses/agpl_v3/header.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-21/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/jsp/test2.jsp" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-21/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/jsp/test2.jsp2" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/resources/META-INF/licenses/cddl_v1/license.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/jsp/test.jsp" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/resources/META-INF/licenses/cddl_v1/header.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-21/child1/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/resources/META-INF/licenses/lgpl_v3/license.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/rst/test2.rst" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/rst/test2.rst2" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/resources/META-INF/licenses/fdl_v1_3/license.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-21/child1/src/license/THIRD-PARTY.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/sql/test2.sql" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-21/child2/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/resources/META-INF/licenses/apache_v2/license.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-23/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/sql/test2.sql2" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-23/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/xml/test2.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/xml/test.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-24/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-24/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/xml/test2.xml2" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-24/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/mysql/test2.mysql2" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-25/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-25/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/mysql/test2.mysql" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-25/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-27/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/site/apt/examples/example-comment-style-list.apt.vm" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/properties/test2.sh2" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/site/apt/examples/example-download-licenses.apt.vm" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/properties/test2.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/site/apt/examples/example-add-license.apt.vm" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/properties/test2.properties2" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-27/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/site/apt/examples/example-thirdparty.apt.vm" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-27/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/site/apt/examples/example-license-list.apt.vm" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/site/apt/examples/update-file-header-config.apt.vm" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/properties/test2.sh" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/child1/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-28/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-28/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-28/child1/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-28/child2/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/child1/src/files/apt/test2.apt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-30/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/child1/src/files/ftl/test2.ftl" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366803533099" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-30/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/resources/newRepository/licenses.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-30/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/child1/src/files/jsp/test2.jsp" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/child1/src/files/jsp/test.jsp" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/child1/src/files/rst/test2.rst" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/child1/src/files/sql/test2.sql" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/child1/src/files/xml/test.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/child1/src/files/xml/test2.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/license-test/test.license.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/child1/src/files/mysql/test2.mysql" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/child1/src/files/properties/test2.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/child1/src/files/properties/test2.sh" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-37-blacklist-success/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-30/src/main/license/descriptionTemplate.ftl" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366803533098" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-37-blacklist-success/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-33/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-37-blacklist-success/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-37-whitelist-success/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-37-whitelist-success/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-33/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-37-whitelist-success/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-33/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-merge-licenses/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-merge-licenses/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-merge-licenses/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-33/src/license/THIRD-PARTY.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-36/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-simple/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-simple/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-36/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-simple/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-36/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-simple/child1/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-simple/child2/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-project-license-test-mojo/changelog.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-36/src/main/license/myTemplate.ftl" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-44/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-project-license-test-mojo/LICENSE.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-project-license-test-mojo/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-project-license-test-mojo/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-44/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-project-license-test-mojo/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-44/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-excluded-included/invoker.properties" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-44/src/license/test/descriptionTemplate.ftl" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366803533099" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-excluded-included/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-45/README.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/add-third-party-excluded-included/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/aggregate-add-third-party-global-db/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-45/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/header/InvalideFileHeaderException.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/model/ProjectLicenseInfoTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/header/UpdateFileHeaderFilter.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/header/package.html" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/api/FreeMarkerHelperTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/model/LicenseStoreTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/utils/LicenseSummaryTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/importer.ewc/src/test/resources/sw-aalen_prognose_20130312.csv" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366796741474" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/importer.ewc/src/test/java/de/idos/importer/aalen/CsvReadingFactory_ParseAalenReadingTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366796737212" ignored="false" />
+    <file path="/fragment.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373007769115" ignored="false" />
+    <file path="/ArtifactIdentifier.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366797546227" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/licensedownload/ArtifactIdentifier.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366798204333" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/licensedownload/RecordLicenseInformation.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366798204333" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/licensedownload/ArtifactIdentifier_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366798204333" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/whitelabeltest/src/main/resources/demo-server/demoserver_iframe_sw-aalen.html" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366802285812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/api/ArtifactCache.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/settings.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/utils/ProjectLicenseInfoSink.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373012886630" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/child1/src/files/ftl/test.ftl" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366803533099" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/update-file-header-test-mojo/src/files/ftl/test.ftl" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366803533098" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-28/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214954" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/download-licenses-basic/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/plugin/src/it/simple-it/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/download-licenses-configured-alt-location/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/download-licenses-configured/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/src/it/MLICENSE-45/child1/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/plugin/src/it/settings.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366805214955" ignored="false" />
+    <file path="/MyMojo.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366806219420" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/web/src/main/webapp/input.xhtml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367585239032" ignored="false" />
+    <file path="/input.xhtml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367567017624" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/web/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367585239032" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/solarplant/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367315700865" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/importer.mail/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367584692805" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/chart/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/importer.readings/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367315700865" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/web/src/main/java/de/idos/base/application/FrameParameter.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/recommendation/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/base/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367315700865" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/datasource/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/datasource/src/main/java/de/idos/datasource/ReadingFactoryRegister.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/ear/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/importer.ewc/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367315700865" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/datasource/src/main/java/de/idos/datasource/TimeSliceRepositoryFactory.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/forecast.model/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367585239032" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/parent/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367593184831" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/importer/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367315700865" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/mandator/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367315700865" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/deploy/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367589701339" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/web/src/main/webapp/impressum.xhtml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/web/src/main/webapp/404.html" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/web/src/main/webapp/graph.xhtml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/web/src/main/webapp/index.xhtml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/web/src/main/webapp/_decorator.xhtml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/web/src/main/webapp/main.xhtml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/web/src/main/webapp/recommendation.xhtml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/web/src/main/webapp/graph_android.html" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/web/src/main/webapp/feedback.xhtml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/whitelabeltest/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/recommendation/Entry_AbstractValidation.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/base/CommonPageDriver.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/recommendation/RecommendationDriver.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/recommendation/ConsumerEntry_UpdateConsumerRuntimeTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/recommendation/PrefersNewerDataOverOlder_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/recommendation/ConsumerEntry_DisplaysDefaultTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/recommendation/Entry_AbstractPositiveValidation.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/recommendation/PlantEntry_DisplaysDefaultTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/recommendation/PlantEntry_ValidatesDeclinationTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/recommendation/PlantEntry_ValidatesPeakPowerTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/recommendation/PlantEntry_ValidatesAlignmentTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/recommendation/ConsumerEntry_ValidatesRuntimeTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/recommendation/PlantEntry_UpdateNominalPowerTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/recommendation/ConsumerEntry_ValidatesPeakPowerEntries.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/integration-test/src/test/java/de/idos/recommendation/ConsumerEntry_UpdateConsumerProfileTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366812727428" ignored="false" />
+    <file path="/third-party-file-print-in-maven-format.ftl" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367316320789" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/base/src/test/java/de/idos/base/EnergyUtilities_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367315500621" ignored="false" />
+    <file path="/EnergyUtilities_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367315064875" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/base/src/main/java/de/idos/physics/EnergyUtilities.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367315709277" ignored="false" />
+    <file path="/EnergyUtilities.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367315648336" ignored="false" />
+    <file path="$PROJECT_DIR$/../../minuteman.jar/mocca-distribution/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367321187575" ignored="false" />
+    <file path="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/sample-usage/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367566685518" ignored="false" />
+    <file path="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/src/it/simple-it/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367566685840" ignored="false" />
+    <file path="/a.dummy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373010505620" ignored="false" />
+    <file path="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/artifact-validation/plugin/src/main/java/com/github/signed/sandboxes/maven/PluginCallback.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367569124594" ignored="false" />
+    <file path="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/artifact-validation/plugin/src/main/java/com/github/signed/sandboxes/maven/TransitiveArtifactResolver.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367569124594" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/model/ProjectLicenseInfo.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367569754484" ignored="false" />
+    <file path="/DownloadLicensesMojo.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367572048485" ignored="false" />
+    <file path="/FetchLicensesMojo.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1372845047962" ignored="false" />
+    <file path="/LicenseLookupCallback.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367573977851" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/LicenseRepository.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367574327570" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/GavCoordinates.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367574565206" ignored="false" />
+    <file path="/Outcome_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367577249134" ignored="false" />
+    <file path="/Outcome.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367577130740" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/web/src/main/webapp/WEB-INF/web.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367584560166" ignored="false" />
+    <file path="$PROJECT_DIR$/../../photovoltaik/base/src/main/java/de/idos/base/time/ClockFactory.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367592184773" ignored="false" />
+    <file path="/ClockFactory.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367592163225" ignored="false" />
+    <file path="/ThirdPartyLicenseRegister.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1372857868855" ignored="false" />
+    <file path="/LicenseData.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1372843442332" ignored="false" />
+    <file path="/Licensee.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373011603104" ignored="false" />
+    <file path="/LicenseObligations.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373008221373" ignored="false" />
+    <file path="/ThirdPartyLicenseRegister_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373007556136" ignored="false" />
+    <file path="/Text.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373007259091" ignored="false" />
+    <file path="/Licensee_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373011806404" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java" line="33" class="org.codehaus.mojo.license.fetchlicenses.ThirdPartyLicenseRegister" package="org.codehaus.mojo.license.fetchlicenses">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="license-maven-plugin" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Licensee.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/Licensee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="33" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Licensee_Test.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/Licensee_Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="104" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FetchLicensesMojo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/FetchLicensesMojo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="30" selection-start="3008" selection-end="3008" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="14" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.26732674">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThirdPartyLicenseRegister.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUtils.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.2/commons-io-2.2.jar!/org/apache/commons/io/FileUtils.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="121" column="35" selection-start="7906" selection-end="7906" vertical-scroll-proportion="-7.84">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="HierarchyBrowserManager">
+    <option name="SCOPE" value="Production" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/GavCoordinates.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/GavCoordinates.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/Outcome_Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/Outcome.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/DownloadLicensesMojo.java" />
+        <option value="$PROJECT_DIR$/target/generated-sources/plugin/org/codehaus/mojo/license/Licensee.java" />
+        <option value="$PROJECT_DIR$/target/generated-sources/plugin/org/codehaus/mojo/license/fetchlicenses/Licensee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/LicenseData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/FetchLicensesMojo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/Text.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister_Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/LicenseObligations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/Licensee.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/Licensee_Test.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-2" />
+    <option name="y" value="-3" />
+    <option name="width" value="1924" />
+    <option name="height" value="1172" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages ProjectPane="false" />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="224" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="233" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="224" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/pom.xml" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="239" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1148" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1148" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="239" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="233" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.codehaus.mojo.license.fetchlicenses" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.codehaus.mojo.license" />
+      <recent name="org.codehaus.mojo.license.api" />
+      <recent name="org.codehaus.mojo.license.utils" />
+      <recent name="org.codehaus.mojo.license.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../sandboxes/sandbox-maven/license-plugin/single-module/src/license" />
+      <recent name="$PROJECT_DIR$/../maven-license-examples" />
+      <recent name="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/plugin/src/main/java/org/codehaus/mojo/license/api" />
+      <recent name="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/plugin/src/main/java" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.codehaus.mojo.license" />
+      <recent name="org.codehaus.mojo.license.fetchlicenses" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.codehaus.mojo.license.fetchlicenses" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Licensee_Test">
+    <configuration default="false" name="Outcome_Test.doNotThrowExceptionOnSuccess" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.codehaus.mojo.license.fetchlicenses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="license-maven-plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.codehaus.mojo.license.fetchlicenses" />
+      <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.Outcome_Test" />
+      <option name="METHOD_NAME" value="doNotThrowExceptionOnSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Outcome_Test" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.codehaus.mojo.license.fetchlicenses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="license-maven-plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.codehaus.mojo.license.fetchlicenses" />
+      <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.Outcome_Test" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ThirdPartyLicenseRegister_Test" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.codehaus.mojo.license.fetchlicenses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="license-maven-plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.codehaus.mojo.license.fetchlicenses" />
+      <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.ThirdPartyLicenseRegister_Test" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Licensee_Test.putTheLicenseTextIntoTheThirdPartyLicenseDirectory" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.codehaus.mojo.license.fetchlicenses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="license-maven-plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.codehaus.mojo.license.fetchlicenses" />
+      <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.Licensee_Test" />
+      <option name="METHOD_NAME" value="putTheLicenseTextIntoTheThirdPartyLicenseDirectory" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Licensee_Test" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.codehaus.mojo.license.fetchlicenses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="license-maven-plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.codehaus.mojo.license.fetchlicenses" />
+      <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.Licensee_Test" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="GLUE" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Outcome_Test.doNotThrowExceptionOnSuccess" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Outcome_Test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ThirdPartyLicenseRegister_Test" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Licensee_Test.putTheLicenseTextIntoTheThirdPartyLicenseDirectory" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Licensee_Test" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Licensee_Test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Licensee_Test.putTheLicenseTextIntoTheThirdPartyLicenseDirectory" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ThirdPartyLicenseRegister_Test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Outcome_Test" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Outcome_Test.doNotThrowExceptionOnSuccess" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8023f31-fb82-4006-8046-2305987dc8be" name="Default" comment="" />
+      <created>1366789053484</created>
+      <updated>1366789053484</updated>
+    </task>
+    <task id="LOCAL-00001" summary="removed the BaseUrl setter on LicenseRepository. Pass the baseUrl in the constructor call.">
+      <created>1366789348119</created>
+      <updated>1366789348119</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Moved object instantiation out of the loop">
+      <created>1366797186426</created>
+      <updated>1366797186426</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Grabed the code required to run the download license mojo">
+      <created>1366805175920</created>
+      <updated>1366805175920</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added a template that generates the maven coordinates">
+      <created>1367316582967</created>
+      <updated>1367316582967</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Build the fetch-license-mojo branch with travis">
+      <created>1367571737947</created>
+      <updated>1367571737947</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added the fetch license mojo that will download licenses from the local filesystem from a maven repository like structure using gav coordinates">
+      <created>1367572026419</created>
+      <updated>1367572026419</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Some skeleton classes an an overall structure of the mojo; time to fill it with life.">
+      <created>1372844551227</created>
+      <updated>1372844551227</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Renamed parameters">
+      <created>1372845182748</created>
+      <updated>1372845182748</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added mockito as dependency in scope test">
+      <created>1372852435075</created>
+      <updated>1372852435075</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Started to implement the Register">
+      <created>1372857907372</created>
+      <updated>1372857907372</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Extended the test">
+      <created>1373007686955</created>
+      <updated>1373007686955</updated>
+    </task>
+    <task id="LOCAL-00012" summary="The license Text is written into the thirdPartLicenses directory">
+      <created>1373011686391</created>
+      <updated>1373011686391</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Restructured test">
+      <created>1373011834194</created>
+      <updated>1373011834194</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-2" y="-3" width="1924" height="1172" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.040874526" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32666665" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295238" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295238" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295238" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28388473" sideWeight="0.67333335" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32666665" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33555132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30416223" sideWeight="0.6644487" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructured test" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="removed the BaseUrl setter on LicenseRepository. Pass the baseUrl in the constructor call." />
+    <MESSAGE value="Moved object instantiation out of the loop" />
+    <MESSAGE value="Grabed the code required to run the download license mojo" />
+    <MESSAGE value="Added a template that generates the maven coordinates" />
+    <MESSAGE value="Build the fetch-license-mojo branch with travis" />
+    <MESSAGE value="Added the fetch license mojo that will download licenses from the local filesystem from a maven repository like structure using gav coordinates" />
+    <MESSAGE value="Some skeleton classes an an overall structure of the mojo; time to fill it with life." />
+    <MESSAGE value="Renamed parameters" />
+    <MESSAGE value="Added mockito as dependency in scope test" />
+    <MESSAGE value="Started to implement the Register" />
+    <MESSAGE value="Test erweitert" />
+    <MESSAGE value="Extended the test" />
+    <MESSAGE value="The license Text is written into the thirdPartLicenses directory" />
+    <MESSAGE value="Restructured test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/model/LicenseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="11" selection-start="2186" selection-end="2186" vertical-scroll-proportion="0.33333334" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/plugin/org/codehaus/mojo/license/HelpMojo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="13" selection-start="944" selection-end="944" vertical-scroll-proportion="0.16129032" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/DownloadLicensesMojo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="254" column="7" selection-start="8160" selection-end="8160" vertical-scroll-proportion="0.3323486">
+          <folding>
+            <element signature="e#8837#8845#0" expanded="true" />
+            <element signature="e#14751#14765#0" expanded="true" />
+            <element signature="e#15748#15767#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6852226" />
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/codehaus/mojo/mojo-parent/31/mojo-parent-31.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="45" selection-start="5199" selection-end="5199" vertical-scroll-proportion="0.2874494" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5-sources.jar!/org/mockito/Matchers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="13" selection-start="4436" selection-end="4436" vertical-scroll-proportion="0.33266732">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/Outcome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="27" selection-start="100" selection-end="100" vertical-scroll-proportion="0.066176474">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/Text.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="1" selection-start="449" selection-end="449" vertical-scroll-proportion="0.4852941">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.2/commons-io-2.2.jar!/org/apache/commons/io/FileUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="35" selection-start="7906" selection-end="7906" vertical-scroll-proportion="-7.84">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="5" selection-start="1819" selection-end="1819" vertical-scroll-proportion="0.64705884">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/LicenseObligations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="5" selection-start="395" selection-end="395" vertical-scroll-proportion="0.30882353">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/Licensee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="33" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/Licensee_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="104" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/FetchLicensesMojo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="30" selection-start="3008" selection-end="3008" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="14" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.26732674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>ECLIPSE</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>examples</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20000002" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: backport-util-concurrent:backport-util-concurrent:3.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>Project</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.16181229" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

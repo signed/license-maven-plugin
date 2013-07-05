@@ -1,7 +1,7 @@
 10
 
 dir
-18277
+18500
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/test/java/org/codehaus/mojo/license
 http://svn.codehaus.org/mojo
 
@@ -26,9 +26,6 @@ rfscholte
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
 
-header
-dir
-
 api
 dir
 
@@ -36,5 +33,8 @@ model
 dir
 
 utils
+dir
+
+header
 dir
 

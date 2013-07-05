@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/mojo/!svn/ver/18277/trunk/mojo/license-maven-plugin
+/mojo/!svn/ver/18462/trunk/mojo/license-maven-plugin
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/mojo/!svn/ver/18317/trunk/mojo/license-maven-plugin/pom.xml
 END
 .gitignore
 K 25
 svn:wc:ra_dav:version-url
 V 63
 /mojo/!svn/ver/14372/trunk/mojo/license-maven-plugin/.gitignore
-END
-pom.xml
-K 25
-svn:wc:ra_dav:version-url
-V 60
-/mojo/!svn/ver/18165/trunk/mojo/license-maven-plugin/pom.xml
 END
