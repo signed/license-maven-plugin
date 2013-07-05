@@ -66,6 +66,8 @@ public class FetchLicensesMojo extends DownloadLicensesMojo {
         ThirdPartyLicenseRegister licenseRepository = new ThirdPartyLicenseRegister(licensesRegisterRoot);
         final Licensee licensee = new Licensee(usedLicensesDirectory);
 
+        getLog().info(" license lookup for: "+coordinates);
+
         final Outcome outcome = Outcome.pessimistic();
         licenseRepository.lookup(coordinates, new LicenseLookupCallback() {
             public void found(LicenseObligations obligations) {

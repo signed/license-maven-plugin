@@ -19,7 +19,7 @@ public class ThirdPartyLicenseRegister {
             callback.missingLicenseInformationFor(coordinates);
         } else {
             Text license = read(licenseFile);
-            LicenseObligations data = new LicenseObligations(license);
+            LicenseObligations data = new LicenseObligations(coordinates, license);
             callback.found(data);
         }
     }
