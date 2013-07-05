@@ -10,4 +10,9 @@ public class GavCoordinates {
         this.artifactId = artifactId;
         this.version = version;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s.%s.%s", groupId, artifactId, version);
+    }
 }

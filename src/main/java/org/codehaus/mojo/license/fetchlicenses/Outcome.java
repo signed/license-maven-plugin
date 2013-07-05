@@ -1,5 +1,7 @@
 package org.codehaus.mojo.license.fetchlicenses;
 
+import org.apache.commons.collections.Closure;
+
 public class Outcome {
     private boolean success;
 
@@ -15,9 +17,9 @@ public class Outcome {
         success = false;
     }
 
-    public void onFailureThrow(RuntimeException e) {
+    public void onFailure(Closure action) {
         if(!success){
-            throw e;
+            action.execute(null);
         }
     }
 }

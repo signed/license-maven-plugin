@@ -22,13 +22,14 @@ package org.codehaus.mojo.license;
  * #L%
  */
 
+import org.apache.commons.collections.Closure;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.plugins.annotations.ResolutionScope;
 import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
-import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
+import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.Licensee;
 import org.codehaus.mojo.license.fetchlicenses.Outcome;
 import org.codehaus.mojo.license.fetchlicenses.ThirdPartyLicenseRegister;
@@ -61,7 +62,7 @@ public class FetchLicensesMojo extends DownloadLicensesMojo {
 
     @Override
     protected void downloadLicenses(ProjectLicenseInfo depProject) {
-        GavCoordinates coordinates = new GavCoordinates(depProject.getGroupId(), depProject.getArtifactId(), depProject.getVersion());
+        final GavCoordinates coordinates = new GavCoordinates(depProject.getGroupId(), depProject.getArtifactId(), depProject.getVersion());
         ThirdPartyLicenseRegister licenseRepository = new ThirdPartyLicenseRegister(licensesRegisterRoot);
         final Licensee licensee = new Licensee(usedLicensesDirectory);
 
@@ -77,6 +78,10 @@ public class FetchLicensesMojo extends DownloadLicensesMojo {
             }
         });
 
-        outcome.onFailureThrow(new RuntimeException());
+        outcome.onFailure(new Closure() {
+            public void execute(Object input) {
+                getLog().error("no license information for: " + coordinates.toString());
+            }
+        });
     }
 }
