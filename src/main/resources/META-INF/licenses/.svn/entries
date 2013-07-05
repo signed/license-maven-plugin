@@ -1,7 +1,7 @@
 10
 
 dir
-18277
+18500
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/main/resources/META-INF/licenses
 http://svn.codehaus.org/mojo
 
@@ -25,21 +25,6 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
-
-apache_v2
-dir
-
-gpl_v1
-dir
-
-gpl_v2
-dir
-
-mit
-dir
-
-gpl_v3
-dir
 
 agpl_v3
 dir
@@ -88,5 +73,20 @@ lgpl_v2_1
 dir
 
 lgpl_v3
+dir
+
+apache_v2
+dir
+
+gpl_v1
+dir
+
+gpl_v2
+dir
+
+mit
+dir
+
+gpl_v3
 dir
 

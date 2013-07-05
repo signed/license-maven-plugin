@@ -1,7 +1,7 @@
 10
 
 dir
-18277
+18500
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/it/download-licenses-configured-alt-location
 http://svn.codehaus.org/mojo
 
@@ -25,40 +25,6 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
-
-postbuild.bsh
-file
-
-
-
-
-2013-04-10T20:18:08.258197Z
-3eab4c08aaf46784b9bf5a39a50aa8dc
-2011-09-14T10:44:29.541537Z
-14690
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-580
 
 licenses.xml
 file
@@ -164,4 +130,38 @@ has-props
 
 
 1131
+
+postbuild.bsh
+file
+
+
+
+
+2013-04-10T20:18:08.258197Z
+3eab4c08aaf46784b9bf5a39a50aa8dc
+2011-09-14T10:44:29.541537Z
+14690
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+580
 
