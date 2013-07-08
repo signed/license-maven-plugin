@@ -17,6 +17,12 @@ public class VersionMappingParser {
         this.builder = builder;
     }
 
+    public void parseMapping(String mappingsAsString) {
+        for (String line : mappingsAsString.split("\n")) {
+            parseLine(line);
+        }
+    }
+
     public void parseLine(String line) {
         if( !line.matches(lineFormatRegex)){
             return;

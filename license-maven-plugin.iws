@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8023f31-fb82-4006-8046-2305987dc8be" name="Default" comment="">
+    <list default="true" id="d8023f31-fb82-4006-8046-2305987dc8be" name="Default" comment="remove duplication and other refactorings">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java" afterPath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java" afterPath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/license-maven-plugin.iws" afterPath="$PROJECT_DIR$/license-maven-plugin.iws" />
     </list>
     <ignored path="license-maven-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373271336197" ignored="false" />
+    <file path="/Dummy.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373273083747" ignored="false" />
     <file path="/LicenseRepositoryTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366789159008" ignored="false" />
     <file path="/LicenseRepository.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366789337385" ignored="false" />
     <file path="$PROJECT_DIR$/src/it/MLICENSE-45/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
@@ -312,7 +313,7 @@
     <file path="$PROJECT_DIR$/../../photovoltaik/web/src/main/webapp/WEB-INF/web.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367584560166" ignored="false" />
     <file path="$PROJECT_DIR$/../../photovoltaik/base/src/main/java/de/idos/base/time/ClockFactory.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367592184773" ignored="false" />
     <file path="/ClockFactory.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367592163225" ignored="false" />
-    <file path="/ThirdPartyLicenseRegister.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373028683875" ignored="false" />
+    <file path="/ThirdPartyLicenseRegister.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373273065823" ignored="false" />
     <file path="/LicenseData.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1372843442332" ignored="false" />
     <file path="/Licensee.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373011603104" ignored="false" />
     <file path="/LicenseObligations.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373008221373" ignored="false" />
@@ -335,7 +336,7 @@
     <file path="$PROJECT_DIR$/../../shared-data/licenses/src/repository/com/google/guava/guava/version-mapping" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373028826460" ignored="false" />
     <file path="/version-mapping" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373028824278" ignored="false" />
     <file path="/VersionMappingParser_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373270610705" ignored="false" />
-    <file path="/VersionMappingParser.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373271453604" ignored="false" />
+    <file path="/VersionMappingParser.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373272354399" ignored="false" />
     <file path="/MappingBuilder.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373269650915" ignored="false" />
     <file path="/RegExp Fragment (VersionMappingParser.java:335).regexp" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373266795279" ignored="false" />
     <file path="/RegExp Fragment (VersionMappingParser.java:393).regexp" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373267942782" ignored="false" />
@@ -442,10 +443,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThirdPartyLicenseRegister.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ThirdPartyLicenseRegister.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="5" selection-start="1463" selection-end="1463" vertical-scroll-proportion="0.0">
+            <state line="40" column="49" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.5244755">
               <folding />
             </state>
           </provider>
@@ -455,17 +456,6 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_Test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="15" column="1" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VersionMappingParser.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="32" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.62109953">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -522,7 +512,6 @@
         <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/LicenseObligations.java" />
         <option value="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/sample-usage/pom.xml" />
         <option value="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/src/main/java/com/github/signed/sandboxes/maven/MyMojo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister_Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/VersionMappingParser_Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/MappingBuilder.java" />
@@ -530,6 +519,7 @@
         <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_WellKnownLicenseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java" />
       </list>
     </option>
   </component>
@@ -1317,7 +1307,11 @@
       <created>1373271337942</created>
       <updated>1373271337942</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="remove duplication and other refactorings">
+      <created>1373271670759</created>
+      <updated>1373271670759</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1363,7 +1357,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32017076" sideWeight="0.68761903" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31238094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31238094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30416223" sideWeight="0.6644487" order="2" side_tool="false" content_ui="combo" />
@@ -1412,7 +1406,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="sub-directory protocol is supported" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove duplication and other refactorings" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1444,6 +1438,7 @@
     <MESSAGE value="more logging" />
     <MESSAGE value="well-known-license protocol is parsed" />
     <MESSAGE value="sub-directory protocol is supported" />
+    <MESSAGE value="remove duplication and other refactorings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1502,13 +1497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="5" selection-start="1463" selection-end="1463" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/applications/java/java6/src.zip!/java/util/regex/Pattern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2431" column="59" selection-start="89259" selection-end="89259" vertical-scroll-proportion="0.35683453">
@@ -1550,10 +1538,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="32" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.62109953">
+        <state line="20" column="8" selection-start="779" selection-end="779" vertical-scroll-proportion="0.19480519">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="49" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.5244755">
+          <folding />
         </state>
       </provider>
     </entry>
