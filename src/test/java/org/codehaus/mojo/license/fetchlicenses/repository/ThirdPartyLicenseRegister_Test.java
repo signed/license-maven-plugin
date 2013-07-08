@@ -23,7 +23,7 @@ public class ThirdPartyLicenseRegister_Test {
     @Rule
     public final TemporaryFolder licenseRegister = new TemporaryFolder();
     private final LicenseLookupCallback callback = mock(LicenseLookupCallback.class);
-    private final GavCoordinates coordinates = new GavCoordinates("groupid", "artifact", "version");
+    private final GavCoordinates coordinates = new GavCoordinates("group.id", "artifact", "version");
 
     @Test
     public void informCallerAboutMissingLicenseInformation() throws Exception {
@@ -45,12 +45,12 @@ public class ThirdPartyLicenseRegister_Test {
     }
 
     private void writeLicenseFor(GavCoordinates coordinates, String licenseText) throws IOException {
-        File metaDataDirectory = licenseRegister.newFolder(coordinates.groupId, coordinates.artifactId);
+        File metaDataDirectory = licenseRegister.newFolder("group", "id", coordinates.artifactId);
         File mappingFile = new File(metaDataDirectory, "version-mapping");
         FileUtils.writeStringToFile(mappingFile, "sub-directory://version <- version", "UTF-8");
 
 
-        File directory = licenseRegister.newFolder(coordinates.groupId, coordinates.artifactId, coordinates.version);
+        File directory = licenseRegister.newFolder("group", "id", coordinates.artifactId, coordinates.version);
         File licenseFile = new File(directory, "LICENSE.txt");
         licenseFile.createNewFile();
 

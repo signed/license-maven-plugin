@@ -20,7 +20,7 @@ public class ThirdPartyLicenseRegister {
     }
 
     public void lookup(GavCoordinates coordinates, final LicenseLookupCallback callback) {
-        File artifactDirectory = new File(repositoryRoot, coordinates.groupId + "/" + coordinates.artifactId + "/");
+        File artifactDirectory = new File(repositoryRoot, groupIdToDirectory(coordinates) + "/" + coordinates.artifactId + "/");
         VersionMapping mapping = loadVersionMapping(artifactDirectory, coordinates);
 
         if (!mapping.hasMappingForVersion(coordinates.version)) {
@@ -38,11 +38,15 @@ public class ThirdPartyLicenseRegister {
 
     private VersionMapping loadVersionMapping(File artifactDirectory, GavCoordinates coordinates) {
         final VersionMapping mapping = new VersionMapping();
-        File versionMappingFile = new File(repositoryRoot, coordinates.groupId + "/" + coordinates.artifactId + "/" + "version-mapping");
+        File versionMappingFile = new File(repositoryRoot, groupIdToDirectory(coordinates) + "/" + coordinates.artifactId + "/" + "version-mapping");
         if (versionMappingFile.isFile()) {
             loadMapping(artifactDirectory, versionMappingFile, mapping);
         }
         return mapping;
+    }
+
+    private String groupIdToDirectory(GavCoordinates coordinates) {
+        return coordinates.groupId.replaceAll("\\.", "/");
     }
 
     private void loadMapping(File artifactDirectory, File versionMappingFile, final VersionMapping mapping) {
