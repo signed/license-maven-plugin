@@ -21,23 +21,28 @@ public class ThirdPartyLicenseRegister {
 
     public void lookup(GavCoordinates coordinates, final LicenseLookupCallback callback) {
         File artifactDirectory = new File(repositoryRoot, coordinates.groupId + "/" + coordinates.artifactId + "/");
-        File versionMappingFile = new File(repositoryRoot, coordinates.groupId + "/" + coordinates.artifactId + "/" + "version-mapping");
-        final VersionMapping mapping = new VersionMapping();
-
-        if (versionMappingFile.isFile()) {
-            loadMapping(artifactDirectory, versionMappingFile, mapping);
-        }
+        VersionMapping mapping = loadVersionMapping(artifactDirectory, coordinates);
 
         if (!mapping.hasMappingForVersion(coordinates.version)) {
             callback.missingLicenseInformationFor(coordinates);
         } else {
-            File root = mapping.rootDirectoryForVersion(coordinates.version);
-            File licenseFileIn = getLicenseFileIn(root);
-            Text license = read(licenseFileIn);
-            LicenseObligations data = new LicenseObligations(coordinates, license);
-            callback.found(data);
+            callback.found(new LicenseObligations(coordinates, readLicense(coordinates, mapping)));
         }
+    }
 
+    private Text readLicense(GavCoordinates coordinates, VersionMapping mapping) {
+        File root = mapping.rootDirectoryForVersion(coordinates.version);
+        File licenseFileIn = new File(root, "LICENSE.txt");
+        return read(licenseFileIn);
+    }
+
+    private VersionMapping loadVersionMapping(File artifactDirectory, GavCoordinates coordinates) {
+        final VersionMapping mapping = new VersionMapping();
+        File versionMappingFile = new File(repositoryRoot, coordinates.groupId + "/" + coordinates.artifactId + "/" + "version-mapping");
+        if (versionMappingFile.isFile()) {
+            loadMapping(artifactDirectory, versionMappingFile, mapping);
+        }
+        return mapping;
     }
 
     private void loadMapping(File artifactDirectory, File versionMappingFile, final VersionMapping mapping) {
@@ -56,10 +61,6 @@ public class ThirdPartyLicenseRegister {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    private File getLicenseFileIn(File directory) {
-        return new File(directory, "LICENSE.txt");
     }
 
     private Text read(File licenseFile) {
