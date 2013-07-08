@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8023f31-fb82-4006-8046-2305987dc8be" name="Default" comment="well-known-license protocol is parsed">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/MappingBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_WellKnownLicenseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java" afterPath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister_Test.java" afterPath="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister_Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/license-maven-plugin.ipr" afterPath="$PROJECT_DIR$/license-maven-plugin.ipr" />
+    <list default="true" id="d8023f31-fb82-4006-8046-2305987dc8be" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_FolderProtocolTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/MappingBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/MappingBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java" afterPath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/license-maven-plugin.iws" afterPath="$PROJECT_DIR$/license-maven-plugin.iws" />
     </list>
     <ignored path="license-maven-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373268689881" ignored="false" />
+    <file path="/Dummy.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373268745555" ignored="false" />
     <file path="/LicenseRepositoryTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366789159008" ignored="false" />
     <file path="/LicenseRepository.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366789337385" ignored="false" />
     <file path="$PROJECT_DIR$/src/it/MLICENSE-45/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
@@ -229,7 +227,7 @@
     <file path="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/utils/LicenseSummaryTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
     <file path="$PROJECT_DIR$/../../photovoltaik/importer.ewc/src/test/resources/sw-aalen_prognose_20130312.csv" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366796741474" ignored="false" />
     <file path="$PROJECT_DIR$/../../photovoltaik/importer.ewc/src/test/java/de/idos/importer/aalen/CsvReadingFactory_ParseAalenReadingTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366796737212" ignored="false" />
-    <file path="/fragment.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373268275746" ignored="false" />
+    <file path="/fragment.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373271249660" ignored="false" />
     <file path="/ArtifactIdentifier.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366797546227" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/licensedownload/ArtifactIdentifier.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366798204333" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/licensedownload/RecordLicenseInformation.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366798204333" ignored="false" />
@@ -303,7 +301,7 @@
     <file path="/EnergyUtilities.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367315648336" ignored="false" />
     <file path="$PROJECT_DIR$/../../minuteman.jar/mocca-distribution/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373015451862" ignored="false" />
     <file path="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/src/it/simple-it/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367566685840" ignored="false" />
-    <file path="/a.dummy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373265802168" ignored="false" />
+    <file path="/a.dummy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373271259419" ignored="false" />
     <file path="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/artifact-validation/plugin/src/main/java/com/github/signed/sandboxes/maven/PluginCallback.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367569124594" ignored="false" />
     <file path="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/artifact-validation/plugin/src/main/java/com/github/signed/sandboxes/maven/TransitiveArtifactResolver.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367569124594" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/model/ProjectLicenseInfo.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367569754484" ignored="false" />
@@ -339,12 +337,13 @@
     <file path="$PROJECT_DIR$/../../moccamote/parent/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373026526545" ignored="false" />
     <file path="$PROJECT_DIR$/../../shared-data/licenses/src/repository/com/google/guava/guava/version-mapping" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373028826460" ignored="false" />
     <file path="/version-mapping" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373028824278" ignored="false" />
-    <file path="/VersionMappingParser_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373268226346" ignored="false" />
-    <file path="/VersionMappingParser.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373268631511" ignored="false" />
-    <file path="/MappingBuilder.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373268244462" ignored="false" />
+    <file path="/VersionMappingParser_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373270610705" ignored="false" />
+    <file path="/VersionMappingParser.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373271127542" ignored="false" />
+    <file path="/MappingBuilder.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373269650915" ignored="false" />
     <file path="/RegExp Fragment (VersionMappingParser.java:335).regexp" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373266795279" ignored="false" />
     <file path="/RegExp Fragment (VersionMappingParser.java:393).regexp" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373267942782" ignored="false" />
     <file path="/VersionMappingParser_WellKnownLicenseTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373268543353" ignored="false" />
+    <file path="/VersionMappingParser_FolderProtocolTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373269633692" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -455,10 +454,32 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="VersionMappingParser_Test.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="1" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="VersionMappingParser.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="585" selection-end="585" vertical-scroll-proportion="0.44313148">
+            <state line="22" column="22" selection-start="814" selection-end="814" vertical-scroll-proportion="0.49034175">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VersionMappingParser_FolderProtocolTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_FolderProtocolTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="47" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -469,7 +490,7 @@
       <file leaf-file-name="VersionMappingParser_WellKnownLicenseTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_WellKnownLicenseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="36" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
+            <state line="18" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -496,7 +517,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/Licensee_Test.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/GavCoordinates.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/Outcome_Test.java" />
@@ -509,8 +529,9 @@
         <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister_Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/VersionMappingParser_Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/MappingBuilder.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_FolderProtocolTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_WellKnownLicenseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java" />
       </list>
     </option>
@@ -928,7 +949,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
@@ -943,6 +964,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.codehaus.mojo.license.fetchlicenses.repository" />
       <recent name="org.codehaus.mojo.license.fetchlicenses" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -960,6 +982,9 @@
       <recent name="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/plugin/src/main/java/org/codehaus/mojo/license/api" />
       <recent name="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/plugin/src/main/java" />
     </key>
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="org.codehaus.mojo.license.fetchlicenses.repository.VersionMappingParser" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.codehaus.mojo.license" />
       <recent name="org.codehaus.mojo.license.fetchlicenses" />
@@ -969,97 +994,7 @@
       <recent name="org.codehaus.mojo.license.fetchlicenses" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VersionMappingParser_WellKnownLicenseTest">
-    <configuration default="false" name="Outcome_Test" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.codehaus.mojo.license.fetchlicenses.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="license-maven-plugin" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="org.codehaus.mojo.license.fetchlicenses" />
-      <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.Outcome_Test" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ThirdPartyLicenseRegister_Test" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.codehaus.mojo.license.fetchlicenses.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="license-maven-plugin" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.codehaus.mojo.license.fetchlicenses" />
-      <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.ThirdPartyLicenseRegister_Test" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Licensee_Test" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.codehaus.mojo.license.fetchlicenses.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="license-maven-plugin" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.codehaus.mojo.license.fetchlicenses" />
-      <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.Licensee_Test" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in license-maven-plugin">
     <configuration default="false" name="VersionMappingParser_Test" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1102,6 +1037,85 @@
       <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.repository.VersionMappingParser_WellKnownLicenseTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="VersionMappingParser_FolderProtocolTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.codehaus.mojo.license.fetchlicenses.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="license-maven-plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.codehaus.mojo.license.fetchlicenses.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.repository.VersionMappingParser_FolderProtocolTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="org.codehaus in license-maven-plugin" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.codehaus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="license-maven-plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.codehaus" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in license-maven-plugin" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="license-maven-plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1211,19 +1225,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Remote.debug maven" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Outcome_Test" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ThirdPartyLicenseRegister_Test" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Licensee_Test" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.VersionMappingParser_Test" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.VersionMappingParser_WellKnownLicenseTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.VersionMappingParser_Test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.VersionMappingParser_WellKnownLicenseTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.VersionMappingParser_FolderProtocolTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.org.codehaus in license-maven-plugin" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.All in license-maven-plugin" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.VersionMappingParser_WellKnownLicenseTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in license-maven-plugin" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.VersionMappingParser_Test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ThirdPartyLicenseRegister_Test" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Outcome_Test" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Licensee_Test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.org.codehaus in license-maven-plugin" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.VersionMappingParser_FolderProtocolTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.VersionMappingParser_WellKnownLicenseTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1298,7 +1312,11 @@
       <created>1373026888948</created>
       <updated>1373026888948</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="well-known-license protocol is parsed">
+      <created>1373268747924</created>
+      <updated>1373268747924</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1335,7 +1353,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295238" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295238" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295238" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295238" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1343,8 +1361,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32017076" sideWeight="0.6704762" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31238094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32017076" sideWeight="0.68761903" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31238094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30416223" sideWeight="0.6644487" order="2" side_tool="false" content_ui="combo" />
@@ -1433,13 +1451,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/Licensee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="1" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/LicenseObligations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
@@ -1503,23 +1514,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_WellKnownLicenseTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/MappingBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="36" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
+        <state line="11" column="49" selection-start="414" selection-end="414" vertical-scroll-proportion="0.16483517">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/MappingBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_FolderProtocolTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="8" selection-start="284" selection-end="284" vertical-scroll-proportion="0.18320611">
+        <state line="12" column="47" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_WellKnownLicenseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="1" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="585" selection-end="585" vertical-scroll-proportion="0.44313148">
+        <state line="22" column="22" selection-start="814" selection-end="814" vertical-scroll-proportion="0.49034175">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
