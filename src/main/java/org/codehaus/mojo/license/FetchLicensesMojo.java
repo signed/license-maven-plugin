@@ -32,7 +32,7 @@ import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.Licensee;
 import org.codehaus.mojo.license.fetchlicenses.Outcome;
-import org.codehaus.mojo.license.fetchlicenses.ThirdPartyLicenseRegister;
+import org.codehaus.mojo.license.fetchlicenses.repository.ThirdPartyLicenseRegister;
 import org.codehaus.mojo.license.model.ProjectLicenseInfo;
 
 import java.io.File;

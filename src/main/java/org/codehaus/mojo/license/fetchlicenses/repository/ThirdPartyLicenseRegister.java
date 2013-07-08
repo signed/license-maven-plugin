@@ -1,8 +1,10 @@
-package org.codehaus.mojo.license.fetchlicenses;
+package org.codehaus.mojo.license.fetchlicenses.repository;
 
 import org.apache.commons.io.FileUtils;
-import org.codehaus.mojo.license.fetchlicenses.repository.VersionMappingBuilder;
-import org.codehaus.mojo.license.fetchlicenses.repository.VersionMappingParser;
+import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
+import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
+import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
+import org.codehaus.mojo.license.fetchlicenses.Text;
 
 import java.io.File;
 import java.io.IOException;

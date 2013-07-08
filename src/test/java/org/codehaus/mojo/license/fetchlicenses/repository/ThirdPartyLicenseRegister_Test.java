@@ -1,6 +1,11 @@
-package org.codehaus.mojo.license.fetchlicenses;
+package org.codehaus.mojo.license.fetchlicenses.repository;
 
 import org.apache.commons.io.FileUtils;
+import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
+import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
+import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
+import org.codehaus.mojo.license.fetchlicenses.Text;
+import org.hamcrest.MatcherAssert;
 import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
@@ -11,7 +16,6 @@ import java.io.File;
 import java.io.IOException;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
@@ -39,7 +43,7 @@ public class ThirdPartyLicenseRegister_Test {
         ArgumentCaptor<LicenseObligations> captor = ArgumentCaptor.forClass(LicenseObligations.class);
         verify(callback).found(captor.capture());
 
-        assertThat(captor.getValue().license, is(new Text("LicenseText")));
+        MatcherAssert.assertThat(captor.getValue().license, is(new Text("LicenseText")));
     }
 
     private void writeLicenseFor(GavCoordinates coordinates, String licenseText) throws IOException {
