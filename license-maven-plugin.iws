@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8023f31-fb82-4006-8046-2305987dc8be" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_FolderProtocolTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/MappingBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/MappingBuilder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java" afterPath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/license-maven-plugin.iws" afterPath="$PROJECT_DIR$/license-maven-plugin.iws" />
     </list>
     <ignored path="license-maven-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373268745555" ignored="false" />
+    <file path="/Dummy.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373271336197" ignored="false" />
     <file path="/LicenseRepositoryTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366789159008" ignored="false" />
     <file path="/LicenseRepository.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366789337385" ignored="false" />
     <file path="$PROJECT_DIR$/src/it/MLICENSE-45/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
@@ -338,7 +335,7 @@
     <file path="$PROJECT_DIR$/../../shared-data/licenses/src/repository/com/google/guava/guava/version-mapping" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373028826460" ignored="false" />
     <file path="/version-mapping" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373028824278" ignored="false" />
     <file path="/VersionMappingParser_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373270610705" ignored="false" />
-    <file path="/VersionMappingParser.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373271127542" ignored="false" />
+    <file path="/VersionMappingParser.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373271453604" ignored="false" />
     <file path="/MappingBuilder.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373269650915" ignored="false" />
     <file path="/RegExp Fragment (VersionMappingParser.java:335).regexp" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373266795279" ignored="false" />
     <file path="/RegExp Fragment (VersionMappingParser.java:393).regexp" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373267942782" ignored="false" />
@@ -468,7 +465,7 @@
       <file leaf-file-name="VersionMappingParser.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="22" selection-start="814" selection-end="814" vertical-scroll-proportion="0.49034175">
+            <state line="30" column="32" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.62109953">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1316,7 +1313,11 @@
       <created>1373268747924</created>
       <updated>1373268747924</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="sub-directory protocol is supported">
+      <created>1373271337942</created>
+      <updated>1373271337942</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1362,7 +1363,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32017076" sideWeight="0.68761903" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31238094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31238094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30416223" sideWeight="0.6644487" order="2" side_tool="false" content_ui="combo" />
@@ -1411,7 +1412,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="well-known-license protocol is parsed" />
+    <option name="LAST_COMMIT_MESSAGE" value="sub-directory protocol is supported" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1442,6 +1443,7 @@
     <MESSAGE value="log instead of throwing an exception" />
     <MESSAGE value="more logging" />
     <MESSAGE value="well-known-license protocol is parsed" />
+    <MESSAGE value="sub-directory protocol is supported" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1548,7 +1550,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="22" selection-start="814" selection-end="814" vertical-scroll-proportion="0.49034175">
+        <state line="30" column="32" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.62109953">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
