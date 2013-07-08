@@ -38,6 +38,7 @@ public class VersionMappingParser {
         for (String version : versions) {
             builder.version(version.trim());
         }
+        builder.build();
     }
 
     private String extractTargetFrom(String line) {

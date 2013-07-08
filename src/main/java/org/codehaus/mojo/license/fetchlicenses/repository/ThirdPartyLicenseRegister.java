@@ -12,30 +12,42 @@ import java.io.IOException;
 public class ThirdPartyLicenseRegister {
 
     private final File repositoryRoot;
+    private final File wellKnownLicenseDirectory;
 
     public ThirdPartyLicenseRegister(File repositoryRoot) {
         this.repositoryRoot = repositoryRoot;
+        this.wellKnownLicenseDirectory = new File(repositoryRoot, "well-known-licenses");
     }
 
-    public void lookup(GavCoordinates coordinates, LicenseLookupCallback callback) {
+    public void lookup(GavCoordinates coordinates, final LicenseLookupCallback callback) {
+        File artifactDirectory = new File(repositoryRoot, coordinates.groupId + "/" + coordinates.artifactId + "/");
         File versionMappingFile = new File(repositoryRoot, coordinates.groupId + "/" + coordinates.artifactId + "/" + "version-mapping");
-        if(versionMappingFile.isFile()) {
-            String mappingsAsString = readMappingFile(versionMappingFile);
-            new VersionMappingParser(new VersionMappingBuilder()).parseMapping(mappingsAsString);
-            String[] split = mappingsAsString.split("<-");
-            System.out.println(split[0].trim());
-            System.out.println(split[1].trim());
-            return;
+        final VersionMapping mapping = new VersionMapping();
+
+        if (versionMappingFile.isFile()) {
+            loadMapping(artifactDirectory, versionMappingFile, mapping);
         }
 
-        File licenseFile = licenseFileFor(coordinates);
-        if (!licenseFile.isFile()) {
+        if (!mapping.hasMappingForVersion(coordinates.version)) {
             callback.missingLicenseInformationFor(coordinates);
         } else {
-            Text license = read(licenseFile);
+            File root = mapping.rootDirectoryForVersion(coordinates.version);
+            File licenseFileIn = getLicenseFileIn(root);
+            Text license = read(licenseFileIn);
             LicenseObligations data = new LicenseObligations(coordinates, license);
             callback.found(data);
         }
+
+    }
+
+    private void loadMapping(File artifactDirectory, File versionMappingFile, final VersionMapping mapping) {
+        String mappingsAsString = readMappingFile(versionMappingFile);
+        VersionMappingBuilder builder = new VersionMappingBuilder(wellKnownLicenseDirectory, artifactDirectory, new RuleProductionListener() {
+            public void produced(VersionMappingRule rule) {
+                mapping.addRule(rule);
+            }
+        });
+        new VersionMappingParser(builder).parseMapping(mappingsAsString);
     }
 
     private String readMappingFile(File versionMappingFile) {
@@ -46,8 +58,7 @@ public class ThirdPartyLicenseRegister {
         }
     }
 
-    private File licenseFileFor(GavCoordinates coordinates) {
-        File directory = new File(repositoryRoot, coordinates.groupId + "/" + coordinates.artifactId + "/" + coordinates.version);
+    private File getLicenseFileIn(File directory) {
         return new File(directory, "LICENSE.txt");
     }
 
