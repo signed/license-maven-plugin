@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8023f31-fb82-4006-8046-2305987dc8be" name="Default" comment="log instead of throwing an exception">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/FetchLicensesMojo.java" afterPath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/FetchLicensesMojo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/LicenseObligations.java" afterPath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/LicenseObligations.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/src/main/java/com/github/signed/sandboxes/maven/MyMojo.java" afterPath="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/src/main/java/com/github/signed/sandboxes/maven/MyMojo.java" />
+    <list default="true" id="d8023f31-fb82-4006-8046-2305987dc8be" name="Default" comment="well-known-license protocol is parsed">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/MappingBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_WellKnownLicenseTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java" afterPath="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister_Test.java" afterPath="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister_Test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/license-maven-plugin.ipr" afterPath="$PROJECT_DIR$/license-maven-plugin.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/license-maven-plugin.iws" afterPath="$PROJECT_DIR$/license-maven-plugin.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/sample-usage/pom.xml" afterPath="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/sample-usage/pom.xml" />
     </list>
     <ignored path="license-maven-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373026613709" ignored="false" />
+    <file path="/Dummy.txt" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373268689881" ignored="false" />
     <file path="/LicenseRepositoryTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366789159008" ignored="false" />
     <file path="/LicenseRepository.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366789337385" ignored="false" />
     <file path="$PROJECT_DIR$/src/it/MLICENSE-45/postbuild.groovy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951095" ignored="false" />
@@ -229,7 +229,7 @@
     <file path="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/utils/LicenseSummaryTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366791951096" ignored="false" />
     <file path="$PROJECT_DIR$/../../photovoltaik/importer.ewc/src/test/resources/sw-aalen_prognose_20130312.csv" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366796741474" ignored="false" />
     <file path="$PROJECT_DIR$/../../photovoltaik/importer.ewc/src/test/java/de/idos/importer/aalen/CsvReadingFactory_ParseAalenReadingTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366796737212" ignored="false" />
-    <file path="/fragment.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373018021643" ignored="false" />
+    <file path="/fragment.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373268275746" ignored="false" />
     <file path="/ArtifactIdentifier.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366797546227" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/licensedownload/ArtifactIdentifier.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366798204333" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/licensedownload/RecordLicenseInformation.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1366798204333" ignored="false" />
@@ -303,7 +303,7 @@
     <file path="/EnergyUtilities.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367315648336" ignored="false" />
     <file path="$PROJECT_DIR$/../../minuteman.jar/mocca-distribution/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373015451862" ignored="false" />
     <file path="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/src/it/simple-it/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367566685840" ignored="false" />
-    <file path="/a.dummy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373010505620" ignored="false" />
+    <file path="/a.dummy" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373265802168" ignored="false" />
     <file path="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/artifact-validation/plugin/src/main/java/com/github/signed/sandboxes/maven/PluginCallback.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367569124594" ignored="false" />
     <file path="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/artifact-validation/plugin/src/main/java/com/github/signed/sandboxes/maven/TransitiveArtifactResolver.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367569124594" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/model/ProjectLicenseInfo.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367569754484" ignored="false" />
@@ -317,11 +317,11 @@
     <file path="$PROJECT_DIR$/../../photovoltaik/web/src/main/webapp/WEB-INF/web.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367584560166" ignored="false" />
     <file path="$PROJECT_DIR$/../../photovoltaik/base/src/main/java/de/idos/base/time/ClockFactory.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367592184773" ignored="false" />
     <file path="/ClockFactory.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1367592163225" ignored="false" />
-    <file path="/ThirdPartyLicenseRegister.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373021478398" ignored="false" />
+    <file path="/ThirdPartyLicenseRegister.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373028683875" ignored="false" />
     <file path="/LicenseData.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1372843442332" ignored="false" />
     <file path="/Licensee.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373011603104" ignored="false" />
     <file path="/LicenseObligations.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373008221373" ignored="false" />
-    <file path="/ThirdPartyLicenseRegister_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373007556136" ignored="false" />
+    <file path="/ThirdPartyLicenseRegister_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373265520723" ignored="false" />
     <file path="/Text.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373007259091" ignored="false" />
     <file path="/Licensee_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373011806404" ignored="false" />
     <file path="/GavCoordinates.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373016374150" ignored="false" />
@@ -337,6 +337,14 @@
     <file path="$PROJECT_DIR$/../../shared-data/licenses/src/repository/com/google/guava/guava/mapping" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373025861279" ignored="false" />
     <file path="$PROJECT_DIR$/../../moccamote/moccamote/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373025935226" ignored="false" />
     <file path="$PROJECT_DIR$/../../moccamote/parent/pom.xml" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373026526545" ignored="false" />
+    <file path="$PROJECT_DIR$/../../shared-data/licenses/src/repository/com/google/guava/guava/version-mapping" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373028826460" ignored="false" />
+    <file path="/version-mapping" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373028824278" ignored="false" />
+    <file path="/VersionMappingParser_Test.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373268226346" ignored="false" />
+    <file path="/VersionMappingParser.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373268631511" ignored="false" />
+    <file path="/MappingBuilder.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373268244462" ignored="false" />
+    <file path="/RegExp Fragment (VersionMappingParser.java:335).regexp" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373266795279" ignored="false" />
+    <file path="/RegExp Fragment (VersionMappingParser.java:393).regexp" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373267942782" ignored="false" />
+    <file path="/VersionMappingParser_WellKnownLicenseTest.java" changelist="d8023f31-fb82-4006-8046-2305987dc8be" time="1373268543353" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,7 +359,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -389,21 +396,6 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java" line="33" class="org.codehaus.mojo.license.fetchlicenses.ThirdPartyLicenseRegister" package="org.codehaus.mojo.license.fetchlicenses">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/FetchLicensesMojo.java" line="64" class="org.codehaus.mojo.license.FetchLicensesMojo" package="org.codehaus.mojo.license">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -435,6 +427,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -443,7 +436,46 @@
     <favorites_list name="license-maven-plugin" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ThirdPartyLicenseRegister_Test.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister_Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="11" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThirdPartyLicenseRegister.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="5" selection-start="1463" selection-end="1463" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VersionMappingParser.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="585" selection-end="585" vertical-scroll-proportion="0.44313148">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VersionMappingParser_WellKnownLicenseTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_WellKnownLicenseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="36" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -451,7 +483,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../sandboxes" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
     <option name="myDateState">
@@ -464,22 +496,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/target/generated-sources/plugin/org/codehaus/mojo/license/Licensee.java" />
-        <option value="$PROJECT_DIR$/target/generated-sources/plugin/org/codehaus/mojo/license/fetchlicenses/Licensee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/LicenseData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/Text.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister_Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/Licensee.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/Licensee_Test.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/GavCoordinates.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/Outcome_Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/Outcome.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/FetchLicensesMojo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/LicenseObligations.java" />
         <option value="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/sample-usage/pom.xml" />
         <option value="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/src/main/java/com/github/signed/sandboxes/maven/MyMojo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/VersionMappingParser_Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/MappingBuilder.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_WellKnownLicenseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java" />
       </list>
     </option>
   </component>
@@ -532,7 +564,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -574,24 +606,312 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codehaus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codehaus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fetchlicenses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codehaus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fetchlicenses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codehaus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codehaus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fetchlicenses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codehaus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="license" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fetchlicenses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="224" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="233" />
-    <property name="OverrideImplement.combined" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="224" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="233" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="224" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/pom.xml" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="239" />
@@ -606,9 +926,9 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
@@ -617,15 +937,16 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="last.edited.regexp" value="well-known-license://apache2 &lt;- 12.4" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="org.codehaus.mojo.license.fetchlicenses" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.codehaus.mojo.license" />
@@ -644,38 +965,11 @@
       <recent name="org.codehaus.mojo.license.fetchlicenses" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.codehaus.mojo.license.fetchlicenses.repository" />
       <recent name="org.codehaus.mojo.license.fetchlicenses" />
     </key>
   </component>
-  <component name="RunManager" selected="Remote.debug maven">
-    <configuration default="false" name="Outcome_Test.doNotThrowExceptionOnSuccess" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.codehaus.mojo.license.fetchlicenses.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="license-maven-plugin" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="org.codehaus.mojo.license.fetchlicenses" />
-      <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.Outcome_Test" />
-      <option name="METHOD_NAME" value="doNotThrowExceptionOnSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.VersionMappingParser_WellKnownLicenseTest">
     <configuration default="false" name="Outcome_Test" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -738,7 +1032,7 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="Licensee_Test.putTheLicenseTextIntoTheThirdPartyLicenseDirectory" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="Licensee_Test" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="org.codehaus.mojo.license.fetchlicenses.*" />
@@ -750,8 +1044,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.codehaus.mojo.license.fetchlicenses" />
       <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.Licensee_Test" />
-      <option name="METHOD_NAME" value="putTheLicenseTextIntoTheThirdPartyLicenseDirectory" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -766,18 +1060,46 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="Licensee_Test" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="VersionMappingParser_Test" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="org.codehaus.mojo.license.fetchlicenses.*" />
+          <option name="PATTERN" value="org.codehaus.mojo.license.fetchlicenses.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="license-maven-plugin" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.codehaus.mojo.license.fetchlicenses" />
-      <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.Licensee_Test" />
+      <option name="PACKAGE_NAME" value="org.codehaus.mojo.license.fetchlicenses.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.repository.VersionMappingParser_Test" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="VersionMappingParser_WellKnownLicenseTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.codehaus.mojo.license.fetchlicenses.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="license-maven-plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.codehaus.mojo.license.fetchlicenses.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.codehaus.mojo.license.fetchlicenses.repository.VersionMappingParser_WellKnownLicenseTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -808,19 +1130,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="GLUE" />
@@ -835,6 +1144,19 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -888,20 +1210,20 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.Outcome_Test.doNotThrowExceptionOnSuccess" />
+      <item index="0" class="java.lang.String" itemvalue="Remote.debug maven" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.Outcome_Test" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.ThirdPartyLicenseRegister_Test" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Licensee_Test.putTheLicenseTextIntoTheThirdPartyLicenseDirectory" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Licensee_Test" />
-      <item index="5" class="java.lang.String" itemvalue="Remote.debug maven" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Licensee_Test" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.VersionMappingParser_Test" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.VersionMappingParser_WellKnownLicenseTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Outcome_Test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Licensee_Test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Licensee_Test.putTheLicenseTextIntoTheThirdPartyLicenseDirectory" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ThirdPartyLicenseRegister_Test" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Outcome_Test.doNotThrowExceptionOnSuccess" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.VersionMappingParser_WellKnownLicenseTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VersionMappingParser_Test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ThirdPartyLicenseRegister_Test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Outcome_Test" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Licensee_Test" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -972,7 +1294,11 @@
       <created>1373017959792</created>
       <updated>1373017959792</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="more logging">
+      <created>1373026888948</created>
+      <updated>1373026888948</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -997,18 +1323,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-3" width="1924" height="1172" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.040874526" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33555132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295238" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295238" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295238" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295238" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1016,11 +1343,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3388474" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32666665" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32017076" sideWeight="0.6704762" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31238094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33555132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30416223" sideWeight="0.6644487" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1067,7 +1393,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="log instead of throwing an exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="well-known-license protocol is parsed" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1096,6 +1422,8 @@
     <MESSAGE value="The license Text is written into the thirdPartLicenses directory" />
     <MESSAGE value="Restructured test" />
     <MESSAGE value="log instead of throwing an exception" />
+    <MESSAGE value="more logging" />
+    <MESSAGE value="well-known-license protocol is parsed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1105,67 +1433,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="418" column="16" selection-start="12948" selection-end="12948" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1-sources.jar!/org/apache/commons/collections/Closure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="17" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.27859238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/Outcome_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="1" selection-start="843" selection-end="843" vertical-scroll-proportion="0.66109425">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#243#360#0" expanded="false" />
-            <element signature="e#353#354#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/Outcome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="348" selection-end="348" vertical-scroll-proportion="0.24264705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/Licensee_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/FetchLicensesMojo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="2516" selection-end="2516" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#3363#3539#0" expanded="true" />
-            <element signature="e#3528#3529#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/Licensee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="1" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="42" selection-start="683" selection-end="683" vertical-scroll-proportion="0.19648094">
           <folding />
         </state>
       </provider>
@@ -1179,50 +1449,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/src/main/java/com/github/signed/sandboxes/maven/LegalRelevantFiles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="105" selection-end="105" vertical-scroll-proportion="0.025817556">
-          <folding />
-        </state>
+        <state line="4" column="17" selection-start="105" selection-end="105" vertical-scroll-proportion="0.025817556" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/src/main/java/com/github/signed/sandboxes/maven/ZipDumper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="24" selection-start="649" selection-end="649" vertical-scroll-proportion="0.38726333">
-          <folding />
-        </state>
+        <state line="21" column="24" selection-start="649" selection-end="649" vertical-scroll-proportion="0.38726333" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/src/main/java/com/github/signed/sandboxes/maven/MyMojo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="1" selection-start="5103" selection-end="5103" vertical-scroll-proportion="0.6089109">
-          <folding />
-        </state>
+        <state line="130" column="1" selection-start="5103" selection-end="5103" vertical-scroll-proportion="0.6089109" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/sample-usage/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="25" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$MAVEN_REPOSITORY$/com/google/guava/guava/14.0.1/guava-14.0.1.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="16" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$MAVEN_REPOSITORY$/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="57" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.41055718">
+        <state line="28" column="57" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.41055718" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="11" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/ThirdPartyLicenseRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="5" selection-start="1463" selection-end="1463" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/applications/java/java6/src.zip!/java/util/regex/Pattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2431" column="59" selection-start="89259" selection-end="89259" vertical-scroll-proportion="0.35683453">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser_WellKnownLicenseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="36" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/MappingBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="8" selection-start="284" selection-end="284" vertical-scroll-proportion="0.18320611">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/codehaus/mojo/license/fetchlicenses/repository/VersionMappingParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="585" selection-end="585" vertical-scroll-proportion="0.44313148">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

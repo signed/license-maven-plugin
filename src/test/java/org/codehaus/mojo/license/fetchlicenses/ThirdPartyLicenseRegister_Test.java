@@ -1,6 +1,7 @@
 package org.codehaus.mojo.license.fetchlicenses;
 
 import org.apache.commons.io.FileUtils;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
@@ -29,6 +30,7 @@ public class ThirdPartyLicenseRegister_Test {
     }
 
     @Test
+    @Ignore
     public void returnAvailableLicenseInformationToCaller() throws Exception {
         writeLicenseFor(coordinates, "LicenseText");
 
@@ -41,9 +43,15 @@ public class ThirdPartyLicenseRegister_Test {
     }
 
     private void writeLicenseFor(GavCoordinates coordinates, String licenseText) throws IOException {
+        File metaDataDirectory = licenseRegister.newFolder(coordinates.groupId, coordinates.artifactId);
+        File mappingFile = new File(metaDataDirectory, "version-mapping");
+        FileUtils.writeStringToFile(mappingFile, "folder.version <- version", "UTF-8");
+
+
         File directory = licenseRegister.newFolder(coordinates.groupId, coordinates.artifactId, coordinates.version);
         File licenseFile = new File(directory, "LICENSE.txt");
         licenseFile.createNewFile();
+
         FileUtils.writeStringToFile(licenseFile, licenseText, "UTF-8");
     }
 

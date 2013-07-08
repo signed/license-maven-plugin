@@ -206,10 +206,13 @@
       <module fileurl="file://$PROJECT_DIR$/license-maven-plugin.iml" filepath="$PROJECT_DIR$/license-maven-plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/maven-plugin-development.iml" filepath="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/maven-plugin-development.iml" />
       <module fileurl="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/maven-plugin-development.iml" filepath="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/maven-plugin-development.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/maven-plugin-development.iml" filepath="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/maven-plugin-development.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-license-examples/outdated-url/outdated-url.iml" filepath="$PROJECT_DIR$/../maven-license-examples/outdated-url/outdated-url.iml" />
       <module fileurl="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/plugin/plugin.iml" filepath="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/plugin/plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/plugin.iml" filepath="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/plugin.iml" filepath="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/plugin/plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/sample-usage/sample-usage.iml" filepath="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/sample-usage/sample-usage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/sample-usage/sample-usage.iml" filepath="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/sample-usage/sample-usage.iml" />
       <module fileurl="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/sample-usage/sample-usage.iml" filepath="$PROJECT_DIR$/../sandboxes/sandbox-maven/maven-plugin-development/license-managment/sample-usage/sample-usage.iml" />
       <module fileurl="file://$PROJECT_DIR$/../sandboxes/sandbox-maven/license-plugin/single-module/sandbox-license-plugin.iml" filepath="$PROJECT_DIR$/../sandboxes/sandbox-maven/license-plugin/single-module/sandbox-license-plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-license-examples/wrong-url/wrong-url.iml" filepath="$PROJECT_DIR$/../maven-license-examples/wrong-url/wrong-url.iml" />
@@ -246,15 +249,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.google.guava:guava:14.0.1">
+    <library name="Maven: com.google.guava:guava:14.0">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/14.0.1/guava-14.0.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/14.0/guava-14.0.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/14.0.1/guava-14.0.1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/14.0/guava-14.0-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/14.0.1/guava-14.0.1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/14.0/guava-14.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.jcraft:jsch:0.1.38">
