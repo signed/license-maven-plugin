@@ -1,7 +1,7 @@
 package org.codehaus.mojo.license.fetchlicenses;
 
 import org.apache.commons.io.FileUtils;
-import org.codehaus.mojo.license.fetchlicenses.repository.MappingBuilder;
+import org.codehaus.mojo.license.fetchlicenses.repository.VersionMappingBuilder;
 import org.codehaus.mojo.license.fetchlicenses.repository.VersionMappingParser;
 
 import java.io.File;
@@ -19,7 +19,7 @@ public class ThirdPartyLicenseRegister {
         File versionMappingFile = new File(repositoryRoot, coordinates.groupId + "/" + coordinates.artifactId + "/" + "version-mapping");
         if(versionMappingFile.isFile()) {
             String mappingsAsString = readMappingFile(versionMappingFile);
-            new VersionMappingParser(new MappingBuilder()).parseMapping(mappingsAsString);
+            new VersionMappingParser(new VersionMappingBuilder()).parseMapping(mappingsAsString);
             String[] split = mappingsAsString.split("<-");
             System.out.println(split[0].trim());
             System.out.println(split[1].trim());

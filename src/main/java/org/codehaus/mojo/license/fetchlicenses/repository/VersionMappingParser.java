@@ -11,9 +11,9 @@ public class VersionMappingParser {
     public static final String lineFormatRegex = format("(^%s|%s)://(.+)<-(.+)$", WellKnownLicenseProtocol, SubDirectoryProtocol);
 
     private final static Pattern locationPattern = Pattern.compile("://([^\\s]+)\\s*<-");
-    private final MappingBuilder builder;
+    private final VersionMappingBuilder builder;
 
-    public VersionMappingParser(MappingBuilder builder) {
+    public VersionMappingParser(VersionMappingBuilder builder) {
         this.builder = builder;
     }
 

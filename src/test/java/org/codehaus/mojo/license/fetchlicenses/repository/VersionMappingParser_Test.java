@@ -9,7 +9,7 @@ public class VersionMappingParser_Test {
 
     @Test
     public void doNotTalkToTheBuilderIfProtocolIsUnKnown() throws Exception {
-        MappingBuilder builder = mock(MappingBuilder.class);
+        VersionMappingBuilder builder = mock(VersionMappingBuilder.class);
         new VersionMappingParser(builder).parseLine("un-known-protocol://sky <- 12.04");
         verifyZeroInteractions(builder);
     }

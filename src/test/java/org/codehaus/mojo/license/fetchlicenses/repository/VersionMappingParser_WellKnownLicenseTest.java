@@ -7,7 +7,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
 public class VersionMappingParser_WellKnownLicenseTest {
-    private final MappingBuilder mock = mock(MappingBuilder.class);
+    private final VersionMappingBuilder mock = mock(VersionMappingBuilder.class);
 
     @Before
     public void parse() throws Exception {

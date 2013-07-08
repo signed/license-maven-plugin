@@ -7,7 +7,7 @@ import static org.mockito.Mockito.verify;
 
 public class VersionMappingParser_FolderProtocolTest {
 
-    private final MappingBuilder builder = mock(MappingBuilder.class);
+    private final VersionMappingBuilder builder = mock(VersionMappingBuilder.class);
 
     @Test
     public void passTheSubDirectoryNameToTheBuilder() throws Exception {
