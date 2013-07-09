@@ -1,4 +1,4 @@
-package org.codehaus.mojo.license.fetchlicenses.repository;
+package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

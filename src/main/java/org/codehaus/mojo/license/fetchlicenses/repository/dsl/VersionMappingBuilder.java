@@ -1,4 +1,6 @@
-package org.codehaus.mojo.license.fetchlicenses.repository;
+package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
+
+import org.codehaus.mojo.license.fetchlicenses.repository.Target;
 
 import java.io.File;
 import java.util.HashSet;

@@ -1,11 +1,14 @@
-package org.codehaus.mojo.license.fetchlicenses.repository;
+package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
+
+import org.codehaus.mojo.license.fetchlicenses.repository.MappingRule;
+import org.codehaus.mojo.license.fetchlicenses.repository.Target;
 
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class VersionMappingRule {
+public class VersionMappingRule implements MappingRule {
 
     private final Map<String, Target> versionToTarget = new HashMap<String, Target>();
 
@@ -22,5 +25,4 @@ public class VersionMappingRule {
     public File getBaseDirectory(String version) {
         return versionToTarget.get(version).directory;
     }
-
 }

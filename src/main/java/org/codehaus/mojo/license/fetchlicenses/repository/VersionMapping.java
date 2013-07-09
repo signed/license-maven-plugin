@@ -6,9 +6,9 @@ import java.util.Collection;
 
 public class VersionMapping {
 
-    private Collection<VersionMappingRule> rules = new ArrayList<VersionMappingRule>();
+    private Collection<MappingRule> rules = new ArrayList<MappingRule>();
 
-    public void addRule(VersionMappingRule rule) {
+    public void addRule(MappingRule rule) {
         rules.add(rule);
     }
 
@@ -17,7 +17,7 @@ public class VersionMapping {
     }
 
     public File rootDirectoryForVersion(String version) {
-        for (VersionMappingRule rule : rules) {
+        for (MappingRule rule : rules) {
             if (rule.appliesTo(version)) {
                 return rule.getBaseDirectory(version);
             }

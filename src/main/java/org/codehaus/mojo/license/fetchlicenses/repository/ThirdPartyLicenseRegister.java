@@ -5,6 +5,9 @@ import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.Text;
+import org.codehaus.mojo.license.fetchlicenses.repository.dsl.RuleProductionListener;
+import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingBuilder;
+import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingParser;
 
 import java.io.File;
 import java.io.IOException;
@@ -52,7 +55,7 @@ public class ThirdPartyLicenseRegister {
     private void loadMapping(File artifactDirectory, File versionMappingFile, final VersionMapping mapping) {
         String mappingsAsString = readMappingFile(versionMappingFile);
         VersionMappingBuilder builder = new VersionMappingBuilder(wellKnownLicenseDirectory, artifactDirectory, new RuleProductionListener() {
-            public void produced(VersionMappingRule rule) {
+            public void produced(MappingRule rule) {
                 mapping.addRule(rule);
             }
         });

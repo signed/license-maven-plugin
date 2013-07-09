@@ -1,5 +1,7 @@
 package org.codehaus.mojo.license.fetchlicenses.repository;
 
+import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingBuilder;
+import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingParser;
 import org.junit.Before;
 import org.junit.Test;
 
