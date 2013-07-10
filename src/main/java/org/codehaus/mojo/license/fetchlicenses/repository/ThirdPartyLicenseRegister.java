@@ -1,13 +1,11 @@
 package org.codehaus.mojo.license.fetchlicenses.repository;
 
-import org.apache.commons.io.FileUtils;
 import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.Text;
 
 import java.io.File;
-import java.io.IOException;
 
 public class ThirdPartyLicenseRegister {
 
@@ -50,17 +48,5 @@ public class ThirdPartyLicenseRegister {
             return  new File(artifactDirectory, target.subDirectory);
         }
         throw new RuntimeException("not supported target");
-    }
-
-    public static class TextReader {
-        public Text read(File file) {
-            try {
-                String string = FileUtils.readFileToString(file, "UTF-8");
-                return new Text(string);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
-
     }
 }
