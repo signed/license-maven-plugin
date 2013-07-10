@@ -11,7 +11,6 @@ public class ThirdPartyLicenseRegister {
 
     private final TextReader textReader = new TextReader();
     private final FileRegisterStructure structure;
-
     private final VersionMappingLoader loader;
 
     public ThirdPartyLicenseRegister(FileRegisterStructure structure, VersionMappingLoader loader) {
