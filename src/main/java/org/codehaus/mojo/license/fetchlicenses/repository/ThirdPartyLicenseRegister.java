@@ -80,7 +80,7 @@ public class ThirdPartyLicenseRegister {
 
     private Text read(File licenseFile) {
         try {
-            String string = FileUtils.readFileToString(licenseFile);
+            String string = FileUtils.readFileToString(licenseFile, "UTF-8");
             return new Text(string);
         } catch (IOException e) {
             throw new RuntimeException(e);
