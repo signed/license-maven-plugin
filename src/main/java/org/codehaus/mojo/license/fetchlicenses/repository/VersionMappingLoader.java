@@ -35,7 +35,7 @@ public class VersionMappingLoader {
         new VersionMappingParser(builder).parseMapping(mappingsAsString);
     }
 
-    public VersionMapping loadVersionMapping(GavCoordinates coordinates) {
+    public VersionMapping loadVersionMappingFor(GavCoordinates coordinates) {
         final VersionMapping mapping = new VersionMapping();
         File versionMappingFile = translator.versionMappingFileFor(coordinates);
         if (versionMappingFile.isFile()) {
