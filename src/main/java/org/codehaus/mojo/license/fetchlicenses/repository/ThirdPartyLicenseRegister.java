@@ -34,17 +34,19 @@ public class ThirdPartyLicenseRegister {
     }
 
     private Text readLicense(GavCoordinates coordinates, VersionMapping mapping, File artifactDirectory) {
-        File root;
         Target target = mapping.target(coordinates.version);
-        if( target instanceof WellKnownLicense) {
-            root = new File(wellKnownLicenseDirectory, target.subDirectory);
-        }else if(target instanceof  SubDirectory) {
-            root = new File(artifactDirectory, target.subDirectory);
-        }else {
-            throw new RuntimeException("unsupported target");
-        }
+        File root = resolveTarget(artifactDirectory, target);
         File licenseFileIn = new File(root, "LICENSE.txt");
         return read(licenseFileIn);
+    }
+
+    private File resolveTarget(File artifactDirectory, Target target) {
+        if( target instanceof WellKnownLicense) {
+            return new File(wellKnownLicenseDirectory, target.subDirectory);
+        }else if(target instanceof SubDirectory) {
+            return  new File(artifactDirectory, target.subDirectory);
+        }
+        throw new RuntimeException("not supported target");
     }
 
     private VersionMapping loadVersionMapping(File artifactDirectory, GavCoordinates coordinates) {
