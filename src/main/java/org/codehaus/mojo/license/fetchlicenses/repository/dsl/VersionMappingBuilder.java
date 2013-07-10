@@ -1,7 +1,7 @@
 package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
 
+import org.codehaus.mojo.license.fetchlicenses.repository.Reference;
 import org.codehaus.mojo.license.fetchlicenses.repository.SubDirectory;
-import org.codehaus.mojo.license.fetchlicenses.repository.Target;
 import org.codehaus.mojo.license.fetchlicenses.repository.WellKnownLicense;
 
 import java.io.File;
@@ -14,7 +14,7 @@ public class VersionMappingBuilder {
     private final File artifactDirectory;
     private final RuleProductionListener listener;
 
-    private Target current;
+    private Reference current;
     private Set<String> versions = new HashSet<String>();
 
     public VersionMappingBuilder(File wellKnownLicenseDirectory, File artifactDirectory, RuleProductionListener listener) {

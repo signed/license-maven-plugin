@@ -15,7 +15,7 @@ public class VersionMapping {
         return null !=  target(version);
     }
 
-    public Target target(String version) {
+    public Reference target(String version) {
         for (MappingRule rule : rules) {
             if (rule.appliesTo(version)) {
                 return rule.getTarget(version);

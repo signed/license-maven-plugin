@@ -17,7 +17,7 @@ public class VersionMappingRule_Test {
         version.add("1.0");
         version.add("1.5");
         version.add("3.0");
-        MappingRule mappingRule = new VersionMappingRule(version, new Target(new File(""), "sub"));
+        MappingRule mappingRule = new VersionMappingRule(version, new Reference(new File(""), "sub"));
 
         Gson gson = new GsonBuilder().create();
         System.out.println(gson.toJson(mappingRule));

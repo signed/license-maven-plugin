@@ -14,21 +14,21 @@ public class LicenseReader {
     }
 
     public Text readLicense(GavCoordinates coordinates, VersionMapping mapping) {
-        Target target = mapping.target(coordinates.version);
-        File root = resolveTarget(target, coordinates);
+        Reference reference = mapping.target(coordinates.version);
+        File root = resolveTarget(reference, coordinates);
         File licenseFileIn = new File(root, "LICENSE.txt");
         return textReader.read(licenseFileIn);
     }
 
-    private File resolveTarget(Target target, GavCoordinates coordinates) {
+    private File resolveTarget(Reference reference, GavCoordinates coordinates) {
         File parent;
-        if (target instanceof WellKnownLicense) {
+        if (reference instanceof WellKnownLicense) {
             parent = structure.getWellKnownLicenseDirectory();
-        } else if (target instanceof SubDirectory) {
+        } else if (reference instanceof SubDirectory) {
             parent = structure.artifactDirectoryFor(coordinates);
         } else {
             throw new RuntimeException("not supported target");
         }
-        return new File(parent, target.subDirectory);
+        return new File(parent, reference.subDirectory);
     }
 }

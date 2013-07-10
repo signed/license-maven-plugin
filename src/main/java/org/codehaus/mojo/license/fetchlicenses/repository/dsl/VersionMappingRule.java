@@ -1,7 +1,7 @@
 package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
 
 import org.codehaus.mojo.license.fetchlicenses.repository.MappingRule;
-import org.codehaus.mojo.license.fetchlicenses.repository.Target;
+import org.codehaus.mojo.license.fetchlicenses.repository.Reference;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,11 +9,11 @@ import java.util.Set;
 
 public class VersionMappingRule implements MappingRule {
 
-    private final Map<String, Target> versionToTarget = new HashMap<String, Target>();
+    private final Map<String, Reference> versionToTarget = new HashMap<String, Reference>();
 
-    public VersionMappingRule(Set<String> versions, Target target) {
+    public VersionMappingRule(Set<String> versions, Reference reference) {
         for (String version : versions) {
-            versionToTarget.put(version, target);
+            versionToTarget.put(version, reference);
         }
     }
 
@@ -21,7 +21,7 @@ public class VersionMappingRule implements MappingRule {
         return versionToTarget.keySet().contains(version);
     }
 
-    public Target getTarget(String version) {
+    public Reference getTarget(String version) {
         return versionToTarget.get(version);
     }
 }
