@@ -15,13 +15,15 @@ public class LicenseReader {
 
     public Text readLicense(GavCoordinates coordinates, VersionMapping mapping) {
         Reference reference = mapping.target(coordinates.version);
+        return textReader.read(fileToLoad(coordinates, reference));
+    }
+
+    private File fileToLoad(GavCoordinates coordinates, Reference reference) {
         File root = resolveTarget(reference, coordinates);
-        File licenseFileIn = new File(root, "LICENSE.txt");
-        return textReader.read(licenseFileIn);
+        return new File(root, "LICENSE.txt");
     }
 
     private File resolveTarget(Reference reference, final GavCoordinates coordinates) {
         return reference.accept(new ResolveConfiguredEndpoint(coordinates, structure));
     }
-
 }
