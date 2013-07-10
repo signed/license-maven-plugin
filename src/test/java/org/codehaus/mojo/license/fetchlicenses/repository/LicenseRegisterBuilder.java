@@ -23,9 +23,9 @@ public class LicenseRegisterBuilder extends ExternalResource{
         licenseRegister.delete();
     }
 
-    public void putLicenseInformationIntoSubdirectory(String legal, GavCoordinates coordinates, TemporaryFolder deleteMeLater) throws IOException {
-        File directory = deleteMeLater.newFolder("group", "id", coordinates.artifactId, legal);
-        writeLicenseInformationTo(directory, "LicenseText");
+    public void putLicenseInformationIntoSubdirectory(String legal, String licenseText, GavCoordinates coordinates) throws IOException {
+        File directory = licenseRegister.newFolder("group", "id", coordinates.artifactId, legal);
+        writeLicenseInformationTo(directory, licenseText);
     }
 
     public void addMetaDataPointingToSubdirectory(String legal, GavCoordinates coordinates) throws IOException {

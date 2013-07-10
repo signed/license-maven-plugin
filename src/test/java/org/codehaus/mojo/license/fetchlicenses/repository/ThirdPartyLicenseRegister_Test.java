@@ -31,7 +31,7 @@ public class ThirdPartyLicenseRegister_Test {
     @Test
     public void returnLicenseInformationInSubdirectoryToCaller() throws Exception {
         licenseRegisterBuilder.addMetaDataPointingToSubdirectory("legal", artifact);
-        licenseRegisterBuilder.putLicenseInformationIntoSubdirectory("legal", artifact, licenseRegisterBuilder.licenseRegister);
+        licenseRegisterBuilder.putLicenseInformationIntoSubdirectory("legal", "LicenseText", artifact);
 
         licenseRegister().lookup(artifact, callback);
 
