@@ -20,15 +20,8 @@ public class LicenseReader {
         return textReader.read(licenseFileIn);
     }
 
-    private File resolveTarget(Reference reference, GavCoordinates coordinates) {
-        File parent;
-        if (reference instanceof WellKnownLicense) {
-            parent = structure.getWellKnownLicenseDirectory();
-        } else if (reference instanceof SubDirectory) {
-            parent = structure.artifactDirectoryFor(coordinates);
-        } else {
-            throw new RuntimeException("not supported target");
-        }
-        return new File(parent, reference.subDirectory);
+    private File resolveTarget(Reference reference, final GavCoordinates coordinates) {
+        return reference.accept(new ResolveConfiguredEndpoint(coordinates, structure));
     }
+
 }
