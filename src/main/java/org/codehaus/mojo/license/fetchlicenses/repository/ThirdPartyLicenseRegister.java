@@ -10,25 +10,21 @@ import java.io.File;
 public class ThirdPartyLicenseRegister {
 
     private final TextReader textReader = new TextReader();
-    private final CoordinatesToPathTranslator translator;
-
-    private final File wellKnownLicenseDirectory;
+    private final FileRegisterStructure structure;
 
     private final VersionMappingLoader loader;
 
     public ThirdPartyLicenseRegister(File repositoryRoot) {
-        this.wellKnownLicenseDirectory = new File(repositoryRoot, "well-known-licenses");
-        loader = new VersionMappingLoader(repositoryRoot);
-        translator = new CoordinatesToPathTranslator(repositoryRoot);
+        structure = new FileRegisterStructure(repositoryRoot);
+        loader = new VersionMappingLoader(structure);
     }
 
     public void lookup(GavCoordinates coordinates, final LicenseLookupCallback callback) {
-        File artifactDirectory = translator.artifactDirectory(coordinates);
-        VersionMapping mapping = loader.loadVersionMapping(coordinates, wellKnownLicenseDirectory);
-
+        VersionMapping mapping = loader.loadVersionMapping(coordinates);
         if (!mapping.hasMappingForVersion(coordinates.version)) {
             callback.missingLicenseInformationFor(coordinates);
         } else {
+            File artifactDirectory = structure.artifactDirectoryFor(coordinates);
             Text license = readLicense(coordinates, mapping, artifactDirectory);
             callback.found(new LicenseObligations(coordinates, license));
         }
@@ -43,7 +39,7 @@ public class ThirdPartyLicenseRegister {
 
     private File resolveTarget(File artifactDirectory, Target target) {
         if( target instanceof WellKnownLicense) {
-            return new File(wellKnownLicenseDirectory, target.subDirectory);
+            return new File(structure.getWellKnownLicenseDirectory(), target.subDirectory);
         }else if(target instanceof SubDirectory) {
             return  new File(artifactDirectory, target.subDirectory);
         }

@@ -11,10 +11,10 @@ import java.io.IOException;
 
 public class VersionMappingLoader {
 
-    private final CoordinatesToPathTranslator translator;
+    private final FileRegisterStructure translator;
 
-    public VersionMappingLoader(File repositoryRoot) {
-        translator = new CoordinatesToPathTranslator(repositoryRoot);
+    public VersionMappingLoader(FileRegisterStructure translator) {
+        this.translator = translator;
     }
 
     public String readMappingFile(File versionMappingFile) {
@@ -35,11 +35,11 @@ public class VersionMappingLoader {
         new VersionMappingParser(builder).parseMapping(mappingsAsString);
     }
 
-    public VersionMapping loadVersionMapping(GavCoordinates coordinates, File wellKnownLicenseDirectory) {
+    public VersionMapping loadVersionMapping(GavCoordinates coordinates) {
         final VersionMapping mapping = new VersionMapping();
-        File versionMappingFile = translator.versionMappingFile(coordinates);
+        File versionMappingFile = translator.versionMappingFileFor(coordinates);
         if (versionMappingFile.isFile()) {
-            loadMapping(translator.artifactDirectory(coordinates), versionMappingFile, mapping, wellKnownLicenseDirectory);
+            loadMapping(translator.artifactDirectoryFor(coordinates), versionMappingFile, mapping, translator.getWellKnownLicenseDirectory());
         }
         return mapping;
     }
