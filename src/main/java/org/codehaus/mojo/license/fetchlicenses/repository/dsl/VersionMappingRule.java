@@ -3,7 +3,6 @@ package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
 import org.codehaus.mojo.license.fetchlicenses.repository.MappingRule;
 import org.codehaus.mojo.license.fetchlicenses.repository.Target;
 
-import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -22,7 +21,7 @@ public class VersionMappingRule implements MappingRule {
         return versionToTarget.keySet().contains(version);
     }
 
-    public File getBaseDirectory(String version) {
-        return versionToTarget.get(version).directory;
+    public Target getTarget(String version) {
+        return versionToTarget.get(version);
     }
 }

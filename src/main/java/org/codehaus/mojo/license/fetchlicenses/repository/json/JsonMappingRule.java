@@ -1,8 +1,8 @@
 package org.codehaus.mojo.license.fetchlicenses.repository.json;
 
 import org.codehaus.mojo.license.fetchlicenses.repository.MappingRule;
+import org.codehaus.mojo.license.fetchlicenses.repository.Target;
 
-import java.io.File;
 import java.util.Set;
 
 public class JsonMappingRule implements MappingRule {
@@ -18,7 +18,7 @@ public class JsonMappingRule implements MappingRule {
         return versions.contains(version);
     }
 
-    public File getBaseDirectory(String version) {
+    public Target getTarget(String version) {
         throw new RuntimeException("not implemented yet");
     }
 }

@@ -5,7 +5,6 @@ import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.Text;
-import org.hamcrest.MatcherAssert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
@@ -15,6 +14,7 @@ import java.io.File;
 import java.io.IOException;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
@@ -33,27 +33,58 @@ public class ThirdPartyLicenseRegister_Test {
     }
 
     @Test
-    public void returnAvailableLicenseInformationToCaller() throws Exception {
-        writeLicenseFor(coordinates, "LicenseText");
+    public void returnLicenseInformationInSubdirectoryToCaller() throws Exception {
+        addMetaDataPointingToSubdirectory(coordinates, "legal");
+        putLicenseInformationIntoSubdirectory("legal");
 
         licenseRegister().lookup(coordinates, callback);
 
-        ArgumentCaptor<LicenseObligations> captor = ArgumentCaptor.forClass(LicenseObligations.class);
-        verify(callback).found(captor.capture());
-
-        MatcherAssert.assertThat(captor.getValue().license, is(new Text("LicenseText")));
+        assertThat(returnedLicenseText(), is(text("LicenseText")));
     }
 
-    private void writeLicenseFor(GavCoordinates coordinates, String licenseText) throws IOException {
+    @Test
+    public void returnWellKnownLicenseInformationToCaller() throws Exception {
+        addKnownLicense("apache", "The Apache License");
+        writeMetaDataFor(coordinates, "well-known-license://apache <- version");
+
+        licenseRegister().lookup(coordinates, callback);
+
+        assertThat(returnedLicenseText(), is(text("The Apache License")));
+    }
+
+    private Text text(String licenseText) {
+        return new Text(licenseText);
+    }
+
+    private Text returnedLicenseText() {
+        ArgumentCaptor<LicenseObligations> captor = ArgumentCaptor.forClass(LicenseObligations.class);
+        verify(callback).found(captor.capture());
+        return captor.getValue().license;
+    }
+
+    private void putLicenseInformationIntoSubdirectory(String legal) throws IOException {
+        File directory = licenseRegister.newFolder("group", "id", coordinates.artifactId, legal);
+        writeLicenseInformationTo(directory, "LicenseText");
+    }
+
+    private void addKnownLicense(String licenseName, String licenseText) throws IOException {
+        File apacheLicenseDirectory = licenseRegister.newFolder("well-known-licenses", licenseName);
+        writeLicenseInformationTo(apacheLicenseDirectory, licenseText);
+    }
+
+    private void addMetaDataPointingToSubdirectory(GavCoordinates coordinates, String legal) throws IOException {
+        writeMetaDataFor(coordinates, "sub-directory://" + legal + " <- version");
+    }
+
+    private void writeMetaDataFor(GavCoordinates coordinates, String metaData) throws IOException {
         File metaDataDirectory = licenseRegister.newFolder("group", "id", coordinates.artifactId);
         File mappingFile = new File(metaDataDirectory, "version-mapping");
-        FileUtils.writeStringToFile(mappingFile, "sub-directory://version <- version", "UTF-8");
+        FileUtils.writeStringToFile(mappingFile, metaData, "UTF-8");
+    }
 
-
-        File directory = licenseRegister.newFolder("group", "id", coordinates.artifactId, coordinates.version);
+    private void writeLicenseInformationTo(File directory, String licenseText) throws IOException {
         File licenseFile = new File(directory, "LICENSE.txt");
         licenseFile.createNewFile();
-
         FileUtils.writeStringToFile(licenseFile, licenseText, "UTF-8");
     }
 

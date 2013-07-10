@@ -29,12 +29,20 @@ public class ThirdPartyLicenseRegister {
         if (!mapping.hasMappingForVersion(coordinates.version)) {
             callback.missingLicenseInformationFor(coordinates);
         } else {
-            callback.found(new LicenseObligations(coordinates, readLicense(coordinates, mapping)));
+            callback.found(new LicenseObligations(coordinates, readLicense(coordinates, mapping, artifactDirectory)));
         }
     }
 
-    private Text readLicense(GavCoordinates coordinates, VersionMapping mapping) {
-        File root = mapping.pathWithinRepository(coordinates.version);
+    private Text readLicense(GavCoordinates coordinates, VersionMapping mapping, File artifactDirectory) {
+        File root;
+        Target target = mapping.target(coordinates.version);
+        if( target instanceof WellKnownLicense) {
+            root = new File(wellKnownLicenseDirectory, target.subDirectory);
+        }else if(target instanceof  SubDirectory) {
+            root = new File(artifactDirectory, target.subDirectory);
+        }else {
+            throw new RuntimeException("unsupported target");
+        }
         File licenseFileIn = new File(root, "LICENSE.txt");
         return read(licenseFileIn);
     }

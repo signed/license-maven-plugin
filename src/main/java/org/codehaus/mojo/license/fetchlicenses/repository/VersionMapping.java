@@ -1,6 +1,5 @@
 package org.codehaus.mojo.license.fetchlicenses.repository;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -13,13 +12,13 @@ public class VersionMapping {
     }
 
     public boolean hasMappingForVersion(String version) {
-        return null !=  pathWithinRepository(version);
+        return null !=  target(version);
     }
 
-    public File pathWithinRepository(String version) {
+    public Target target(String version) {
         for (MappingRule rule : rules) {
             if (rule.appliesTo(version)) {
-                return rule.getBaseDirectory(version);
+                return rule.getTarget(version);
             }
         }
         return null;
