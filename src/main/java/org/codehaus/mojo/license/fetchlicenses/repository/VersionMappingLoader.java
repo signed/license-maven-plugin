@@ -17,12 +17,13 @@ public class VersionMappingLoader {
         this.translator = translator;
     }
 
-    public String readMappingFile(File versionMappingFile) {
-        try {
-            return FileUtils.readFileToString(versionMappingFile, "UTF-8");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+    public VersionMapping loadVersionMappingFor(GavCoordinates coordinates) {
+        final VersionMapping mapping = new VersionMapping();
+        File versionMappingFile = translator.versionMappingFileFor(coordinates);
+        if (versionMappingFile.isFile()) {
+            loadMapping(translator.artifactDirectoryFor(coordinates), versionMappingFile, mapping, translator.getWellKnownLicenseDirectory());
         }
+        return mapping;
     }
 
     private void loadMapping(File artifactDirectory, File versionMappingFile, final VersionMapping mapping, File wellKnownLicenseDirectory1) {
@@ -35,12 +36,11 @@ public class VersionMappingLoader {
         new VersionMappingParser(builder).parseMapping(mappingsAsString);
     }
 
-    public VersionMapping loadVersionMappingFor(GavCoordinates coordinates) {
-        final VersionMapping mapping = new VersionMapping();
-        File versionMappingFile = translator.versionMappingFileFor(coordinates);
-        if (versionMappingFile.isFile()) {
-            loadMapping(translator.artifactDirectoryFor(coordinates), versionMappingFile, mapping, translator.getWellKnownLicenseDirectory());
+    private String readMappingFile(File versionMappingFile) {
+        try {
+            return FileUtils.readFileToString(versionMappingFile, "UTF-8");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
-        return mapping;
     }
 }
