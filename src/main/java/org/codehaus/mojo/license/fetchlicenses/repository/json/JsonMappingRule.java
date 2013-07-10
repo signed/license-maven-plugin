@@ -7,11 +7,11 @@ import java.util.Set;
 
 public class JsonMappingRule implements MappingRule {
     private final Set<String> versions;
-    private String license = "/well-known/apache2/";
-    private String notice = "NOTICE.txt";
+    private final Set<Pointer> pointers;
 
-    public JsonMappingRule(Set<String> versions) {
+    public JsonMappingRule(Set<String> versions, Set<Pointer> pointers) {
         this.versions = versions;
+        this.pointers = pointers;
     }
 
     public boolean appliesTo(String version) {
@@ -20,5 +20,13 @@ public class JsonMappingRule implements MappingRule {
 
     public Reference getTarget(String version) {
         throw new RuntimeException("not implemented yet");
+    }
+
+    public Set<String> versions() {
+        return versions;
+    }
+
+    public Set<Pointer> pointers() {
+        return pointers;
     }
 }
