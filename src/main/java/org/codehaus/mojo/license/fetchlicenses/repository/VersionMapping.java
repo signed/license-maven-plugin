@@ -13,10 +13,10 @@ public class VersionMapping {
     }
 
     public boolean hasMappingForVersion(String version) {
-        return null !=  rootDirectoryForVersion(version);
+        return null !=  pathWithinRepository(version);
     }
 
-    public File rootDirectoryForVersion(String version) {
+    public File pathWithinRepository(String version) {
         for (MappingRule rule : rules) {
             if (rule.appliesTo(version)) {
                 return rule.getBaseDirectory(version);

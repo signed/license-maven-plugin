@@ -34,7 +34,7 @@ public class ThirdPartyLicenseRegister {
     }
 
     private Text readLicense(GavCoordinates coordinates, VersionMapping mapping) {
-        File root = mapping.rootDirectoryForVersion(coordinates.version);
+        File root = mapping.pathWithinRepository(coordinates.version);
         File licenseFileIn = new File(root, "LICENSE.txt");
         return read(licenseFileIn);
     }

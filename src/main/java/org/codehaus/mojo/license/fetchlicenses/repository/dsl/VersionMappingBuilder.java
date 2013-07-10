@@ -1,6 +1,8 @@
 package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
 
+import org.codehaus.mojo.license.fetchlicenses.repository.SubDirectory;
 import org.codehaus.mojo.license.fetchlicenses.repository.Target;
+import org.codehaus.mojo.license.fetchlicenses.repository.WellKnownLicense;
 
 import java.io.File;
 import java.util.HashSet;
@@ -22,11 +24,11 @@ public class VersionMappingBuilder {
     }
 
     public void wellKnownLicense(String identifier) {
-        current = new Target(wellKnownLicenseDirectory, identifier);
+        current = new WellKnownLicense(wellKnownLicenseDirectory, identifier);
     }
 
     public void subDirectory(String directoryName) {
-        current = new Target(artifactDirectory,directoryName);
+        current = new SubDirectory(artifactDirectory,directoryName);
     }
 
     public void version(String version) {
