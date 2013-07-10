@@ -14,9 +14,9 @@ public class ThirdPartyLicenseRegister {
 
     private final VersionMappingLoader loader;
 
-    public ThirdPartyLicenseRegister(File repositoryRoot) {
-        structure = new FileRegisterStructure(repositoryRoot);
-        loader = new VersionMappingLoader(structure);
+    public ThirdPartyLicenseRegister(FileRegisterStructure structure, VersionMappingLoader loader) {
+        this.structure = structure;
+        this.loader = loader;
     }
 
     public void lookup(GavCoordinates coordinates, final LicenseLookupCallback callback) {

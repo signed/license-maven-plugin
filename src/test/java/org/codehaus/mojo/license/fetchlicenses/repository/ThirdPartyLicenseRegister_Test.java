@@ -49,7 +49,8 @@ public class ThirdPartyLicenseRegister_Test {
     }
 
     private ThirdPartyLicenseRegister licenseRegister() {
-        return new ThirdPartyLicenseRegister(licenseRegisterBuilder.getRoot());
+        final FileRegisterStructure structure = new FileRegisterStructure(licenseRegisterBuilder.getRoot());
+        return new ThirdPartyLicenseRegister(structure, new VersionMappingLoader(structure));
     }
 
     private Text text(String licenseText) {
