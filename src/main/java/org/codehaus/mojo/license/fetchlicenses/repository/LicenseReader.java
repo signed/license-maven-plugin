@@ -21,11 +21,14 @@ public class LicenseReader {
     }
 
     private File resolveTarget(Target target, GavCoordinates coordinates) {
-        if( target instanceof WellKnownLicense) {
-            return new File(structure.getWellKnownLicenseDirectory(), target.subDirectory);
-        }else if(target instanceof SubDirectory) {
-            return  new File(structure.artifactDirectoryFor(coordinates), target.subDirectory);
+        File parent;
+        if (target instanceof WellKnownLicense) {
+            parent = structure.getWellKnownLicenseDirectory();
+        } else if (target instanceof SubDirectory) {
+            parent = structure.artifactDirectoryFor(coordinates);
+        } else {
+            throw new RuntimeException("not supported target");
         }
-        throw new RuntimeException("not supported target");
+        return new File(parent, target.subDirectory);
     }
 }
