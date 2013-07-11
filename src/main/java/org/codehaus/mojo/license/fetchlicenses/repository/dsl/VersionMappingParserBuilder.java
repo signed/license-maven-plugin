@@ -3,6 +3,7 @@ package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
 import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.VersionMappingParser;
 import org.codehaus.mojo.license.fetchlicenses.repository.FileRegisterStructure;
+import org.codehaus.mojo.license.fetchlicenses.repository.RuleProductionListener;
 
 import java.io.File;
 

@@ -1,6 +1,7 @@
 package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
 
 import org.codehaus.mojo.license.fetchlicenses.repository.MappingRule;
+import org.codehaus.mojo.license.fetchlicenses.repository.RuleProductionListener;
 import org.codehaus.mojo.license.fetchlicenses.repository.VersionMapping;
 
 class PopulateVersionMapping implements RuleProductionListener {

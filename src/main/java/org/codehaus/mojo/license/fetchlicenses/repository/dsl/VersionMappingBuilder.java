@@ -1,6 +1,7 @@
 package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
 
 import org.codehaus.mojo.license.fetchlicenses.repository.Reference;
+import org.codehaus.mojo.license.fetchlicenses.repository.RuleProductionListener;
 
 import java.io.File;
 import java.util.HashSet;

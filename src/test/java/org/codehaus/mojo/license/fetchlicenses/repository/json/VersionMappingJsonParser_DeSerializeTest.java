@@ -1,7 +1,7 @@
 package org.codehaus.mojo.license.fetchlicenses.repository.json;
 
 import org.codehaus.mojo.license.fetchlicenses.repository.MappingRule;
-import org.codehaus.mojo.license.fetchlicenses.repository.dsl.RuleProductionListener;
+import org.codehaus.mojo.license.fetchlicenses.repository.RuleProductionListener;
 import org.junit.Test;
 
 import java.util.ArrayList;
