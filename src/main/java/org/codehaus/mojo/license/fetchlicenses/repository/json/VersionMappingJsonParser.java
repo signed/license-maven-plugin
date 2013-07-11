@@ -11,9 +11,9 @@ import com.google.gson.JsonParseException;
 import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
 import com.google.gson.reflect.TypeToken;
+import org.codehaus.mojo.license.fetchlicenses.VersionMappingParser;
 import org.codehaus.mojo.license.fetchlicenses.repository.MappingRule;
 import org.codehaus.mojo.license.fetchlicenses.repository.dsl.RuleProductionListener;
-import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingParser;
 
 import java.lang.reflect.Type;
 import java.util.LinkedHashSet;
