@@ -4,6 +4,7 @@ import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.Text;
+import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingLoader;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;

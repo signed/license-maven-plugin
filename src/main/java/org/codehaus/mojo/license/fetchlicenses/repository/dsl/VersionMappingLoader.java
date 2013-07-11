@@ -1,10 +1,10 @@
-package org.codehaus.mojo.license.fetchlicenses.repository;
+package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
 
 import org.apache.commons.io.FileUtils;
 import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
-import org.codehaus.mojo.license.fetchlicenses.repository.dsl.RuleProductionListener;
-import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingBuilder;
-import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingParser;
+import org.codehaus.mojo.license.fetchlicenses.repository.FileRegisterStructure;
+import org.codehaus.mojo.license.fetchlicenses.repository.MappingRule;
+import org.codehaus.mojo.license.fetchlicenses.repository.VersionMapping;
 
 import java.io.File;
 import java.io.IOException;
