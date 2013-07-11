@@ -2,6 +2,7 @@ package org.codehaus.mojo.license.fetchlicenses.repository;
 
 import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.Text;
+import org.codehaus.mojo.license.fetchlicenses.repository.dsl.ResolveConfiguredEndpoint;
 
 import java.io.File;
 

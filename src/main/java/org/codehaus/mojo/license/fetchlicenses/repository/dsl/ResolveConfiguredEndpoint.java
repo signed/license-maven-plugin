@@ -1,6 +1,9 @@
-package org.codehaus.mojo.license.fetchlicenses.repository;
+package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
 
 import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
+import org.codehaus.mojo.license.fetchlicenses.repository.FileRegisterStructure;
+import org.codehaus.mojo.license.fetchlicenses.repository.Reference;
+import org.codehaus.mojo.license.fetchlicenses.repository.ReferenceVisitor;
 
 import java.io.File;
 

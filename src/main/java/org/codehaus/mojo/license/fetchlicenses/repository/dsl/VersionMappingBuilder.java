@@ -1,8 +1,6 @@
 package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
 
 import org.codehaus.mojo.license.fetchlicenses.repository.Reference;
-import org.codehaus.mojo.license.fetchlicenses.repository.SubDirectory;
-import org.codehaus.mojo.license.fetchlicenses.repository.WellKnownLicense;
 
 import java.io.File;
 import java.util.HashSet;
