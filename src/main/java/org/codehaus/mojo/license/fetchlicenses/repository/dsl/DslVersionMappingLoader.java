@@ -3,7 +3,6 @@ package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
 import org.apache.commons.io.FileUtils;
 import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.repository.FileRegisterStructure;
-import org.codehaus.mojo.license.fetchlicenses.repository.MappingRule;
 import org.codehaus.mojo.license.fetchlicenses.repository.VersionMapping;
 import org.codehaus.mojo.license.fetchlicenses.repository.VersionMappingLoader;
 
@@ -22,19 +21,10 @@ public class DslVersionMappingLoader implements VersionMappingLoader {
         final VersionMapping mapping = new VersionMapping();
         File versionMappingFile = translator.versionMappingFileFor(coordinates);
         if (versionMappingFile.isFile()) {
-            loadMapping(translator.artifactDirectoryFor(coordinates), versionMappingFile, mapping, translator.getWellKnownLicenseDirectory());
+            String mappingsAsString = readMappingFile(versionMappingFile);
+            parseMapping(mappingsAsString, new PopulateVersionMapping(mapping), translator, coordinates);
         }
         return mapping;
-    }
-
-    private void loadMapping(File artifactDirectory, File versionMappingFile, final VersionMapping mapping, File wellKnownLicenseDirectory1) {
-        String mappingsAsString = readMappingFile(versionMappingFile);
-        VersionMappingBuilder builder = new VersionMappingBuilder(wellKnownLicenseDirectory1, artifactDirectory, new RuleProductionListener() {
-            public void produced(MappingRule rule) {
-                mapping.addRule(rule);
-            }
-        });
-        new VersionMappingParser(builder).parseMapping(mappingsAsString);
     }
 
     private String readMappingFile(File versionMappingFile) {
@@ -43,5 +33,12 @@ public class DslVersionMappingLoader implements VersionMappingLoader {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private void parseMapping(String mappingsAsString, RuleProductionListener listener, FileRegisterStructure translator, GavCoordinates coordinates) {
+        File artifactDirectory = translator.artifactDirectoryFor(coordinates);
+        File wellKnownLicenseDirectory = translator.getWellKnownLicenseDirectory();
+        VersionMappingBuilder builder = new VersionMappingBuilder(wellKnownLicenseDirectory, artifactDirectory, listener);
+        new VersionMappingParser(builder).parseMapping(mappingsAsString);
     }
 }
