@@ -32,7 +32,6 @@ import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.Licensee;
 import org.codehaus.mojo.license.fetchlicenses.Outcome;
-import org.codehaus.mojo.license.fetchlicenses.repository.DslVersionMappingLoader;
 import org.codehaus.mojo.license.fetchlicenses.repository.FileRegisterStructure;
 import org.codehaus.mojo.license.fetchlicenses.repository.LicenseReader;
 import org.codehaus.mojo.license.fetchlicenses.repository.ThirdPartyLicenseRegister;
@@ -70,7 +69,7 @@ public class FetchLicensesMojo extends DownloadLicensesMojo {
         final GavCoordinates coordinates = new GavCoordinates(depProject.getGroupId(), depProject.getArtifactId(), depProject.getVersion());
         final FileRegisterStructure structure = new FileRegisterStructure(licensesRegisterRoot);
         VersionMappingParserBuilder versionMappingParserBuilder = new VersionMappingParserBuilder(structure);
-        VersionMappingLoader loader = new DslVersionMappingLoader(structure, versionMappingParserBuilder);
+        VersionMappingLoader loader = new VersionMappingLoader(structure, versionMappingParserBuilder);
         ThirdPartyLicenseRegister licenseRepository = new ThirdPartyLicenseRegister(loader, new LicenseReader(structure));
         final Licensee licensee = new Licensee(usedLicensesDirectory);
 
