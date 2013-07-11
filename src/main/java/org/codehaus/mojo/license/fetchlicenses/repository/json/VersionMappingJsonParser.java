@@ -21,11 +21,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class JsonMappingRuleParser implements VersionMappingParser {
+public class VersionMappingJsonParser implements VersionMappingParser {
 
     private final RuleProductionListener listener;
 
-    public JsonMappingRuleParser(RuleProductionListener listener) {
+    public VersionMappingJsonParser(RuleProductionListener listener) {
         this.listener = listener;
     }
 

@@ -19,6 +19,8 @@ public class VersionMappingParserBuilder {
         File artifactDirectory = translator.artifactDirectoryFor(this.coordinates);
         File wellKnownLicenseDirectory = translator.getWellKnownLicenseDirectory();
         VersionMappingBuilder builder = new VersionMappingBuilder(wellKnownLicenseDirectory, artifactDirectory, listener);
+
+
         return new VersionMappingDslParser(builder);
     }
 

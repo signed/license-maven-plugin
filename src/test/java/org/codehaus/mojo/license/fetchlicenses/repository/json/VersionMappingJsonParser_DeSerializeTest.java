@@ -11,7 +11,7 @@ import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class JsonMappingRuleParser_DeSerializeTest {
+public class VersionMappingJsonParser_DeSerializeTest {
 
     private final String singleRule = "{\n" +
             "  \"versions\": [\"1.2\",\"2.3\", \"3\"],\n" +
@@ -25,7 +25,7 @@ public class JsonMappingRuleParser_DeSerializeTest {
             foundRules.add(rule);
         }
     };
-    private final JsonMappingRuleParser parser = new JsonMappingRuleParser(listener);
+    private final VersionMappingJsonParser parser = new VersionMappingJsonParser(listener);
 
     @Test
     public void deserializeVersionsProperly() throws Exception {
