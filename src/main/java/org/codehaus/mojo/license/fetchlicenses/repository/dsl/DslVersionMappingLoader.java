@@ -5,6 +5,7 @@ import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.repository.FileRegisterStructure;
 import org.codehaus.mojo.license.fetchlicenses.repository.MappingRule;
 import org.codehaus.mojo.license.fetchlicenses.repository.VersionMapping;
+import org.codehaus.mojo.license.fetchlicenses.repository.VersionMappingLoader;
 
 import java.io.File;
 import java.io.IOException;
