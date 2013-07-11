@@ -1,7 +1,7 @@
 package org.codehaus.mojo.license.fetchlicenses.repository;
 
 import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingBuilder;
-import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingParser;
+import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingDslParser;
 import org.junit.Test;
 
 import static org.mockito.Mockito.mock;
@@ -12,7 +12,7 @@ public class VersionMappingParser_Test {
     @Test
     public void doNotTalkToTheBuilderIfProtocolIsUnKnown() throws Exception {
         VersionMappingBuilder builder = mock(VersionMappingBuilder.class);
-        new VersionMappingParser(builder).parseLine("un-known-protocol://sky <- 12.04");
+        new VersionMappingDslParser(builder).parseLine("un-known-protocol://sky <- 12.04");
         verifyZeroInteractions(builder);
     }
 }

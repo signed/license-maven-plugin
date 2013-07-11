@@ -1,7 +1,7 @@
 package org.codehaus.mojo.license.fetchlicenses.repository;
 
 import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingBuilder;
-import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingParser;
+import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingDslParser;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,7 +13,7 @@ public class VersionMappingParser_WellKnownLicenseTest {
 
     @Before
     public void parse() throws Exception {
-        new VersionMappingParser(mock).parseLine("well-known-license://apache2 <- 12.4, 13.0.1");
+        new VersionMappingDslParser(mock).parseLine("well-known-license://apache2 <- 12.4, 13.0.1");
     }
 
     @Test

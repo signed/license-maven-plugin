@@ -12,17 +12,21 @@ import java.io.IOException;
 public class DslVersionMappingLoader implements VersionMappingLoader {
 
     private final FileRegisterStructure translator;
+    private VersionMappingParserBuilder parser;
 
-    public DslVersionMappingLoader(FileRegisterStructure translator) {
+    public DslVersionMappingLoader(FileRegisterStructure translator, VersionMappingParserBuilder versionMappingParserBuilder) {
         this.translator = translator;
+        this.parser = versionMappingParserBuilder;
     }
 
     public VersionMapping loadVersionMappingFor(GavCoordinates coordinates) {
-        final VersionMapping mapping = new VersionMapping();
+        VersionMapping mapping = new VersionMapping();
         File versionMappingFile = translator.versionMappingFileFor(coordinates);
         if (versionMappingFile.isFile()) {
             String mappingsAsString = readMappingFile(versionMappingFile);
-            parseMapping(mappingsAsString, new PopulateVersionMapping(mapping), translator, coordinates);
+            parser.forArtifact(coordinates);
+            parser.informProductionListener(new PopulateVersionMapping(mapping));
+            parser.build().parseMapping(mappingsAsString);
         }
         return mapping;
     }
@@ -33,12 +37,5 @@ public class DslVersionMappingLoader implements VersionMappingLoader {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    private void parseMapping(String mappingsAsString, RuleProductionListener listener, FileRegisterStructure translator, GavCoordinates coordinates) {
-        File artifactDirectory = translator.artifactDirectoryFor(coordinates);
-        File wellKnownLicenseDirectory = translator.getWellKnownLicenseDirectory();
-        VersionMappingBuilder builder = new VersionMappingBuilder(wellKnownLicenseDirectory, artifactDirectory, listener);
-        new VersionMappingParser(builder).parseMapping(mappingsAsString);
     }
 }

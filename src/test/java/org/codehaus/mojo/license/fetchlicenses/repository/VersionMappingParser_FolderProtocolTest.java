@@ -1,7 +1,7 @@
 package org.codehaus.mojo.license.fetchlicenses.repository;
 
 import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingBuilder;
-import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingParser;
+import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingDslParser;
 import org.junit.Test;
 
 import static org.mockito.Mockito.mock;
@@ -13,7 +13,7 @@ public class VersionMappingParser_FolderProtocolTest {
 
     @Test
     public void passTheSubDirectoryNameToTheBuilder() throws Exception {
-        new VersionMappingParser(builder).parseLine("sub-directory://the-name <- 0.8-SNAPSHOT");
+        new VersionMappingDslParser(builder).parseLine("sub-directory://the-name <- 0.8-SNAPSHOT");
 
         verify(builder).subDirectory("the-name");
     }

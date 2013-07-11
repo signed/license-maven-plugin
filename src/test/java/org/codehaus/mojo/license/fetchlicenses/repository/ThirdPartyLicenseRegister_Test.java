@@ -5,6 +5,7 @@ import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.Text;
 import org.codehaus.mojo.license.fetchlicenses.repository.dsl.DslVersionMappingLoader;
+import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingParserBuilder;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
@@ -51,7 +52,7 @@ public class ThirdPartyLicenseRegister_Test {
 
     private ThirdPartyLicenseRegister licenseRegister() {
         FileRegisterStructure structure = new FileRegisterStructure(licenseRegisterBuilder.getRoot());
-        return new ThirdPartyLicenseRegister(new DslVersionMappingLoader(structure), new LicenseReader(structure));
+        return new ThirdPartyLicenseRegister(new DslVersionMappingLoader(structure, new VersionMappingParserBuilder(structure)), new LicenseReader(structure));
     }
 
     private Text text(String licenseText) {
