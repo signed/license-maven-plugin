@@ -4,8 +4,6 @@ import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.Text;
-import org.codehaus.mojo.license.fetchlicenses.repository.dsl.DslVersionMappingLoader;
-import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingParserBuilder;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
@@ -32,8 +30,8 @@ public class ThirdPartyLicenseRegister_Test {
 
     @Test
     public void returnLicenseInformationInSubdirectoryToCaller() throws Exception {
-        licenseRegisterBuilder.addMetaDataPointingToSubdirectory("legal", artifact);
-        licenseRegisterBuilder.putLicenseInformationIntoSubdirectory("legal", "LicenseText", artifact);
+        licenseRegisterBuilder.addMetaDataPointingToSubdirectory("legal/LICENSE.txt", artifact);
+        licenseRegisterBuilder.putLicenseInformationIntoSubdirectory("legal/LICENSE.txt", "LicenseText", artifact);
 
         licenseRegister().lookup(artifact, callback);
 
@@ -42,8 +40,8 @@ public class ThirdPartyLicenseRegister_Test {
 
     @Test
     public void returnWellKnownLicenseInformationToCaller() throws Exception {
-        licenseRegisterBuilder.addKnownLicense("apache", "The Apache License");
-        licenseRegisterBuilder.addMetadataPointingToWellKnownLicense("apache", artifact);
+        licenseRegisterBuilder.addKnownLicense("apache/LICENSE.txt", "The Apache License");
+        licenseRegisterBuilder.addMetadataPointingToWellKnownLicense("apache/LICENSE.txt", artifact);
 
         licenseRegister().lookup(artifact, callback);
 

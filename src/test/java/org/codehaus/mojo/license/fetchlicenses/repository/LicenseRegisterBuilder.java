@@ -10,12 +10,13 @@ import java.io.IOException;
 
 public class LicenseRegisterBuilder extends ExternalResource{
 
-
     public final TemporaryFolder licenseRegister = new TemporaryFolder();
+    private FileRegisterStructure structure;
 
     @Override
     protected void before() throws Throwable {
         licenseRegister.create();
+        structure = new FileRegisterStructure(licenseRegister.getRoot());
     }
 
     @Override
@@ -23,13 +24,22 @@ public class LicenseRegisterBuilder extends ExternalResource{
         licenseRegister.delete();
     }
 
-    public void putLicenseInformationIntoSubdirectory(String legal, String licenseText, GavCoordinates coordinates) throws IOException {
-        File directory = licenseRegister.newFolder("group", "id", coordinates.artifactId, legal);
-        writeLicenseInformationTo(directory, licenseText);
+    public void putLicenseInformationIntoSubdirectory(String relativeLicensePath, String licenseText, GavCoordinates coordinates) throws IOException {
+        File licenseFile = new File(structure.artifactDirectoryFor(coordinates), relativeLicensePath);
+        writeLicenseInformationInto(licenseFile, licenseText);
     }
 
     public void addMetaDataPointingToSubdirectory(String legal, GavCoordinates coordinates) throws IOException {
-        writeMetaDataFor(coordinates, "sub-directory://" + legal + " <- version");
+        String version = coordinates.version;
+        String metadata = fillMetaDataTemplate(legal, version);
+        writeMetaDataFor(coordinates, metadata);
+    }
+
+    private String fillMetaDataTemplate(String licenseString, String version) {
+        return "{ \n" +
+                                    "\"versions\" : [\""+ version +"\"] ,\n" +
+                                    "\"license\" : \""+licenseString+"\"\n" +
+                                "}";
     }
 
     public void writeMetaDataFor(GavCoordinates coordinates, String metaData) throws IOException {
@@ -42,18 +52,19 @@ public class LicenseRegisterBuilder extends ExternalResource{
         return licenseRegister.getRoot();
     }
 
-    private void writeLicenseInformationTo(File directory, String licenseText) throws IOException {
-        File licenseFile = new File(directory, "LICENSE.txt");
+    private void writeLicenseInformationInto(File licenseFile, String licenseText) throws IOException {
+        licenseFile.getParentFile().mkdirs();
         licenseFile.createNewFile();
         FileUtils.writeStringToFile(licenseFile, licenseText, "UTF-8");
     }
 
-    void addKnownLicense(String licenseName, String licenseText) throws IOException {
-        File apacheLicenseDirectory = licenseRegister.newFolder("well-known-licenses", licenseName);
-        writeLicenseInformationTo(apacheLicenseDirectory, licenseText);
+    public void addKnownLicense(String relativePath, String licenseText) throws IOException {
+        File licenseFile = new File(structure.getWellKnownLicenseDirectory(), relativePath);
+        writeLicenseInformationInto(licenseFile, licenseText);
     }
 
-    public void addMetadataPointingToWellKnownLicense(String licenseName, GavCoordinates coordinates) throws IOException {
-        writeMetaDataFor(coordinates, "well-known-license://" + licenseName + " <- " + coordinates.version);
+    public void addMetadataPointingToWellKnownLicense(final String relativePath, GavCoordinates coordinates) throws IOException {
+        String metaData = fillMetaDataTemplate("->well-known-license/" + relativePath, coordinates.version);
+        writeMetaDataFor(coordinates, metaData);
     }
 }

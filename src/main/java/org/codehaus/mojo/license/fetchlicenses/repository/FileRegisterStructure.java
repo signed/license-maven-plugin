@@ -26,4 +26,8 @@ public class FileRegisterStructure {
     private String groupIdToPath(GavCoordinates coordinates) {
         return coordinates.groupId.replaceAll("\\.", "/");
     }
+
+    public File getRoot() {
+        return repositoryRoot;
+    }
 }

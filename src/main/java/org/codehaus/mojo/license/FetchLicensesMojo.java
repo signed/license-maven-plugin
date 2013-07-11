@@ -32,12 +32,12 @@ import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.Licensee;
 import org.codehaus.mojo.license.fetchlicenses.Outcome;
+import org.codehaus.mojo.license.fetchlicenses.repository.DslVersionMappingLoader;
 import org.codehaus.mojo.license.fetchlicenses.repository.FileRegisterStructure;
 import org.codehaus.mojo.license.fetchlicenses.repository.LicenseReader;
 import org.codehaus.mojo.license.fetchlicenses.repository.ThirdPartyLicenseRegister;
 import org.codehaus.mojo.license.fetchlicenses.repository.VersionMappingLoader;
-import org.codehaus.mojo.license.fetchlicenses.repository.dsl.DslVersionMappingLoader;
-import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingParserBuilder;
+import org.codehaus.mojo.license.fetchlicenses.repository.VersionMappingParserBuilder;
 import org.codehaus.mojo.license.model.ProjectLicenseInfo;
 
 import java.io.File;

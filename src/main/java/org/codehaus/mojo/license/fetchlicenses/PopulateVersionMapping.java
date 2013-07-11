@@ -1,10 +1,10 @@
-package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
+package org.codehaus.mojo.license.fetchlicenses;
 
 import org.codehaus.mojo.license.fetchlicenses.repository.MappingRule;
 import org.codehaus.mojo.license.fetchlicenses.repository.RuleProductionListener;
 import org.codehaus.mojo.license.fetchlicenses.repository.VersionMapping;
 
-class PopulateVersionMapping implements RuleProductionListener {
+public class PopulateVersionMapping implements RuleProductionListener {
     private final VersionMapping mapping;
 
     public PopulateVersionMapping(VersionMapping mapping) {

@@ -1,5 +1,7 @@
 package org.codehaus.mojo.license.fetchlicenses.repository;
 
+import org.codehaus.mojo.license.fetchlicenses.repository.json.Pointer;
+
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -15,7 +17,7 @@ public class VersionMapping {
         return null !=  target(version);
     }
 
-    public Reference target(String version) {
+    public Pointer target(String version) {
         for (MappingRule rule : rules) {
             if (rule.appliesTo(version)) {
                 return rule.getTarget(version);

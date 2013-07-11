@@ -1,11 +1,8 @@
-package org.codehaus.mojo.license.fetchlicenses.repository.dsl;
+package org.codehaus.mojo.license.fetchlicenses.repository;
 
 import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.VersionMappingParser;
-import org.codehaus.mojo.license.fetchlicenses.repository.FileRegisterStructure;
-import org.codehaus.mojo.license.fetchlicenses.repository.RuleProductionListener;
-
-import java.io.File;
+import org.codehaus.mojo.license.fetchlicenses.repository.json.VersionMappingJsonParser;
 
 public class VersionMappingParserBuilder {
 
@@ -18,12 +15,7 @@ public class VersionMappingParserBuilder {
     }
 
     public VersionMappingParser build() {
-        File artifactDirectory = translator.artifactDirectoryFor(this.coordinates);
-        File wellKnownLicenseDirectory = translator.getWellKnownLicenseDirectory();
-        VersionMappingBuilder builder = new VersionMappingBuilder(wellKnownLicenseDirectory, artifactDirectory, listener);
-
-
-        return new VersionMappingDslParser(builder);
+        return new VersionMappingJsonParser(listener);
     }
 
     public VersionMappingParserBuilder forArtifact(GavCoordinates coordinates) {
