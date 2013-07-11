@@ -22,7 +22,6 @@ package org.codehaus.mojo.license;
  * #L%
  */
 
-import org.apache.commons.collections.Closure;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
@@ -31,7 +30,6 @@ import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.Licensee;
-import org.codehaus.mojo.license.fetchlicenses.Outcome;
 import org.codehaus.mojo.license.fetchlicenses.repository.FileRegisterStructure;
 import org.codehaus.mojo.license.fetchlicenses.repository.LicenseReader;
 import org.codehaus.mojo.license.fetchlicenses.repository.ThirdPartyLicenseRegister;
@@ -75,21 +73,18 @@ public class FetchLicensesMojo extends DownloadLicensesMojo {
 
         getLog().info(" license lookup for: "+coordinates);
 
-        final Outcome outcome = Outcome.pessimistic();
+
         licenseRepository.lookup(coordinates, new LicenseLookupCallback() {
             public void found(LicenseObligations obligations) {
                 licensee.complyWith(obligations);
-                outcome.success();
             }
 
             public void missingLicenseInformationFor(GavCoordinates coordinates) {
-                outcome.failure();
+                getLog().error("no license information for " + coordinates.toString());
             }
-        });
 
-        outcome.onFailure(new Closure() {
-            public void execute(Object input) {
-                getLog().error("no license information for: " + coordinates.toString());
+            public void couldNotParseMetaData(GavCoordinates coordinates) {
+                getLog().error("could not parse metadata for "+coordinates.toString());
             }
         });
     }

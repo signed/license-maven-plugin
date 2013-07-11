@@ -15,8 +15,12 @@ public class ThirdPartyLicenseRegister {
         this.licenseReader = licenseReader;
     }
 
-    public void lookup(GavCoordinates coordinates, LicenseLookupCallback callback) {
-        VersionMapping mapping = loader.loadVersionMappingFor(coordinates);
+    public void lookup(final GavCoordinates coordinates, final LicenseLookupCallback callback) {
+        VersionMapping mapping = loader.loadVersionMappingFor(coordinates, new LoaderCallback() {
+            public void failedToLoadVersionMapping() {
+                callback.couldNotParseMetaData(coordinates);
+            }
+        });
         if (mapping.hasMappingForVersion(coordinates.version)) {
             passLicenseInformationToCaller(coordinates, callback, mapping);
         } else {

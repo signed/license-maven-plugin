@@ -17,16 +17,24 @@ public class VersionMappingLoader {
         this.parser = versionMappingParserBuilder;
     }
 
-    public VersionMapping loadVersionMappingFor(GavCoordinates coordinates) {
+    public VersionMapping loadVersionMappingFor(GavCoordinates coordinates, LoaderCallback loaderCallback) {
         VersionMapping mapping = new VersionMapping();
         File versionMappingFile = translator.versionMappingFileFor(coordinates);
         if (versionMappingFile.isFile()) {
-            String mappingsAsString = readMappingFile(versionMappingFile);
-            parser.forArtifact(coordinates);
-            parser.informProductionListener(new PopulateVersionMapping(mapping));
-            parser.build().parseMapping(mappingsAsString);
+            try {
+                readAndParse(coordinates, mapping, versionMappingFile);
+            } catch (Exception e) {
+                loaderCallback.failedToLoadVersionMapping();
+            }
         }
         return mapping;
+    }
+
+    private void readAndParse(GavCoordinates coordinates, VersionMapping mapping, File versionMappingFile) {
+        String mappingsAsString = readMappingFile(versionMappingFile);
+        parser.forArtifact(coordinates);
+        parser.informProductionListener(new PopulateVersionMapping(mapping));
+        parser.build().parseMapping(mappingsAsString);
     }
 
     private String readMappingFile(File versionMappingFile) {
