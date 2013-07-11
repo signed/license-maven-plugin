@@ -1,5 +1,6 @@
 package org.codehaus.mojo.license.fetchlicenses.repository.json;
 
+import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonDeserializationContext;
@@ -10,18 +11,37 @@ import com.google.gson.JsonParseException;
 import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
 import com.google.gson.reflect.TypeToken;
+import org.codehaus.mojo.license.fetchlicenses.repository.MappingRule;
+import org.codehaus.mojo.license.fetchlicenses.repository.dsl.RuleProductionListener;
+import org.codehaus.mojo.license.fetchlicenses.repository.dsl.VersionMappingParser;
 
 import java.lang.reflect.Type;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class JsonMappingRuleParser {
+public class JsonMappingRuleParser implements VersionMappingParser {
+
+    private final RuleProductionListener listener;
+
+    public JsonMappingRuleParser(RuleProductionListener listener) {
+        this.listener = listener;
+    }
 
     public JsonMappingRule parseMappingRule(String json) {
         GsonBuilder builder = new GsonBuilder();
         builder.registerTypeAdapter(JsonMappingRule.class, new MappingRuleTypeAdapter());
-        return builder.create().fromJson(json, JsonMappingRule.class);
+        Gson gson = builder.create();
+        return gson.fromJson(json, JsonMappingRule.class);
+    }
+
+    public void parseMapping(String mappingsAsString) {
+        List<String> split = new RuleSplitter().split(mappingsAsString);
+        for (String rule : split) {
+            MappingRule jsonMappingRule = parseMappingRule(rule);
+            listener.produced(jsonMappingRule);
+        }
     }
 
     private static class MappingRuleTypeAdapter implements JsonSerializer<JsonMappingRule>, JsonDeserializer<JsonMappingRule> {
