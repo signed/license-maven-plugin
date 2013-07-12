@@ -18,15 +18,11 @@ public class JsonMappingRule implements MappingRule {
         return versions.contains(version);
     }
 
-    public Iterable<Pointer> pointers(String version) {
+    public Iterable<Pointer> pointers() {
         return Collections.unmodifiableSet(pointers);
     }
 
     public Set<String> versions() {
         return versions;
-    }
-
-    public Set<Pointer> pointers() {
-        return pointers;
     }
 }

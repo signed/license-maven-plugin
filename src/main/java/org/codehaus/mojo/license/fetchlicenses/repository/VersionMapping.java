@@ -24,7 +24,7 @@ public class VersionMapping {
         List<Pointer> pointers = new ArrayList<Pointer>();
         for (MappingRule rule : rules) {
             if (rule.appliesTo(version)) {
-                addAll(pointers, rule.pointers(version).iterator());
+                addAll(pointers, rule.pointers().iterator());
             }
         }
 
