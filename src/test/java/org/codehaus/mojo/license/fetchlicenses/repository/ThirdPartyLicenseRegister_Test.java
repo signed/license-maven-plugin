@@ -8,6 +8,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 
+import java.io.File;
+
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.mock;
@@ -49,8 +51,9 @@ public class ThirdPartyLicenseRegister_Test {
     }
 
     private ThirdPartyLicenseRegister licenseRegister() {
-        FileRegisterStructure structure = new FileRegisterStructure(licenseRegisterBuilder.getRoot());
-        return new ThirdPartyLicenseRegister(new VersionMappingLoader(structure, new VersionMappingParserBuilder(structure)), new LicenseReader(structure));
+        File root = licenseRegisterBuilder.getRoot();
+        FileRegisterStructure structure = new FileRegisterStructure(root);
+        return new ThirdPartyLicenseRegister(new VersionMappingLoader(structure), new LicenseReader(structure));
     }
 
     private Text text(String licenseText) {

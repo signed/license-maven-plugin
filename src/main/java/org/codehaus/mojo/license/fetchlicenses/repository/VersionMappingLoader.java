@@ -3,6 +3,7 @@ package org.codehaus.mojo.license.fetchlicenses.repository;
 import org.apache.commons.io.FileUtils;
 import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.PopulateVersionMapping;
+import org.codehaus.mojo.license.fetchlicenses.repository.json.VersionMappingJsonParser;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,11 +11,9 @@ import java.io.IOException;
 public class VersionMappingLoader {
 
     private final FileRegisterStructure translator;
-    private VersionMappingParserBuilder parser;
 
-    public VersionMappingLoader(FileRegisterStructure translator, VersionMappingParserBuilder versionMappingParserBuilder) {
+    public VersionMappingLoader(FileRegisterStructure translator) {
         this.translator = translator;
-        this.parser = versionMappingParserBuilder;
     }
 
     public VersionMapping loadVersionMappingFor(GavCoordinates coordinates, LoaderCallback loaderCallback) {
@@ -22,7 +21,7 @@ public class VersionMappingLoader {
         File versionMappingFile = translator.versionMappingFileFor(coordinates);
         if (versionMappingFile.isFile()) {
             try {
-                readAndParse(coordinates, mapping, versionMappingFile);
+                readAndParse(mapping, versionMappingFile);
             } catch (Exception e) {
                 loaderCallback.failedToLoadVersionMapping();
             }
@@ -30,11 +29,10 @@ public class VersionMappingLoader {
         return mapping;
     }
 
-    private void readAndParse(GavCoordinates coordinates, VersionMapping mapping, File versionMappingFile) {
+    private void readAndParse(VersionMapping mapping, File versionMappingFile) {
         String mappingsAsString = readMappingFile(versionMappingFile);
-        parser.forArtifact(coordinates);
-        parser.informProductionListener(new PopulateVersionMapping(mapping));
-        parser.build().parseMapping(mappingsAsString);
+        VersionMappingJsonParser parser = new VersionMappingJsonParser(new PopulateVersionMapping(mapping));
+        parser.parseMapping(mappingsAsString);
     }
 
     private String readMappingFile(File versionMappingFile) {
