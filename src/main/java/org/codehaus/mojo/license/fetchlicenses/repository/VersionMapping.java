@@ -1,6 +1,5 @@
 package org.codehaus.mojo.license.fetchlicenses.repository;
 
-import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.repository.json.Pointer;
 
 import java.util.ArrayList;
@@ -16,22 +15,17 @@ public class VersionMapping {
     }
 
     public boolean coversVersion(String version) {
-        return null !=  legalTexts(version);
+        return legalTexts(version).iterator().hasNext();
     }
 
-    public Pointer legalTexts(String version) {
+    public Iterable<Pointer> legalTexts(String version) {
+        List<Pointer> pointers = new ArrayList<Pointer>();
         for (MappingRule rule : rules) {
             if (rule.appliesTo(version)) {
-                return rule.getTarget(version);
+                pointers.add(rule.getTarget(version));
             }
         }
-        return null;
-    }
 
-    public Iterable<Pointer> legalTexts(GavCoordinates coordinates) {
-        Pointer reference = legalTexts(coordinates.version);
-        List<Pointer> pointers = new ArrayList<Pointer>();
-        pointers.add(reference);
         return pointers;
     }
 }

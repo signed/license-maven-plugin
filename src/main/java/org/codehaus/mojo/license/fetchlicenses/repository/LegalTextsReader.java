@@ -19,7 +19,7 @@ public class LegalTextsReader {
     public Iterable<Text> readFor(GavCoordinates coordinates, VersionMapping mapping) {
         List<Text> result = new ArrayList<Text>();
 
-        for (Pointer pointer : mapping.legalTexts(coordinates)) {
+        for (Pointer pointer : mapping.legalTexts(coordinates.version)) {
             File toLoad = fileToLoad(coordinates, pointer);
             Text license = textReader.read(toLoad);
             result.add(license);
