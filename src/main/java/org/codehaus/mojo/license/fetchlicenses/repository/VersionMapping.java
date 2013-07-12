@@ -13,7 +13,7 @@ public class VersionMapping {
         rules.add(rule);
     }
 
-    public boolean hasMappingForVersion(String version) {
+    public boolean coversVersion(String version) {
         return null !=  target(version);
     }
 

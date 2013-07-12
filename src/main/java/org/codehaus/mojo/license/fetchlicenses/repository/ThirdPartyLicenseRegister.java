@@ -21,7 +21,7 @@ public class ThirdPartyLicenseRegister {
                 callback.couldNotParseMetaData(coordinates);
             }
         });
-        if (mapping.hasMappingForVersion(coordinates.version)) {
+        if (mapping.coversVersion(coordinates.version)) {
             passLicenseInformationToCaller(coordinates, callback, mapping);
         } else {
             informCallerAboutMissingLicenseInformation(coordinates, callback);
