@@ -24,9 +24,21 @@ public class Licensee_Test {
     @Test
     public void putTheLicenseTextIntoTheThirdPartyLicenseDirectory() throws Exception {
         legalTextsToAdd.add(licenseText);
-        new Licensee(thirdPartyLicenses.getRoot()).complyWith(new LicenseObligations(coordinates, legalTextsToAdd));
+        writeLegalTexts();
 
         assertThat(contentOfFileInThirdPartyLicenses("org.example.artifact.LICENSE.txt"), is("The license text"));
+    }
+
+    @Test(expected = RuntimeException.class)
+    public void doNotOverrideExistingFiles() throws Exception {
+        legalTextsToAdd.add(new Text("Text One"));
+        legalTextsToAdd.add(new Text("Text Two"));
+
+        writeLegalTexts();
+    }
+
+    private void writeLegalTexts() {
+        new Licensee(thirdPartyLicenses.getRoot()).complyWith(new LicenseObligations(coordinates, legalTextsToAdd));
     }
 
     private String contentOfFileInThirdPartyLicenses(String child) throws IOException {

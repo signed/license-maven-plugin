@@ -17,8 +17,11 @@ public class Licensee {
         try {
             String groupId = obligations.coordinates.groupId;
             String artifact = obligations.coordinates.artifactId;
-            File file = new File(usedLicenseDirectory, groupId + "." + artifact + ".LICENSE.txt");
             for (Text legalText : obligations.legalTexts) {
+                File file = new File(usedLicenseDirectory, groupId + "." + artifact + ".LICENSE.txt");
+                if(file.exists()) {
+                    throw new RuntimeException("Overwriting legal documents");
+                }
                 FileUtils.writeStringToFile(file, legalText.toString(), "UTF-8");
             }
         } catch (IOException e) {
