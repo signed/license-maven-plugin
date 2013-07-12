@@ -1,10 +1,27 @@
 package org.codehaus.mojo.license.fetchlicenses;
 
-public class Text {
-    public final String text;
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
 
-    public Text(String text){
+public class Text {
+    private final String name;
+    private final String text;
+
+    public Text(String text) {
+        this("LICENSE.txt", text);
+    }
+
+    public Text(String name, String text) {
+        this.name = name;
         this.text = text;
+    }
+
+    public String text() {
+        return text;
+    }
+
+    public String name() {
+        return name;
     }
 
     @Override
@@ -13,12 +30,12 @@ public class Text {
             return false;
         }
         Text that = (Text) obj;
-        return text.equals(that.text);
+        return new EqualsBuilder().append(this.name, that.name).append(this.text, that.text).isEquals();
     }
 
     @Override
     public int hashCode() {
-        return text.hashCode();
+        return new HashCodeBuilder().append(this.name).append(this.text).toHashCode();
     }
 
     @Override

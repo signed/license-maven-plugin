@@ -37,6 +37,13 @@ public class Licensee_Test {
         writeLegalTexts();
     }
 
+    @Test
+    public void writeMultipleTextsToThirdPartLicenseDirectory() throws Exception {
+        legalTextsToAdd.add(new Text("one", "Text One"));
+        legalTextsToAdd.add(new Text("two", "Text Two"));
+
+    }
+
     private void writeLegalTexts() {
         new Licensee(thirdPartyLicenses.getRoot()).complyWith(new LicenseObligations(coordinates, legalTextsToAdd));
     }
