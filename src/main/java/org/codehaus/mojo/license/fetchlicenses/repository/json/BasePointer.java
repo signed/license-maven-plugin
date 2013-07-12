@@ -23,7 +23,7 @@ public class BasePointer implements Pointer {
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(name).append(path()).hashCode();
+        return new HashCodeBuilder().append(name).append(path).hashCode();
     }
 
     @Override
