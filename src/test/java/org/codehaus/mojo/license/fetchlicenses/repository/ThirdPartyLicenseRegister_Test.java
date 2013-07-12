@@ -57,7 +57,7 @@ public class ThirdPartyLicenseRegister_Test {
     }
 
     private Text text(String licenseText) {
-        return new Text(licenseText);
+        return new Text("LICENSE.txt", licenseText);
     }
 
     private Text returnedLicenseText() {

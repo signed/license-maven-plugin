@@ -10,7 +10,7 @@ public class TextReader {
     public Text read(File file) {
         try {
             String string = FileUtils.readFileToString(file, "UTF-8");
-            return new Text(string);
+            return new Text(file.getName(), string);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

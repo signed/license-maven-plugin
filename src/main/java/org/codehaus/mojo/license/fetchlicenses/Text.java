@@ -7,10 +7,6 @@ public class Text {
     private final String name;
     private final String text;
 
-    public Text(String text) {
-        this("LICENSE.txt", text);
-    }
-
     public Text(String name, String text) {
         this.name = name;
         this.text = text;
@@ -36,10 +32,5 @@ public class Text {
     @Override
     public int hashCode() {
         return new HashCodeBuilder().append(this.name).append(this.text).toHashCode();
-    }
-
-    @Override
-    public String toString() {
-        return text;
     }
 }
