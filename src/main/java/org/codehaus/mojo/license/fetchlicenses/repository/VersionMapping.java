@@ -14,10 +14,10 @@ public class VersionMapping {
     }
 
     public boolean coversVersion(String version) {
-        return null !=  target(version);
+        return null !=  legalTexts(version);
     }
 
-    public Pointer target(String version) {
+    public Pointer legalTexts(String version) {
         for (MappingRule rule : rules) {
             if (rule.appliesTo(version)) {
                 return rule.getTarget(version);

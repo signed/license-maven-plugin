@@ -16,7 +16,7 @@ public class LegalTextsReader {
     }
 
     public Iterable<Text> readFor(GavCoordinates coordinates, VersionMapping mapping) {
-        Pointer reference = mapping.target(coordinates.version);
+        Pointer reference = mapping.legalTexts(coordinates.version);
         File toLoad = fileToLoad(coordinates, reference);
         Text license = textReader.read(toLoad);
         return Collections.singletonList(license);
