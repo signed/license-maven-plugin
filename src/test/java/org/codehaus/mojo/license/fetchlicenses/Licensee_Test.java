@@ -18,21 +18,20 @@ public class Licensee_Test {
     @Rule
     public final TemporaryFolder thirdPartyLicenses = new TemporaryFolder();
     private final GavCoordinates coordinates = new GavCoordinates("org.example", "artifact", "do not care");
-    private final Text licenseText = new Text("The license text");
     private final List<Text> legalTextsToAdd = new ArrayList<Text>();
 
     @Test
     public void putTheLicenseTextIntoTheThirdPartyLicenseDirectory() throws Exception {
-        legalTextsToAdd.add(licenseText);
+        legalTextsToAdd.add(new Text("The Name", "The license text"));
         writeLegalTexts();
 
-        assertThat(contentOfFileInThirdPartyLicenses("org.example.artifact.LICENSE.txt"), is("The license text"));
+        assertThat(contentOfFileInThirdPartyLicenses("org.example.artifact.The Name"), is("The license text"));
     }
 
     @Test(expected = RuntimeException.class)
-    public void doNotOverrideExistingFiles() throws Exception {
-        legalTextsToAdd.add(new Text("Text One"));
-        legalTextsToAdd.add(new Text("Text Two"));
+    public void doNotOverrideTwoTextsThatShareTheSameName() throws Exception {
+        legalTextsToAdd.add(new Text("same name", "Text One"));
+        legalTextsToAdd.add(new Text("same name", "Text Two"));
 
         writeLegalTexts();
     }
@@ -42,6 +41,10 @@ public class Licensee_Test {
         legalTextsToAdd.add(new Text("one", "Text One"));
         legalTextsToAdd.add(new Text("two", "Text Two"));
 
+        writeLegalTexts();
+
+        assertThat(contentOfFileInThirdPartyLicenses("org.example.artifact.one"), is("Text One"));
+        assertThat(contentOfFileInThirdPartyLicenses("org.example.artifact.two"), is("Text Two"));
     }
 
     private void writeLegalTexts() {
