@@ -3,7 +3,7 @@ package org.codehaus.mojo.license.fetchlicenses.repository;
 import org.apache.commons.io.FileUtils;
 import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.PopulateVersionMapping;
-import org.codehaus.mojo.license.fetchlicenses.repository.json.VersionMappingJsonParser;
+import org.codehaus.mojo.license.fetchlicenses.repository.json.VersionMappingJson;
 
 import java.io.File;
 import java.io.IOException;
@@ -31,7 +31,7 @@ public class VersionMappingLoader {
 
     private void readAndParse(VersionMapping mapping, File versionMappingFile) {
         String mappingsAsString = readMappingFile(versionMappingFile);
-        VersionMappingJsonParser parser = new VersionMappingJsonParser(new PopulateVersionMapping(mapping));
+        VersionMappingJson parser = new VersionMappingJson(new PopulateVersionMapping(mapping));
         parser.parseMapping(mappingsAsString);
     }
 

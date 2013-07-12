@@ -19,12 +19,21 @@ public class LegalTextsReader {
     public Iterable<Text> readFor(GavCoordinates coordinates, VersionMapping mapping) {
         List<Text> result = new ArrayList<Text>();
 
-        for (Pointer pointer : mapping.legalTexts(coordinates.version)) {
+        boolean licenseMissing = true;
+
+        for (Pointer pointer : mapping.pointers(coordinates.version)) {
+            if("license".equals(pointer.name())) {
+                licenseMissing = false;
+            }
+
             File toLoad = fileToLoad(coordinates, pointer);
             Text license = textReader.read(toLoad);
             result.add(license);
         }
 
+        if(licenseMissing){
+            throw new RuntimeException("no license information present");
+        }
         return result;
     }
 

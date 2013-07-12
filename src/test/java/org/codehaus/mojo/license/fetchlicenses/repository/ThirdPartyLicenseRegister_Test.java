@@ -5,12 +5,12 @@ import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.Text;
-import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 
 import java.io.File;
+import java.io.IOException;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -36,6 +36,7 @@ public class ThirdPartyLicenseRegister_Test {
     public void returnLicenseInformationInSubdirectoryToCaller() throws Exception {
         licenseRegisterBuilder.addLicenseMetaDataPointingToSubdirectory("legal/LICENSE.txt", artifact);
         licenseRegisterBuilder.putLicenseInformationIntoSubdirectory("legal/LICENSE.txt", "LicenseText", artifact);
+        licenseRegisterBuilder.writeMetaData(artifact);
 
         licenseRegister().lookup(artifact, callback);
 
@@ -46,6 +47,7 @@ public class ThirdPartyLicenseRegister_Test {
     public void returnWellKnownLicenseInformationToCaller() throws Exception {
         licenseRegisterBuilder.addKnownLicense("apache/LICENSE.txt", "The Apache License");
         licenseRegisterBuilder.addMetadataPointingToWellKnownLicense("apache/LICENSE.txt", artifact);
+        licenseRegisterBuilder.writeMetaData(artifact);
 
         licenseRegister().lookup(artifact, callback);
 
@@ -53,14 +55,20 @@ public class ThirdPartyLicenseRegister_Test {
     }
 
     @Test
-    @Ignore
     public void returnNoticeInformationInSubdirectoryToCaller() throws Exception {
         licenseRegisterBuilder.addNoticeMetaDataPointingToSubdirectory("legal/NOTICE.txt", artifact);
         licenseRegisterBuilder.putNoticeInformationIntoSubdirectory("legal/NOTICE.txt", "Notice text", artifact);
+        addRequiredDummyLicenseForTheArtifact();
+        licenseRegisterBuilder.writeMetaData(artifact);
 
         licenseRegister().lookup(artifact, callback);
 
-        assertThat(returnedLicenseText(), is(license("Notice text")));
+        assertThat(returnedLicenseText(), is(notice("Notice text")));
+    }
+
+    private void addRequiredDummyLicenseForTheArtifact() throws IOException {
+        licenseRegisterBuilder.addMetadataPointingToWellKnownLicense("dummy.txt", artifact);
+        licenseRegisterBuilder.addKnownLicense("dummy.txt", "not read");
     }
 
     private ThirdPartyLicenseRegister licenseRegister() {

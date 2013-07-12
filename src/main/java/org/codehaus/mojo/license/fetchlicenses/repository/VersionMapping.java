@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import static org.apache.commons.collections.CollectionUtils.addAll;
+
 public class VersionMapping {
 
     private Collection<MappingRule> rules = new ArrayList<MappingRule>();
@@ -15,14 +17,14 @@ public class VersionMapping {
     }
 
     public boolean coversVersion(String version) {
-        return legalTexts(version).iterator().hasNext();
+        return pointers(version).iterator().hasNext();
     }
 
-    public Iterable<Pointer> legalTexts(String version) {
+    public Iterable<Pointer> pointers(String version) {
         List<Pointer> pointers = new ArrayList<Pointer>();
         for (MappingRule rule : rules) {
             if (rule.appliesTo(version)) {
-                pointers.add(rule.getTarget(version));
+                addAll(pointers, rule.pointers(version).iterator());
             }
         }
 

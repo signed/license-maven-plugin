@@ -25,7 +25,7 @@ public class VersionMappingJsonParser_DeSerializeTest {
             foundRules.add(rule);
         }
     };
-    private final VersionMappingJsonParser parser = new VersionMappingJsonParser(listener);
+    private final VersionMappingJson parser = new VersionMappingJson(listener);
 
     @Test
     public void deserializeVersionsProperly() throws Exception {

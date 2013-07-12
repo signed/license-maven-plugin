@@ -2,6 +2,7 @@ package org.codehaus.mojo.license.fetchlicenses.repository.json;
 
 import org.codehaus.mojo.license.fetchlicenses.repository.MappingRule;
 
+import java.util.Collections;
 import java.util.Set;
 
 public class JsonMappingRule implements MappingRule {
@@ -17,13 +18,8 @@ public class JsonMappingRule implements MappingRule {
         return versions.contains(version);
     }
 
-    public Pointer getTarget(String version) {
-        for (Pointer pointer : pointers) {
-            if("license".equals(pointer.name())){
-                return pointer;
-            }
-        }
-        throw new RuntimeException("no license information present");
+    public Iterable<Pointer> pointers(String version) {
+        return Collections.unmodifiableSet(pointers);
     }
 
     public Set<String> versions() {

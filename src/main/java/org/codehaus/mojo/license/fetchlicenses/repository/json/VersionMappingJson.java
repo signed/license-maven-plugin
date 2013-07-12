@@ -21,19 +21,22 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class VersionMappingJsonParser implements VersionMappingParser {
+public class VersionMappingJson implements VersionMappingParser {
 
     private final RuleProductionListener listener;
 
-    public VersionMappingJsonParser(RuleProductionListener listener) {
+    public VersionMappingJson(RuleProductionListener listener) {
         this.listener = listener;
     }
 
     public JsonMappingRule parseMappingRule(String json) {
+        return gson().fromJson(json, JsonMappingRule.class);
+    }
+
+    private Gson gson() {
         GsonBuilder builder = new GsonBuilder();
         builder.registerTypeAdapter(JsonMappingRule.class, new MappingRuleTypeAdapter());
-        Gson gson = builder.create();
-        return gson.fromJson(json, JsonMappingRule.class);
+        return builder.create();
     }
 
     public void parseMapping(String mappingsAsString) {
@@ -42,6 +45,10 @@ public class VersionMappingJsonParser implements VersionMappingParser {
             MappingRule jsonMappingRule = parseMappingRule(rule);
             listener.produced(jsonMappingRule);
         }
+    }
+
+    public String toJson(MappingRule rule) {
+        return gson().toJson(rule);
     }
 
     private static class MappingRuleTypeAdapter implements JsonSerializer<JsonMappingRule>, JsonDeserializer<JsonMappingRule> {
