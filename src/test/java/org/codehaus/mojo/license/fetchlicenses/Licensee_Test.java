@@ -7,6 +7,8 @@ import org.junit.rules.TemporaryFolder;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -17,10 +19,12 @@ public class Licensee_Test {
     public final TemporaryFolder thirdPartyLicenses = new TemporaryFolder();
     private final GavCoordinates coordinates = new GavCoordinates("org.example", "artifact", "do not care");
     private final Text licenseText = new Text("The license text");
+    private final List<Text> legalTextsToAdd = new ArrayList<Text>();
 
     @Test
     public void putTheLicenseTextIntoTheThirdPartyLicenseDirectory() throws Exception {
-        new Licensee(thirdPartyLicenses.getRoot()).complyWith(new LicenseObligations(coordinates, licenseText));
+        legalTextsToAdd.add(licenseText);
+        new Licensee(thirdPartyLicenses.getRoot()).complyWith(new LicenseObligations(coordinates, legalTextsToAdd));
 
         assertThat(contentOfFileInThirdPartyLicenses("org.example.artifact.LICENSE.txt"), is("The license text"));
     }

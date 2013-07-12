@@ -63,7 +63,7 @@ public class ThirdPartyLicenseRegister_Test {
     private Text returnedLicenseText() {
         ArgumentCaptor<LicenseObligations> captor = ArgumentCaptor.forClass(LicenseObligations.class);
         verify(callback).found(captor.capture());
-        return captor.getValue().license;
+        return captor.getValue().legalTexts.iterator().next();
     }
 
 }

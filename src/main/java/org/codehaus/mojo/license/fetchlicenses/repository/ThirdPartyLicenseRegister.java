@@ -5,6 +5,8 @@ import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.Text;
 
+import java.util.Collections;
+
 public class ThirdPartyLicenseRegister {
 
     private final VersionMappingLoader loader;
@@ -30,7 +32,7 @@ public class ThirdPartyLicenseRegister {
 
     private void passLicenseInformationToCaller(GavCoordinates coordinates, LicenseLookupCallback callback, VersionMapping mapping) {
         Text license = licenseReader.readLicense(coordinates, mapping);
-        callback.found(new LicenseObligations(coordinates, license));
+        callback.found(new LicenseObligations(coordinates, Collections.singletonList(license)));
     }
 
     private void informCallerAboutMissingLicenseInformation(GavCoordinates coordinates, LicenseLookupCallback callback) {
