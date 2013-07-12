@@ -20,4 +20,9 @@ public class Text {
     public int hashCode() {
         return text.hashCode();
     }
+
+    @Override
+    public String toString() {
+        return text;
+    }
 }
