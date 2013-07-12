@@ -1,5 +1,6 @@
 package org.codehaus.mojo.license.fetchlicenses.repository;
 
+import org.codehaus.mojo.license.LicenseRegisterFactory;
 import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
@@ -52,8 +53,7 @@ public class ThirdPartyLicenseRegister_Test {
 
     private ThirdPartyLicenseRegister licenseRegister() {
         File root = licenseRegisterBuilder.getRoot();
-        FileRegisterStructure structure = new FileRegisterStructure(root);
-        return new ThirdPartyLicenseRegister(new VersionMappingLoader(structure), new LicenseReader(structure));
+        return new LicenseRegisterFactory().erectThirdPartyLicenseRegister(root);
     }
 
     private Text text(String licenseText) {
