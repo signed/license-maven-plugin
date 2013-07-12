@@ -5,6 +5,7 @@ import org.codehaus.mojo.license.fetchlicenses.Text;
 import org.codehaus.mojo.license.fetchlicenses.repository.json.Pointer;
 
 import java.io.File;
+import java.util.Collections;
 
 public class LegalTextsReader {
     private final TextReader textReader = new TextReader();
@@ -14,10 +15,11 @@ public class LegalTextsReader {
         this.structure = structure;
     }
 
-    public Text readLicense(GavCoordinates coordinates, VersionMapping mapping) {
+    public Iterable<Text> readFor(GavCoordinates coordinates, VersionMapping mapping) {
         Pointer reference = mapping.target(coordinates.version);
         File toLoad = fileToLoad(coordinates, reference);
-        return textReader.read(toLoad);
+        Text license = textReader.read(toLoad);
+        return Collections.singletonList(license);
     }
 
     private File fileToLoad(GavCoordinates coordinates, Pointer reference) {
