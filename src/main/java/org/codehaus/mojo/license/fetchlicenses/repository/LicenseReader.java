@@ -16,7 +16,8 @@ public class LicenseReader {
 
     public Text readLicense(GavCoordinates coordinates, VersionMapping mapping) {
         Pointer reference = mapping.target(coordinates.version);
-        return textReader.read(fileToLoad(coordinates, reference));
+        File toLoad = fileToLoad(coordinates, reference);
+        return textReader.read(toLoad);
     }
 
     private File fileToLoad(GavCoordinates coordinates, Pointer reference) {
