@@ -6,9 +6,9 @@ import org.codehaus.mojo.license.fetchlicenses.repository.json.Pointer;
 
 import java.io.File;
 import java.io.FileFilter;
-import java.util.Arrays;
 import java.util.Collection;
 
+import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;
 
 public class PointerResolver {
@@ -23,7 +23,7 @@ public class PointerResolver {
         File targetOfPointer = resolveTarget(coordinates, pointer);
         if (pointer.path().endsWith("/")) {
             FileFilter filter = FileFileFilter.FILE;
-            return Arrays.asList(targetOfPointer.listFiles(filter));
+            return asList(targetOfPointer.listFiles(filter));
         } else {
             return singletonList(targetOfPointer);
         }
