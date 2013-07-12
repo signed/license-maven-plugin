@@ -3,6 +3,8 @@ package org.codehaus.mojo.license.fetchlicenses;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
+import static java.lang.String.format;
+
 public class Text {
     private final String name;
     private final String text;
@@ -32,5 +34,10 @@ public class Text {
     @Override
     public int hashCode() {
         return new HashCodeBuilder().append(this.name).append(this.text).toHashCode();
+    }
+
+    @Override
+    public String toString() {
+        return format("<%s>\n%s", name, text);
     }
 }

@@ -5,6 +5,7 @@ import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
 import org.codehaus.mojo.license.fetchlicenses.Text;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
@@ -33,12 +34,12 @@ public class ThirdPartyLicenseRegister_Test {
 
     @Test
     public void returnLicenseInformationInSubdirectoryToCaller() throws Exception {
-        licenseRegisterBuilder.addMetaDataPointingToSubdirectory("legal/LICENSE.txt", artifact);
+        licenseRegisterBuilder.addLicenseMetaDataPointingToSubdirectory("legal/LICENSE.txt", artifact);
         licenseRegisterBuilder.putLicenseInformationIntoSubdirectory("legal/LICENSE.txt", "LicenseText", artifact);
 
         licenseRegister().lookup(artifact, callback);
 
-        assertThat(returnedLicenseText(), is(text("LicenseText")));
+        assertThat(returnedLicenseText(), is(license("LicenseText")));
     }
 
     @Test
@@ -48,7 +49,18 @@ public class ThirdPartyLicenseRegister_Test {
 
         licenseRegister().lookup(artifact, callback);
 
-        assertThat(returnedLicenseText(), is(text("The Apache License")));
+        assertThat(returnedLicenseText(), is(license("The Apache License")));
+    }
+
+    @Test
+    @Ignore
+    public void returnNoticeInformationInSubdirectoryToCaller() throws Exception {
+        licenseRegisterBuilder.addNoticeMetaDataPointingToSubdirectory("legal/NOTICE.txt", artifact);
+        licenseRegisterBuilder.putNoticeInformationIntoSubdirectory("legal/NOTICE.txt", "Notice text", artifact);
+
+        licenseRegister().lookup(artifact, callback);
+
+        assertThat(returnedLicenseText(), is(license("Notice text")));
     }
 
     private ThirdPartyLicenseRegister licenseRegister() {
@@ -56,8 +68,12 @@ public class ThirdPartyLicenseRegister_Test {
         return new LicenseRegisterFactory().erectThirdPartyLicenseRegister(root);
     }
 
-    private Text text(String licenseText) {
+    private Text license(String licenseText) {
         return new Text("LICENSE.txt", licenseText);
+    }
+
+    private Text notice(String licenseText) {
+        return new Text("NOTICE.txt", licenseText);
     }
 
     private Text returnedLicenseText() {

@@ -29,17 +29,36 @@ public class LicenseRegisterBuilder extends ExternalResource{
         writeLicenseInformationInto(licenseFile, licenseText);
     }
 
-    public void addMetaDataPointingToSubdirectory(String legal, GavCoordinates coordinates) throws IOException {
-        String version = coordinates.version;
-        String metadata = fillMetaDataTemplate(legal, version);
+    public void addLicenseMetaDataPointingToSubdirectory(String subDirectory, GavCoordinates coordinates) throws IOException {
+        String metadata = fillMetaDataTemplate(subDirectory, coordinates.version);
+        writeMetaDataFor(coordinates, metadata);
+    }
+
+    public void putNoticeInformationIntoSubdirectory(String relativeLicensePath, String noticeText, GavCoordinates coordinates) throws IOException {
+        File noticeFile = new File(structure.artifactDirectoryFor(coordinates), relativeLicensePath);
+        writeLicenseInformationInto(noticeFile, noticeText);
+    }
+
+    public void addNoticeMetaDataPointingToSubdirectory(String subDirectory, GavCoordinates coordinates) throws IOException {
+        String metadata = fillMetaDataTemplate(subDirectory, coordinates.version);
         writeMetaDataFor(coordinates, metadata);
     }
 
     private String fillMetaDataTemplate(String licenseString, String version) {
+        String pointerType = "license";
+        return fillMetaData(licenseString, version, pointerType);
+    }
+
+    private String fillMetaDataTemplateForNotice(String licenseString, String version) {
+        String pointerType = "notice";
+        return fillMetaData(licenseString, version, pointerType);
+    }
+
+    private String fillMetaData(String licenseString, String version, String pointerType) {
         return "{ \n" +
-                                    "\"versions\" : [\""+ version +"\"] ,\n" +
-                                    "\"license\" : \""+licenseString+"\"\n" +
-                                "}";
+                   "\"versions\" : [\""+ version +"\"] ,\n" +
+                   "\"" + pointerType + "\" : \"" +licenseString+"\"\n" +
+               "}";
     }
 
     public void writeMetaDataFor(GavCoordinates coordinates, String metaData) throws IOException {
