@@ -17,24 +17,26 @@ public class LegalTextsReader {
     }
 
     public Iterable<Text> readFor(GavCoordinates coordinates, VersionMapping mapping) {
-        Pointer reference = mapping.legalTexts(coordinates.version);
-        File toLoad = fileToLoad(coordinates, reference);
-        Text license = textReader.read(toLoad);
         List<Text> result = new ArrayList<Text>();
-        result.add(license);
+
+        for (Pointer pointer : mapping.legalTexts(coordinates)) {
+            File toLoad = fileToLoad(coordinates, pointer);
+            Text license = textReader.read(toLoad);
+            result.add(license);
+        }
 
         return result;
     }
 
     private File fileToLoad(GavCoordinates coordinates, Pointer reference) {
         String path = reference.path();
-        if(path.startsWith("/")) {
+        if (path.startsWith("/")) {
             return new File(structure.getRoot(), reference.path());
-        }else if(path.startsWith("->well-known-license")) {
+        } else if (path.startsWith("->well-known-license")) {
             int firstSlash = path.indexOf('/');
             String relativePathBelowWellKnownLicenseDirectory = path.substring(firstSlash, path.length());
             return new File(structure.getWellKnownLicenseDirectory(), relativePathBelowWellKnownLicenseDirectory);
-        }else {
+        } else {
             File artifactDirectory = structure.artifactDirectoryFor(coordinates);
             return new File(artifactDirectory, reference.path());
         }
