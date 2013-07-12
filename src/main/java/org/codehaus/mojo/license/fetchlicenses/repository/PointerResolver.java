@@ -22,6 +22,9 @@ public class PointerResolver {
     public Collection<File> filesToLoad(GavCoordinates coordinates, Pointer pointer) {
         File targetOfPointer = resolveTarget(coordinates, pointer);
         if (pointer.path().endsWith("/")) {
+            if (!targetOfPointer.isDirectory()) {
+                throw new RuntimeException("no directory "+targetOfPointer.getAbsolutePath());
+            }
             FileFilter filter = FileFileFilter.FILE;
             return asList(targetOfPointer.listFiles(filter));
         } else {
