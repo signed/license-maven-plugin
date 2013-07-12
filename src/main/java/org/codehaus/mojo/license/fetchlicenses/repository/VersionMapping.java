@@ -27,7 +27,6 @@ public class VersionMapping {
                 addAll(pointers, rule.pointers().iterator());
             }
         }
-
         return pointers;
     }
 }
