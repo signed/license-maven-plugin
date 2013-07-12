@@ -10,11 +10,11 @@ import java.util.Collections;
 public class ThirdPartyLicenseRegister {
 
     private final VersionMappingLoader loader;
-    private final LicenseReader licenseReader;
+    private final LegalTextsReader legalTextsReader;
 
-    public ThirdPartyLicenseRegister(VersionMappingLoader loader, LicenseReader licenseReader) {
+    public ThirdPartyLicenseRegister(VersionMappingLoader loader, LegalTextsReader legalTextsReader) {
         this.loader = loader;
-        this.licenseReader = licenseReader;
+        this.legalTextsReader = legalTextsReader;
     }
 
     public void lookup(final GavCoordinates coordinates, final LicenseLookupCallback callback) {
@@ -31,7 +31,7 @@ public class ThirdPartyLicenseRegister {
     }
 
     private void passLicenseInformationToCaller(GavCoordinates coordinates, LicenseLookupCallback callback, VersionMapping mapping) {
-        Text license = licenseReader.readLicense(coordinates, mapping);
+        Text license = legalTextsReader.readLicense(coordinates, mapping);
         callback.found(new LicenseObligations(coordinates, Collections.singletonList(license)));
     }
 

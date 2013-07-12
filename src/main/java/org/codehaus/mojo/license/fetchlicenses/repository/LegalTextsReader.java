@@ -6,11 +6,11 @@ import org.codehaus.mojo.license.fetchlicenses.repository.json.Pointer;
 
 import java.io.File;
 
-public class LicenseReader {
+public class LegalTextsReader {
     private final TextReader textReader = new TextReader();
     private final FileRegisterStructure structure;
 
-    public LicenseReader(FileRegisterStructure structure) {
+    public LegalTextsReader(FileRegisterStructure structure) {
         this.structure = structure;
     }
 
