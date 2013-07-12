@@ -23,7 +23,7 @@ public class Licensee {
                 if(file.exists()) {
                     throw new RuntimeException("Overwriting legal documents");
                 }
-                FileUtils.writeStringToFile(file, legalText.toString(), "UTF-8");
+                FileUtils.writeStringToFile(file, legalText.text(), "UTF-8");
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
