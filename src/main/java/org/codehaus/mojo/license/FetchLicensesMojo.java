@@ -39,7 +39,7 @@ import java.io.File;
 import java.util.List;
 
 @Mojo(name = "fetch-licenses", requiresDependencyResolution = ResolutionScope.TEST,
-        defaultPhase = LifecyclePhase.PACKAGE)
+        defaultPhase = LifecyclePhase.PREPARE_PACKAGE)
 public class FetchLicensesMojo extends DownloadLicensesMojo {
 
     /**
