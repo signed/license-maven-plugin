@@ -43,7 +43,7 @@ import java.util.List;
 public class FetchLicensesMojo extends DownloadLicensesMojo {
 
     /**
-     * The base directory for the third party license register that contains the license information
+     * The base directory for the third party license register that contains the license information.
      *
      * @since 1.6
      */
@@ -67,6 +67,14 @@ public class FetchLicensesMojo extends DownloadLicensesMojo {
     @Parameter(alias = "ignoreDependencyArtifacts")
     private List<String> ignoreArtifacts;
 
+    /**
+     * Break the build if there is no license for a dependency artifact.
+     *
+     * @since 1.6
+     */
+    @Parameter(alias = "failBuildOnMissingLicense", defaultValue = "true")
+    private boolean failBuildOnMissingLicense;
+
 
     @Override
     protected void downloadLicenses(ProjectLicenseInfo depProject, Artifact artifact) {
@@ -82,19 +90,27 @@ public class FetchLicensesMojo extends DownloadLicensesMojo {
         ThirdPartyLicenseRegister licenseRepository = new LicenseRegisterFactory().erectThirdPartyLicenseRegister(licensesRegisterRoot);
         final Licensee licensee = new Licensee(usedLicensesDirectory);
 
+        final boolean[] foundLicense = {false};
+
         licenseRepository.lookup(coordinates, new LicenseLookupCallback() {
             public void found(LicenseObligations obligations) {
                 licensee.complyWith(obligations);
+                foundLicense[0] = true;
             }
 
             public void missingLicenseInformationFor(GavCoordinates coordinates) {
                 getLog().error("no license information for " + coordinates.toString());
+
             }
 
             public void couldNotParseMetaData(GavCoordinates coordinates) {
                 getLog().error("could not parse metadata for " + coordinates.toString());
             }
         });
+
+        if (!foundLicense[0] && failBuildOnMissingLicense) {
+            throw new RuntimeException("could not find license for " + coordinates);
+        }
     }
 
 }
