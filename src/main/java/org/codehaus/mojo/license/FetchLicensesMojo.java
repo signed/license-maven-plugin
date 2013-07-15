@@ -22,10 +22,12 @@ package org.codehaus.mojo.license;
  * #L%
  */
 
+import org.apache.maven.artifact.Artifact;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.plugins.annotations.ResolutionScope;
+import org.apache.maven.shared.artifact.filter.PatternExcludesArtifactFilter;
 import org.codehaus.mojo.license.fetchlicenses.GavCoordinates;
 import org.codehaus.mojo.license.fetchlicenses.LicenseLookupCallback;
 import org.codehaus.mojo.license.fetchlicenses.LicenseObligations;
@@ -34,18 +36,18 @@ import org.codehaus.mojo.license.fetchlicenses.repository.ThirdPartyLicenseRegis
 import org.codehaus.mojo.license.model.ProjectLicenseInfo;
 
 import java.io.File;
+import java.util.List;
 
 @Mojo(name = "fetch-licenses", requiresDependencyResolution = ResolutionScope.TEST,
         defaultPhase = LifecyclePhase.PACKAGE)
 public class FetchLicensesMojo extends DownloadLicensesMojo {
 
     /**
-     * The base directory fot the third party license register that contains the license information
-     * in maven file structure.
+     * The base directory for the third party license register that contains the license information
      *
      * @since 1.6
      */
-    @Parameter(property = "thirdPartyLicensesRegister", defaultValue = "${project.build.directory}/licenses-register/")
+    @Parameter(alias = "thirdPartyLicensesRegister", defaultValue = "${project.build.directory}/licenses-register/")
     private File licensesRegisterRoot;
 
     /**
@@ -54,17 +56,31 @@ public class FetchLicensesMojo extends DownloadLicensesMojo {
      *
      * @since 1.6
      */
-    @Parameter(property = "writeUsedLicensesTo", defaultValue = "${project.build.directory}/licenses")
+    @Parameter(alias = "writeUsedLicensesTo", defaultValue = "${project.build.directory}/licenses")
     private File usedLicensesDirectory;
+
+    /**
+     * Do not look for license information for artifacts that match on of the supplied pattern.
+     *
+     * @since 1.6
+     */
+    @Parameter(alias = "ignoreDependencyArtifacts")
+    private List<String> ignoreArtifacts;
 
 
     @Override
-    protected void downloadLicenses(ProjectLicenseInfo depProject) {
+    protected void downloadLicenses(ProjectLicenseInfo depProject, Artifact artifact) {
         final GavCoordinates coordinates = new GavCoordinates(depProject.getGroupId(), depProject.getArtifactId(), depProject.getVersion());
+
+        PatternExcludesArtifactFilter ignoreArtifactsFilter = new PatternExcludesArtifactFilter(ignoreArtifacts, false);
+        if (!ignoreArtifactsFilter.include(artifact)) {
+            getLog().info("ignoring artifact: " + coordinates);
+            return;
+        }
+        getLog().info("lookup license for: " + coordinates);
+
         ThirdPartyLicenseRegister licenseRepository = new LicenseRegisterFactory().erectThirdPartyLicenseRegister(licensesRegisterRoot);
         final Licensee licensee = new Licensee(usedLicensesDirectory);
-
-        getLog().info(" license lookup for: "+coordinates);
 
         licenseRepository.lookup(coordinates, new LicenseLookupCallback() {
             public void found(LicenseObligations obligations) {
@@ -76,7 +92,7 @@ public class FetchLicensesMojo extends DownloadLicensesMojo {
             }
 
             public void couldNotParseMetaData(GavCoordinates coordinates) {
-                getLog().error("could not parse metadata for "+coordinates.toString());
+                getLog().error("could not parse metadata for " + coordinates.toString());
             }
         });
     }

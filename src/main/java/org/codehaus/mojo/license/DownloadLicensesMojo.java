@@ -274,7 +274,7 @@ public class DownloadLicensesMojo
             {
                 depProject = createDependencyProject( project );
             }
-            downloadLicenses( depProject );
+            downloadLicenses( depProject, artifact);
             depProjectLicenses.add( depProject );
         }
 
@@ -532,8 +532,9 @@ public class DownloadLicensesMojo
      * Download the licenses associated with this project
      *
      * @param depProject The project which generated the dependency
+     * @param artifact
      */
-    protected void downloadLicenses( ProjectLicenseInfo depProject )
+    protected void downloadLicenses(ProjectLicenseInfo depProject, Artifact artifact)
     {
 
         getLog().debug( "Downloading license(s) for project " + depProject );
