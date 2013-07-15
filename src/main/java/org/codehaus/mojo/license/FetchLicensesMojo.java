@@ -85,6 +85,10 @@ public class FetchLicensesMojo extends DownloadLicensesMojo {
             getLog().info("ignoring artifact: " + coordinates);
             return;
         }
+        lookUpLicense(coordinates);
+    }
+
+    private void lookUpLicense(GavCoordinates coordinates) {
         getLog().info("lookup license for: " + coordinates);
 
         ThirdPartyLicenseRegister licenseRepository = new LicenseRegisterFactory().erectThirdPartyLicenseRegister(licensesRegisterRoot);
