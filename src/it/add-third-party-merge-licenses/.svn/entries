@@ -1,7 +1,7 @@
 10
 
 dir
-18500
+18536
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/it/add-third-party-merge-licenses
 http://svn.codehaus.org/mojo
 
@@ -25,6 +25,40 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
+
+pom.xml
+file
+
+
+
+
+2013-04-10T20:18:08.422197Z
+d594b70e83e830bfd962e89128819569
+2013-01-06T12:20:28.144351Z
+17840
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5854
 
 invoker.properties
 file
@@ -93,38 +127,4 @@ has-props
 
 
 2785
-
-pom.xml
-file
-
-
-
-
-2013-04-10T20:18:08.422197Z
-d594b70e83e830bfd962e89128819569
-2013-01-06T12:20:28.144351Z
-17840
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5854
 
