@@ -39,7 +39,7 @@
 
   <scm>
     <connection>scm:svn:http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin</developerConnection>
+    <developerConnection>${developerconnection}</developerConnection>
     <url>http://fisheye.codehaus.org/browse/mojo/trunk/mojo/license-maven-plugin</url>
   </scm>
 
@@ -131,6 +131,7 @@
     <invokerPluginVersion>1.8</invokerPluginVersion>
     <javadocPluginVersion>2.9</javadocPluginVersion>
 
+    <developerconnection>scm:svn:https://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin</developerconnection>
   </properties>
 
   <dependencies>
