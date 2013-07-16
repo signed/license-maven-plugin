@@ -1,7 +1,7 @@
 10
 
 dir
-18500
+18536
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/main/java/org/codehaus/mojo/license
 http://svn.codehaus.org/mojo
 
@@ -25,40 +25,6 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
-
-DownloadLicensesMojo.java
-file
-
-
-
-
-2013-07-05T08:33:05.718293Z
-b6e8574c80c0bea56a701ca86abf08ce
-2013-05-12T10:24:33.959287Z
-18291
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-19180
 
 AbstractLicenseReportMojo.java
 file
@@ -128,6 +94,9 @@ has-props
 
 15336
 
+api
+dir
+
 AbstractLicenseReportRenderer.java
 file
 
@@ -161,43 +130,6 @@ has-props
 
 
 12861
-
-api
-dir
-
-AbstractLicenseMojo.java
-file
-
-
-
-
-2013-05-03T07:03:09.792887Z
-f9a0bdf61afa85099d7863a3eff75359
-2013-05-02T19:34:40.064374Z
-18277
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-11593
 
 AggregatorAddThirdPartyMojo.java
 file
@@ -233,6 +165,40 @@ has-props
 
 6915
 
+AbstractLicenseMojo.java
+file
+
+
+
+
+2013-05-03T07:03:09.792887Z
+f9a0bdf61afa85099d7863a3eff75359
+2013-05-02T19:34:40.064374Z
+18277
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11593
+
 AbstractLicenseNameMojo.java
 file
 
@@ -267,40 +233,6 @@ has-props
 
 4656
 
-UpdateProjectLicenseMojo.java
-file
-
-
-
-
-2013-05-03T07:03:09.788887Z
-6e5c264d20a89f564f45e9c3c6489cdd
-2013-05-02T19:34:40.064374Z
-18277
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6816
-
 AbstractFileHeaderMojo.java
 file
 
@@ -334,6 +266,40 @@ has-props
 
 
 42951
+
+UpdateProjectLicenseMojo.java
+file
+
+
+
+
+2013-05-03T07:03:09.788887Z
+6e5c264d20a89f564f45e9c3c6489cdd
+2013-05-02T19:34:40.064374Z
+18277
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6816
 
 LicenseListMojo.java
 file
@@ -406,40 +372,6 @@ has-props
 header
 dir
 
-ThirdPartyReportMojo.java
-file
-
-
-
-
-2013-05-03T07:03:09.788887Z
-22ce724b15eb1ce3ec5dd4eb3948e8ee
-2013-05-02T19:34:40.064374Z
-18277
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-10967
-
 CheckFileHeaderMojo.java
 file
 
@@ -473,6 +405,40 @@ has-props
 
 
 3264
+
+ThirdPartyReportMojo.java
+file
+
+
+
+
+2013-05-03T07:03:09.788887Z
+22ce724b15eb1ce3ec5dd4eb3948e8ee
+2013-05-02T19:34:40.064374Z
+18277
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10967
 
 AbstractAddThirdPartyMojo.java
 file
@@ -581,4 +547,38 @@ has-props
 
 
 3720
+
+DownloadLicensesMojo.java
+file
+
+
+
+
+2013-07-05T08:33:05.718293Z
+b6e8574c80c0bea56a701ca86abf08ce
+2013-05-12T10:24:33.959287Z
+18291
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19180
 

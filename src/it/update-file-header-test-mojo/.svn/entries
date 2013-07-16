@@ -1,7 +1,7 @@
 10
 
 dir
-18500
+18536
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo
 http://svn.codehaus.org/mojo
 
@@ -25,6 +25,43 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
+
+changelog.txt
+file
+
+
+
+
+2013-04-10T20:18:07.874197Z
+84cd665335e06cd384f89259a6db33ad
+2011-01-22T08:36:13.436452Z
+13433
+tchemit
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+45
+
+src
+dir
 
 invoker.properties
 file
@@ -197,42 +234,5 @@ has-props
 7640
 
 child1
-dir
-
-changelog.txt
-file
-
-
-
-
-2013-04-10T20:18:07.874197Z
-84cd665335e06cd384f89259a6db33ad
-2011-01-22T08:36:13.436452Z
-13433
-tchemit
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-45
-
-src
 dir
 

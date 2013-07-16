@@ -1,7 +1,7 @@
 10
 
 dir
-18500
+18536
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/src/files/mysql
 http://svn.codehaus.org/mojo
 
@@ -25,6 +25,40 @@ tchemit
 
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
+
+test2.mysql2
+file
+
+
+
+
+2013-04-10T20:18:07.714197Z
+7f0f95ddc1a632ed2f0ea151e289ef18
+2012-12-12T10:17:10.192248Z
+17762
+tchemit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+993
 
 test.mysql
 file
@@ -127,38 +161,4 @@ tchemit
 
 
 991
-
-test2.mysql2
-file
-
-
-
-
-2013-04-10T20:18:07.714197Z
-7f0f95ddc1a632ed2f0ea151e289ef18
-2012-12-12T10:17:10.192248Z
-17762
-tchemit
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-993
 

@@ -1,7 +1,7 @@
 10
 
 dir
-18500
+18536
 http://svn.codehaus.org/mojo/trunk/mojo/license-maven-plugin/src/it/update-file-header-test-mojo/child1/src/files
 http://svn.codehaus.org/mojo
 
@@ -26,6 +26,15 @@ tchemit
 
 52ab4f32-60fc-0310-b215-8acea882cd1b
 
+apt
+dir
+
+ftl
+dir
+
+mysql
+dir
+
 rst
 dir
 
@@ -39,14 +48,5 @@ sql
 dir
 
 xml
-dir
-
-apt
-dir
-
-ftl
-dir
-
-mysql
 dir
 
