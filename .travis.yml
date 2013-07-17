@@ -10,7 +10,6 @@ jdk:
   - oraclejdk7
 branches:
   only:
-    - probe
     - fetch-licenses-mojo
 notifications:
   email:
